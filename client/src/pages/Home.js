@@ -1,5 +1,5 @@
 import React from 'react';
-import Digital from '../images/digital-world.mp4';
+// import Digital from '../images/digital-world.mp4';
 import '../styles/Home.css';
 import '../App.css';
 
@@ -7,7 +7,7 @@ import '../App.css';
  
   return (
     <section className="home-container">
-      <video src={Digital} autoPlay loop muted className="background-video"></video>
+      {/* <video src={Digital} autoPlay loop muted className="background-video"></video> */}
       <div className='home-content'>    
         <h1>"Immerse yourself in the digital landscape."</h1>
           <p>
