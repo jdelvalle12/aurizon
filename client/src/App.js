@@ -5,7 +5,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from './pages/Home';
 import About from './pages/About';
-import Projects from './pages/Projects';
+import Services from './pages/Services';
+import Products from './pages/Products';
+import Portfolio from './pages/Portfolio';
+import Process from './pages/Process';
+import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 import './index.css';
 import './App.css';
@@ -15,12 +19,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // const toggleMenu = () => {
-  //   setIsMenuOpen(!isMenuOpen);
-  // };
 
 
 return (
@@ -33,9 +31,12 @@ return (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/process" element={<Process />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/resume" element={<Resume />} /> */}
         </Routes>
         <Footer />
       </div>
