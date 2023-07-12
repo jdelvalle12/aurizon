@@ -26,46 +26,58 @@ const toggleProductDropdown = () => {
     </div>
     <nav className="navi">
       <Link className="about" to="/about">About</Link>
-      {/* <div className="services-container"></div> */}
-        <Link
-            className={`services ${isServiceDropdownOpen ? 'active' : ''}`}
-            onClick={toggleServiceDropdown}
-            to="#"
-          >
-            Services
-            <span className={`dropdown-arrow ${isServiceDropdownOpen ? 'open' : ''}`}>&#9662;</span>
-          </Link>
-          {isServiceDropdownOpen && (
-            <ul className="dropdown-menu">
+      <div className="relative">
+      <a
+              href="#"
+              className={`services inline-flex items-center space-x-1 font-medium text-gray-700 hover:text-gray-900 ${isServiceDropdownOpen ? 'active' : ''}`}
+              onClick={toggleServiceDropdown}
+            >
+              Services
+              <span className={`dropdown-arrow ${isServiceDropdownOpen ? 'open' : ''}`}>&#9662;</span>
+            </a>
+            {isServiceDropdownOpen && (
+              <ul className="dropdown-menu absolute z-10 hidden mt-2 py-1 text-gray-700 bg-white border rounded shadow">
+                <li>
+                  <Link
+                    to="/services/full-stack-web-development"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Web Development
+                  </Link>
+                </li>
               <li>
-                <Link to="/services/full-stack-web-development">Full Stack Web Development</Link>
+                <Link to="/services/api-development" className="block px-4 py-2 hover:bg-gray-100">API Development</Link>
               </li>
               <li>
-                <Link to="/services/api-development">API Development</Link>
+                <Link to="/services/mobile-app-development" className="block px-4 py-2 hover:bg-gray-100">Mobile App Development</Link>
               </li>
               <li>
-                <Link to="/services/front-end-development">Frontend-Development</Link>
-              </li>
-              <li>
-                <Link to="/services/back-end-development">Backend-Development</Link>
+                <Link to="/services/back-end-development" className="block px-4 py-2 hover:bg-gray-100"></Link>
               </li>
             </ul>
           )}
-           <Link
-            className={`products ${isProductDropdownOpen ? 'active' : ''}`}
-            onClick={toggleProductDropdown}
-            to="#"
-          >
-            Products
-            <span className={`dropdown-arrow ${isProductDropdownOpen ? 'open' : ''}`}>&#9662;</span>
-          </Link>
-          {isProductDropdownOpen && (
-            <ul className="dropdown-menu">
+          </div>
+          <div className="relative">
+          <a
+              href="#"
+              className={`products inline-flex items-center space-x-1 font-medium text-gray-700 hover:text-gray-900 ${isProductDropdownOpen ? 'active' : ''}`}
+              onClick={toggleProductDropdown}
+            >
+              Products
+              <span className={`dropdown-arrow ${isProductDropdownOpen ? 'open' : ''}`}>&#9662;</span>
+            </a>
+            {isProductDropdownOpen && (
+              <ul className="dropdown-menu absolute z-10 hidden mt-2 py-1 text-gray-700 bg-white border rounded shadow">
+                <li>
+                  <Link
+                    to="/products/journeez"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    JourneEZ
+                  </Link>
+                </li>
               <li>
-                <Link to="/products/journeez">JourneEZ</Link>
-              </li>
-              <li>
-                <Link to="/products/accorplan">Coming Soon</Link>
+                <Link to="/products/accorplan" className="block px-4 py-2 hover:bg-gray-100">Coming Soon</Link>
               </li>
               {/* <li>
                 <Link to="/products/front-end-development">Frontend-Development</Link>
@@ -75,8 +87,8 @@ const toggleProductDropdown = () => {
               </li> */}
             </ul>
           )}
+          </div>
       <Link className="portfolio" to="/portfolio">Portfolio</Link>
-      <Link className="process" to="/process">Process</Link>
       <Link className="careers" to="/process">Careers</Link>
       <Link className="contact" to="/contact">Contact</Link>
     </nav>

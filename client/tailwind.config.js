@@ -7,7 +7,7 @@ module.exports = {
           primary: '#008080',
         },
         fontFamily: {
-          body: ['Open Sans', 'sans-serif'],
+          body: ['Source Code Pro', 'Space Grotesk', 'sans-serif'],
         },
         spacing: {
           '128': '32rem',
