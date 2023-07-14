@@ -8,6 +8,7 @@ import About from './pages/About';
 import Technologies from './pages/Technologies';
 import Portfolio from './pages/Portfolio';
 import Careers from './pages/Careers';
+import News from './pages/News';
 import Contact from './pages/Contact';
 import './index.css';
 import './App.css';
@@ -32,6 +33,7 @@ return (
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

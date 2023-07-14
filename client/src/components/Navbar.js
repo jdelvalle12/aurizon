@@ -5,6 +5,7 @@ import '../App.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isMobile = window.innerWidth <= 768; // Check if the screen width is less than or equal to 768px
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -19,8 +20,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
-      <div className="logo">Logo</div>
+    <nav className='mobile-nav'>
+      {/* <div className="logo">Logo</div> */}
       <div
         className={`menu ${isMenuOpen ? 'open' : ''}`}
         onMouseEnter={handleMouseEnter}
@@ -32,14 +33,22 @@ const Navbar = () => {
           <li>Our technologies</li>
           <li>Portfolio</li>
           <li>Careers</li>
+          <li>News</li>
           <li>Contact</li>
         </ul>
       </div>
-      <button className="hamburger" onClick={toggleMenu}>
-        <span className={`line ${isMenuOpen ? 'open' : ''}`}></span>
-        <span className={`line ${isMenuOpen ? 'open' : ''}`}></span>
-        <span className={`line ${isMenuOpen ? 'open' : ''}`}></span>
-      </button>
+      {/* Hamburger menu button */}
+      {isMobile && (
+        <button className="hamburger" onClick={toggleMenu}>
+          <span className={`line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span className={`line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span className={`line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span className={`line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span className={`line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span className={`line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span className={`line ${isMenuOpen ? 'open' : ''}`}></span>
+        </button>
+      )}
     </nav>
   );
 };

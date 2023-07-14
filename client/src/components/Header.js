@@ -1,15 +1,29 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from "../components/Navbar";
 import '../components/Header.css';
 import '../index.css';
 import '../App.css';
 
 const Header = () => {
   const [isServiceDropdownOpen, setIsServiceDropdownOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Check if the screen width is less than or equal to 768px
 
-const toggleServiceDropdown = () => {
-  setIsServiceDropdownOpen(!isServiceDropdownOpen);
-};
+  const toggleServiceDropdown = () => {
+    setIsServiceDropdownOpen(!isServiceDropdownOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
 <header className="text-light mb-4 py-1">
@@ -19,6 +33,7 @@ const toggleServiceDropdown = () => {
         <span className="bg-aqua text-black px-1">DEV</span>erse
       </Link>
     </div>
+    {!isMobile && (
     <nav className="navi">
       <Link className="about" to="/about">Who we are</Link>
       <div className="relative">
@@ -47,7 +62,7 @@ const toggleServiceDropdown = () => {
                 <Link to="/technologies/api-development" className="flex px-4 py-2 hover:bg-gray-100">API Development</Link>
               </li>
               <li>
-                {/* <Link to="/technologies/mobile-app-development" className="block px-4 py-2 hover:bg-gray-100">Mobile App Development</Link> */}
+                <Link to="/technologies/mobile-app-development" className="block px-4 py-2 hover:bg-gray-100">Mobile App Development</Link>
               </li>
               <li>
                 {/* <Link to="/technologies/back-end-development" className="block px-4 py-2 hover:bg-gray-100"></Link> */}
@@ -56,7 +71,7 @@ const toggleServiceDropdown = () => {
                 <li>
                   <Link
                     // to="https://www.journeeztrip.com"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="flex px-4 py-2 hover:bg-gray-100"
                   >
                     In development
                   </Link>
@@ -65,7 +80,7 @@ const toggleServiceDropdown = () => {
               <li>
                 <Link 
                 // to="/technologies/accorplan" 
-                className="block px-4 py-2 hover:bg-gray-100">In development</Link>
+                className="flex px-4 py-2 hover:bg-gray-100">In development</Link>
               </li>
               {/* <li>
                 <Link to="/technologies/front-end-development">Frontend-Development</Link>
@@ -79,8 +94,13 @@ const toggleServiceDropdown = () => {
           </div>
       <Link className="portfolio" to="/portfolio">Portfolio</Link>
       <Link className="careers" to="/process">Careers</Link>
+      <Link className="news" to="/news">News</Link>
       <Link className="contact" to="/contact">Contact</Link>
     </nav>
+    )}
+    <div className="mobile-menu">
+          <Navbar /> 
+    </div>
   </div>
 </header>
   );
