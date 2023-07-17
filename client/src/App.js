@@ -6,6 +6,9 @@ import Footer from "./components/Footer";
 import Home from './pages/Home';
 import About from './pages/About';
 import Technologies from './pages/Technologies';
+import ApiDevelopment from './pages/Api-Development';
+import MobileDevelopment from './pages/Mobile-Development';
+import WebDevelopment from './pages/Web-Development';
 import Portfolio from './pages/Portfolio';
 import Careers from './pages/Careers';
 import News from './pages/News';
@@ -31,6 +34,9 @@ return (
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/technologies" element={<Technologies />} />
+          <Route path="/technologies/api-development" element={<ApiDevelopment />} />
+          <Route path="/technologies/mobile-development" element={<MobileDevelopment />} />
+          <Route path="/technologies/web-development" element={<WebDevelopment />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/news" element={<News />} />

@@ -52,7 +52,7 @@ const Header = () => {
                   
                 <li>
                   <Link
-                    to="/technologies/full-stack-web-development"
+                    to="/technologies/web-development"
                     className="flex px-4 py-2 hover:bg-gray-100"
                   >
                     Web Development
