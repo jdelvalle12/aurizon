@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className='copyright'>
-        © 2023 DEVerse Technologies
+        © 2023 DEVerso Technologies
       </div>
       <div className="social-icons">
         <a href="https://github.com/jdelvalle12" target="_blank" rel="noopener noreferrer">

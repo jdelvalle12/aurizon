@@ -30,7 +30,7 @@ const Header = () => {
   <div className="header-container flex flex-col lg:flex-row justify-between items-center">
     <div className="logo-relative">
       <Link className="no-underline flex items-center" to="/">
-        <span className="bg-aqua text-black px-1">DEV</span>erse
+        <span className="bg-aqua text-black px-1">DEV</span>erso
       </Link>
     </div>
     {!isMobile && (

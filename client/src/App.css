@@ -301,7 +301,8 @@ body {
     padding: 1rem;
     background-color: none;
     color: white;
-    border: solid 5px aqua; 
+    border: solid 7px aqua; 
+    border-radius: 25px;
   }
   
   /* nav::before,
