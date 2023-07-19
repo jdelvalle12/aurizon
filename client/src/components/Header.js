@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import '../components/Header.css';
+import Cog from '../images/Cog.jpg';
 import '../index.css';
 import '../App.css';
 
@@ -30,7 +31,10 @@ const Header = () => {
   <div className="header-container flex flex-col lg:flex-row justify-between items-center">
     <div className="logo-relative">
       <Link className="no-underline flex items-center" to="/">
-        <span className="bg-aqua text-black px-1">DEV</span>erso
+      <div className="gear-logo-container">
+        <img src={Cog} alt="Gear Logo" className="gear-logo" />
+      </div>
+        <span className="bg-aqua text-black px-1">DEV</span>estus
       </Link>
     </div>
     {!isMobile && (

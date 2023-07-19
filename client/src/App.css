@@ -76,6 +76,16 @@ body {
   font-weight: bold;
 }
 
+.gear-logo-container {
+  background-color: transparent;
+}
+
+.gear-logo  {
+  width: 40px; 
+  height: 40px;
+  margin-right: 1rem;
+}
+
 .logo-relative span {
   background-color: aqua;
   color: black;
