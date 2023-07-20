@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // import 'tailwindcss/tailwind.css';
 import '../index.css';
@@ -30,10 +30,28 @@ const Navbar = () => {
     setIsDropdownOpen(false);
   };
 
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleDocumentClick = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        // Close the dropdown if the click is outside the menu
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleDocumentClick);
+
+    return () => {
+      document.removeEventListener('click', handleDocumentClick);
+    };
+  }, []);
+
   return (
     <nav className='mobile-nav'>
       {/* <div className="logo">Logo</div> */}
       <div
+        ref={dropdownRef}
         className={`menu ${isMenuOpen ? 'open' : ''}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -48,12 +66,27 @@ const Navbar = () => {
           <Link to="#" className="nav-link">
             Our technologies
             <span className={`dropdown-arrow ${isDropdownOpen ? 'open' : ''}`}>&#9662;</span></Link>
-          <div className="mobile-dropdown-menu">
+          <div className={`mobile-dropdown-menu ${isDropdownOpen ? 'open' : ''}`}>
               {/* Dropdown menu content */}
               <ul>
-                <li><Link to="/technologies/web-development">Web Development</Link></li>
-                <li><Link to="/technologies/api-development">API Development</Link></li>
-                <li><Link to="/technologies/mobile-development">Mobile Development</Link></li>
+                <h3>Services</h3>
+                  <li><Link className='sub-nav-link' to="/technologies/web-development">Web Development</Link></li>
+                  <li><Link className='sub-nav-link' to="/technologies/api-development">API Development</Link></li>
+                  <li><Link className='sub-nav-link' to="/technologies/mobile-development">Mobile Development</Link></li>
+                  <li><Link className='sub-nav-link' to="/technologies/business-solutions">Business Solutions</Link></li>
+                <h3>Explore Apps</h3>
+                  <li><Link
+                    // to="https://www.journeeztrip.com"
+                    className='sub-nav-link'
+                  >
+                    In development
+                  </Link></li>
+                  <h3>Work Tools</h3>
+                  <li>
+                <Link 
+                // to="/technologies/accorplan" 
+                className='sub-nav-link'>In development</Link>
+              </li>
               </ul>
             </div>
           </li>

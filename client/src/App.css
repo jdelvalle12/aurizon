@@ -78,6 +78,7 @@ body {
 
 .gear-logo-container {
   background-color: transparent;
+  background: none;
 }
 
 .gear-logo  {
@@ -87,8 +88,10 @@ body {
 }
 
 .logo-relative span {
+  font-weight: bold;
   background-color: aqua;
   color: black;
+  font-size: 3rem;
   line-height: 0.8; 
   padding-top: 0.3rem; 
   padding-bottom: 0.1rem; 
@@ -96,7 +99,7 @@ body {
 
 .no-underline {
   position: relative;
-  font-size: 2.3rem;
+  font-size: 2rem;
   /* z-index: 100; */
   color: aliceblue;
   text-decoration: none;
@@ -348,7 +351,7 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   
   .menu ul li:hover {
@@ -389,7 +392,37 @@ body {
   }
 
   .mobile-dropdown-menu {
-   
+    display: none;
+  }
+  
+  .mobile-dropdown-menu.open {
+    display: block;
+    background-color: white;
+  }
+
+  .mobile-dropdown-menu h3 {
+    color: #007bff;
+    font-size: 1.3rem
+  }
+  
+  .sub-nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Source Code Pro', 'Space Grotesk', sans-serif;
+  }
+
+  .sub-nav-link:hover {
+    color: aqua;
+    background-color: black;
+  }
+  
+  .dropdown-arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdown-arrow.open {
+    transform: rotate(180deg);
   }
 
 /*Home*/
