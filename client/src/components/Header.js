@@ -34,7 +34,7 @@ const Header = () => {
       {/* <div className="gear-logo-container">
         <img src={Cogwheel} alt="Gear Logo" className="gear-logo bg-none" />
       </div> */}
-        <span className="bg-aqua text-black bold px-1">A</span>phestus
+        <span className="bg-aqua text-black bold px-1">DEVA</span>ltus
       </Link>
     </div>
     {!isMobile && (
@@ -69,7 +69,7 @@ const Header = () => {
                 <Link to="/technologies/mobile-app-development" className="block px-4 py-2 hover:bg-gray-100">Mobile App Development</Link>
               </li>
               <li>
-                {/* <Link to="/technologies/back-end-development" className="block px-4 py-2 hover:bg-gray-100"></Link> */}
+                <Link to="/technologies/business-solutions" className="block px-4 py-2 hover:bg-gray-100">Business Solutions</Link>
               </li>      
                 <h2>Explore our apps</h2>
                 <li>
