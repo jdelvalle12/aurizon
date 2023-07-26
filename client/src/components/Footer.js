@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className='copyright'>
-        © 2023 Devaltus Technologies
+        © 2023 Aurizon Technologies
       </div>
       <div className="social-icons">
         <a href="https://github.com/jdelvalle12" target="_blank" rel="noopener noreferrer">

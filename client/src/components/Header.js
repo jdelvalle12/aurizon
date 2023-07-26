@@ -34,7 +34,7 @@ const Header = () => {
       {/* <div className="gear-logo-container">
         <img src={Cogwheel} alt="Gear Logo" className="gear-logo bg-none" />
       </div> */}
-        <span className="bg-aqua text-black bold px-1">DEVA</span>ltus
+        <span className="bg-aqua text-black bold px-1">A</span>urizon
       </Link>
     </div>
     {!isMobile && (
