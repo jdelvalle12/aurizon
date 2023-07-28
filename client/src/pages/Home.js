@@ -9,7 +9,8 @@ import '../App.css';
     <section className="home-container">
       {/* <video src={Digital} autoPlay loop muted className="background-video"></video> */}
       <div className='home-content'>    
-        <h1></h1>
+        <h1>"Aeon Innovations, Illuminating Tomorrow"</h1>
+        <h2>"Your Gateway To Extraordinary Solutions"</h2>
           <p>
             
           </p>

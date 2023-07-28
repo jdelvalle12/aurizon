@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import '../components/Header.css';
-import Cogwheel from '../images/Cogwheel.jpg';
 import '../index.css';
 import '../App.css';
 
@@ -34,7 +33,7 @@ const Header = () => {
       {/* <div className="gear-logo-container">
         <img src={Cogwheel} alt="Gear Logo" className="gear-logo bg-none" />
       </div> */}
-        <span className="bg-aqua text-black bold px-1">A</span>urizon
+        Auriz<span className="bg-aqua text-black bold px-1">on</span>
       </Link>
     </div>
     {!isMobile && (

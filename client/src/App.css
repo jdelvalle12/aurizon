@@ -76,7 +76,7 @@ body {
   font-weight: bold;
 }
 
-.gear-logo-container {
+/* .gear-logo-container {
   background-color: transparent;
   background: none;
 }
@@ -85,13 +85,13 @@ body {
   width: 40px; 
   height: 40px;
   margin-right: 1rem;
-}
+} */
 
 .logo-relative span {
   font-weight: bold;
   background-color: aqua;
   color: black;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 0.8; 
   /* padding-top: 0.3rem;  */
   padding-bottom: 0.1rem; 
@@ -430,28 +430,54 @@ body {
 
 .home-container {
   display: block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
  
 }
 
-.home-container  {
- 
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
+/* Apply the animation to the slogan */
 .home-content h1 {
+  display: flex;
+  font-size: 3.5rem;
+  font-style: italic;
+  color: #007bff;
+  margin-top: 2.5rem; 
+  width: 80%; 
+  height: auto;
+  margin-left: 0.8rem;
+
+  /* Apply the updated animation */
+  animation: slideInRight 3.5s ease-out;
+}
+
+.home-content h2  {
+  display: flex;
+  width: 80%;
   font-size: 2rem;
-  font-weight: bold;
-  color: rgb(68, 131, 190);
-  margin-top: 11.5rem; 
-  max-width: 28rem; 
+  /* font-weight: bold; */
+  color: black;
+  margin-top: 7.5rem; 
+  justify-content: center;
+  align-content: center;
   text-align: center; 
   margin-left: 1rem;
 }
+
 
 .home-content p {
   font-size: 1.3rem;
