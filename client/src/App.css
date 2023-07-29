@@ -119,7 +119,7 @@ body {
 .technologies,
 .portfolio,
 .careers,
-.news,
+.insider,
 .contact {
   align-items: center;
   text-decoration: none;
@@ -134,7 +134,7 @@ body {
 .contact:hover,
 .technologies:hover,
 .careers:hover,
-.news:hover,
+.insider:hover,
 .about:hover {
   text-decoration: underline;
   color: aqua;

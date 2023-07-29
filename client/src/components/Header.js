@@ -97,7 +97,7 @@ const Header = () => {
           </div>
       <Link className="portfolio" to="/portfolio">Portfolio</Link>
       <Link className="careers" to="/process">Careers</Link>
-      <Link className="news" to="/news">News</Link>
+      <Link className="insider" to="/insider">Insider</Link>
       <Link className="contact" to="/contact">Contact</Link>
     </nav>
     )}
