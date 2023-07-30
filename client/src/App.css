@@ -58,34 +58,27 @@ body {
   }
 }
 
-/*Header*/
+/*Logo*/
 
-.header-container {
+.logo-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  /* z-index: 100; */
-  height: auto;
-  line-height: 30px;
-  margin-top: -0.5rem;
-  padding: 1.5rem;
-  color: aliceblue;
-  background-color: black;
-  font-family: 'Source Code Pro', 'Space Grotesk', sans-serif;
-  font-size: 2.5rem;
+  justify-content: center;
+  /* Add any additional styling for the logo container */
+}
+
+.logo {
+  font-size: 2rem;
   font-weight: bold;
+  /* Add any additional styling for the logo text */
 }
 
-/* .gear-logo-container {
-  background-color: transparent;
-  background: none;
+.arc {
+  width: 50px;
+  height: 30px;
+  /* margin: 0 10px; */
+  /* Add any additional styling for the SVG arc */
 }
-
-.gear-logo  {
-  width: 40px; 
-  height: 40px;
-  margin-right: 1rem;
-} */
 
 .logo-relative span {
   font-weight: bold;
@@ -114,6 +107,25 @@ body {
   font-size: 2.8rem;
   transition: font-size 0.5s ease;
 }
+
+/*Header*/
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* z-index: 100; */
+  height: auto;
+  line-height: 30px;
+  margin-top: -0.5rem;
+  padding: 1.5rem;
+  color: aliceblue;
+  background-color: black;
+  font-family: 'Source Code Pro', 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
 
 .about,
 .technologies,
@@ -439,30 +451,31 @@ body {
  
 }
 
-@keyframes slideInRight {
+/* Apply the animation to the slogan */
+.home-content h1 {
+  font-size: 2.5rem;
+  font-family: 'Source Code Pro', 'Space Grotesk', sans-serif; /* Change the font family to your preferred italic font */
+  font-style: italic; /* Apply italic to the font */
+  color: #007bff;
+  margin-top: 2.5rem;
+  width: 80%;
+  height: auto;
+  opacity: 0;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
   from {
-    transform: translateX(-100%);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
     opacity: 1;
   }
 }
 
-/* Apply the animation to the slogan */
-.home-content h1 {
-  display: flex;
-  font-size: 3.5rem;
-  font-style: italic;
-  color: #007bff;
-  margin-top: 2.5rem; 
-  width: 80%; 
-  height: auto;
-  margin-left: 0.8rem;
-
-  /* Apply the updated animation */
-  animation: slideInRight 3.5s ease-out;
+.home-content h1.fade-in {
+  opacity: 1;
 }
 
 .home-content h2  {

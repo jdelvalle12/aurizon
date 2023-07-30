@@ -1,21 +1,29 @@
-import React from 'react';
-// import Digital from '../images/digital-world.mp4';
-import '../styles/Home.css';
+import React, { useEffect, useState } from 'react';
+import '../index.css';
 import '../App.css';
 
- export default function Home() {
- 
+const Home = () => {
+  const [showSlogan, setShowSlogan] = useState(false);
+
+  useEffect(() => {
+    setShowSlogan(true);
+  }, []);
+
   return (
-    <section className="home-container">
-      {/* <video src={Digital} autoPlay loop muted className="background-video"></video> */}
-      <div className='home-content'>    
-        <h1>"Aeon Innovations, Illuminating Tomorrow"</h1>
-        <h2>"Your Gateway To Extraordinary Solutions"</h2>
-          <p>
-            
-          </p>
-      </div>
-    </section>
+    <div className="home-content">
+      {/* Add the "fade-in" class if showSlogan is true */}
+      <h1 className={showSlogan ? 'fade-in' : ''}>"Aeon Innovations, Illuminating Tomorrow"</h1>
+      <h2>Your gateway to extraordinary solutions</h2>
+    </div>
   );
-}
+};
+
+export default Home;
+
+
+
+
+
+
+
 
