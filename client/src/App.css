@@ -100,7 +100,8 @@ body {
   /* justify-content: center;
   width: 23rem; */
   transition: font-size 0.5s ease;
-  /* margin-left: 1rem; */
+  margin-right: 4.5rem;
+ 
 }
 
 .no-underline:hover {
@@ -169,6 +170,7 @@ body {
   flex-direction: row;
   font-family: 'Source Code Pro', 'Space Grotesk', sans-serif;
   width: 20rem;
+  margin-right: 1rem;
 }
 
 .technologies.active + .dropdown-menu,
@@ -324,6 +326,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
+    margin-right: 1.5rem;
     padding: 1rem;
     background-color: none;
     color: white;
@@ -481,15 +484,15 @@ body {
 
 .home-content h2  {
   display: flex;
-  width: 80%;
-  font-size: 2rem;
+  width: 50%;
+  font-size: 2.9rem;
   /* font-weight: bold; */
   color: black;
   margin-top: 7.5rem; 
   justify-content: center;
   align-content: center;
   text-align: center; 
-  margin-left: 1rem;
+  margin-left: 5rem;
 }
 
 
@@ -498,11 +501,28 @@ body {
   line-height: 2rem;
   /* text-align: justify; */
   color: black;
-  padding-top: 3.5rem;
-  max-width: 24rem; 
+  padding-top: 1.5rem;
+  width: 50%; 
   text-align: center; 
-  margin-right: 2rem;
-  margin-left: 3rem;
+  /* margin-right: 5rem; */
+  margin-left: 5rem;
+}
+
+/* CSS for sliding animation */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the sliding animation to the slide-in class */
+.slide-in {
+  animation: slideFromLeft 1s ease forwards; /* Adjust animation duration as needed */
 }
 
 
