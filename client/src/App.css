@@ -498,21 +498,23 @@ body {
   justify-content: left;
   align-content: center;
   text-align: center; 
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 
 .home-content p {
+  display: flex;
   font-size: 1.3rem;
   line-height: 2rem;
   /* text-align: justify; */
   justify-content: left;
+  align-content: center;
+  text-align: center; 
   color: black;
   padding-top: 1.5rem;
-  width: 40%; 
-  text-align: center; 
+  width: 50%; 
   /* margin-right: 10rem; */
-  margin-left: 5rem;
+  margin-left: 2.7rem;
 }
 
 /* CSS for sliding animation */
@@ -551,9 +553,10 @@ body {
 
 /* Style the button to match the design */
 .contact-button {
+  display: flex;
   font-size: 2rem;
   margin-top: 1rem; /* Add margin between the <p> and button */
-  margin-left: 15rem;
+  margin-left: 5rem;
   background-color: aqua;
   color: black;
   border: none;
@@ -561,12 +564,14 @@ body {
   border-radius: 25px;
   cursor: pointer;
   text-decoration: none;
+  /* width: 50%; */
 }
 
 .button-container {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 1rem; /* Add margin between the <p> and button */
 }
 
