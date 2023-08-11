@@ -88,7 +88,13 @@ body {
   line-height: 0.8; 
   /* padding-top: 0.3rem;  */
   padding-bottom: 0.1rem; 
-  /* border-radius: 25px; */
+  border-radius: 25px;
+  transition: font-size 0.8s ease;
+}
+
+.logo-span:hover {
+  font-size: 3.8rem;
+  transition: font-size 0.8s ease;
 }
 
 .no-underline {
@@ -99,14 +105,14 @@ body {
   text-decoration: none;
   /* justify-content: center;
   width: 23rem; */
-  transition: font-size 0.5s ease;
+  transition: font-size 0.8s ease;
   margin-right: 4.5rem;
  
 }
 
 .no-underline:hover {
   font-size: 2.8rem;
-  transition: font-size 0.5s ease;
+  transition: font-size 0.8s ease;
 }
 
 /*Header*/
@@ -489,10 +495,10 @@ body {
   /* font-weight: bold; */
   color: black;
   margin-top: 7.5rem; 
-  justify-content: center;
+  justify-content: left;
   align-content: center;
   text-align: center; 
-  margin-left: 5rem;
+  margin-left: 1rem;
 }
 
 
@@ -500,11 +506,12 @@ body {
   font-size: 1.3rem;
   line-height: 2rem;
   /* text-align: justify; */
+  justify-content: left;
   color: black;
   padding-top: 1.5rem;
-  width: 50%; 
+  width: 40%; 
   text-align: center; 
-  /* margin-right: 5rem; */
+  /* margin-right: 10rem; */
   margin-left: 5rem;
 }
 
@@ -523,6 +530,44 @@ body {
 /* Apply the sliding animation to the slide-in class */
 .slide-in {
   animation: slideFromLeft 1s ease forwards; /* Adjust animation duration as needed */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  animation: slideFromLeft 1s ease forwards; /* Adjust animation duration as needed */
+  width: 100%;
+}
+
+/* Center-align the content on larger screens */
+@media (max-width: 768px) {
+  .content-container {
+    align-items: center;
+    text-align: center;
+    
+  }
+}
+
+/* Style the button to match the design */
+.contact-button {
+  font-size: 2rem;
+  margin-top: 1rem; /* Add margin between the <p> and button */
+  margin-left: 15rem;
+  background-color: aqua;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 1rem; /* Add margin between the <p> and button */
 }
 
 

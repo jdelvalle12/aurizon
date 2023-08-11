@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../index.css';
 import '../App.css';
 
@@ -35,6 +36,9 @@ const Home = () => {
         At Aurizon, we build technology that helps businesses succeed and develop intuitive and user-friendly products
         to simplify everyday tasks.
       </p>
+      <div className={`button-container ${showSlogan ? 'slide-in' : ''}`}>
+        <Link to="/contact" className={`contact-button ${showSlogan ? 'slide-in' : ''}`}>Contact Us</Link>
+      </div>
     </div>
   );
 };
