@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Motion from '../images/background-motion.mp4'
 import '../index.css';
 import '../App.css';
 
@@ -28,6 +29,7 @@ const Home = () => {
 
   return (
     <div className="home-content">
+      <video src={Motion} autoPlay loop muted className="background-video"></video>
       <h1 className={showSlogan ? 'fade-in' : ''}>"Aeon Innovations, Illuminating Tomorrow"</h1>
       <h2>
         <span id="typing-text"></span>
