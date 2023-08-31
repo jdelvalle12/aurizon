@@ -34,13 +34,19 @@ const Home = () => {
       <h2>
         <span id="typing-text"></span>
       </h2>
-      <p className={showSlogan ? 'slide-in' : ''}>
-        At Aurizon, we build technology that helps businesses succeed and develop intuitive and user-friendly products
-        to simplify everyday tasks.
-      </p>
+        <span className="mission">
+          We embark on a journey of innovation and on a mission
+          to be at the forefront of technological advancements
+        </span>
       <div className={`button-container ${showSlogan ? 'slide-in' : ''}`}>
-        <Link to="/contact" className={`contact-button ${showSlogan ? 'slide-in' : ''}`}>Contact Us</Link>
+        <Link to="/contact" className={`contact-button ${showSlogan ? 'slide-in' : ''}`}>Let's Get Started</Link>
       </div>
+        <h3>What We Do</h3>
+        <p className={showSlogan ? 'slide-in' : ''}>
+          At Aurizon, we build technology that helps businesses succeed and develop intuitive and user-friendly products
+          to simplify everyday tasks.
+        </p>
+      
     </div>
   );
 };
