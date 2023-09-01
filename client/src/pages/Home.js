@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Motion from '../images/background-motion.mp4';
-// import Coding from '../images/coding.mp4';
+import Digital from '../images/digital-motion.mp4';
 import '../index.css';
 import '../App.css';
 
@@ -44,13 +44,22 @@ const Home = () => {
       <div className={`button-container ${showSlogan ? 'slide-in' : ''}`}>
         <Link to="/contact" className={`contact-button ${showSlogan ? 'slide-in' : ''}`}>Let's Get Started</Link>
       </div>
-      <div>
-        <h3>What We Do</h3>
+      <div className="home-about-container">
+        <div className="glass-box">
+          <h3 className='who-we-are'>Who We Are</h3>
+            <p className='home-about-para'>At Aurizon, we are passionate about pushing boundaries and 
+            exploring new horizons in the tech industry. We are committed to empowering businesses and 
+            individuals with cutting-edge technologies that drive growth.</p>
+          <Link to="/about" className="about-link">Learn More</Link>
+        </div>
+      <video src={Digital} autoPlay loop muted className="motion-video"></video>
+      </div>
+      <div className='what-we-do-container'>
+        <h3 className='what-we-do'>What We Do</h3>
         <p className={showSlogan ? 'slide-in' : ''}>
-          At Aurizon, we build and manage technology that helps businesses succeed and develop intuitive and user-friendly products
-          to simplify everyday tasks.
+          At Aurizon, we build and manage technology that helps businesses succeed and develop intuitive
+          and user-friendly products to simplify everyday tasks.
         </p>      
-        {/* <video src={Coding} autoPlay loop muted className="motion-video"></video> */}
         <div className="service-container">
           <div className="service-box web">
             <h4>Web Development</h4>
