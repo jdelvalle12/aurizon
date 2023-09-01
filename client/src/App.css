@@ -92,16 +92,16 @@ body {
   color: black;
   font-size: 3rem;
   line-height: 0.8; 
-  /* padding-top: 0.3rem;  */
+  padding-top: 0.3rem; 
   padding-bottom: 0.1rem; 
   border-radius: 25px;
-  transition: font-size 0.8s ease;
+  /* transition: font-size 0.8s ease; */
 }
 
-.logo-span:hover {
+/* .logo-span:hover {
   font-size: 3.8rem;
   transition: font-size 0.8s ease;
-}
+} */
 
 .no-underline {
   position: relative;
@@ -111,15 +111,15 @@ body {
   text-decoration: none;
   /* justify-content: center;
   width: 23rem; */
-  transition: font-size 0.8s ease;
+  /* transition: font-size 0.8s ease; */
   margin-right: 4.5rem;
  
 }
 
-.no-underline:hover {
+/* .no-underline:hover {
   font-size: 2.8rem;
   transition: font-size 0.8s ease;
-}
+} */
 
 /*Header*/
 
@@ -456,31 +456,30 @@ body {
 /*Home*/
 
 .home-container {
-  position: relative;
-  display: flex;
-  /* flex-direction: row; */
+  /* position: relative; */
+  display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: black;
+  /* color: black; */
   width: 100%;
+  /* height: 100%; */
 }
 
-.background-video {
+.home-container .background-video {
   position: absolute;
-  /* width: 50%; */
-  height: auto;
-  line-height: 30px;
+  width: 100%;
+  height: 100%;
 }
 
 /* Apply the animation to the slogan */
-.home-content h1 {
+.home-container h1 {
   font-size: 2.5rem;
   font-family: 'Source Code Pro', 'Space Grotesk', sans-serif; /* Change the font family to your preferred italic font */
   font-style: italic; /* Apply italic to the font */
-  color: aliceblue;
+  color: aqua;
   margin-top: 2.5rem;
   /* margin-left: 1rem; */
   /* width: 80%; */
@@ -501,16 +500,15 @@ body {
   }
 }
 
-.home-content h1.fade-in {
+.home-container h1.fade-in {
   opacity: 1;
 }
 
-.home-content h2  {
+.home-container h2  {
   display: flex;
   /* width: 90%; */
   font-size: 2.9rem;
-  /* font-weight: bold; */
-  color: black;
+  color: aliceblue;
   margin-top: 7.5rem; 
   justify-content: center;
   align-content: center;
@@ -525,19 +523,32 @@ body {
   justify-content: center;
   align-content: center;
   text-align: center; 
-  color: black;
-  padding-top: 2.5rem;
-  /* width: 80%;  */
-  /* margin-right: 10rem; */
-  /* margin-left: 2rem; */
+  color: aliceblue;
+  /* padding-top: 2.5rem; */
+  max-width: 80%; 
+  margin: 0 auto;
 }
 
-.home-content h3  {
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 2s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-container h3  {
   display: flex;
   /* width: 80%; */
   font-size: 2.9rem;
   /* font-weight: bold; */
-  color: black;
+  color: aliceblue;
   margin-top: 7.5rem; 
   justify-content: center;
   align-content: center;
@@ -545,7 +556,7 @@ body {
   /* margin-left: 2rem; */
 }
 
-.home-content p {
+.home-container p {
   display: flex;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -554,9 +565,8 @@ body {
   text-align: center; 
   color: black;
   padding-top: 1.5rem;
-  /* width: 70%;  */
-  /* margin-right: 10rem; */
-  /* margin-left: 2rem; */
+  max-width: 70%; 
+  margin: 0 auto
 }
 
 /* CSS for sliding animation */
@@ -597,17 +607,19 @@ body {
 .contact-button {
   display: flex;
   font-size: 2rem;
-  margin-top: 1rem; /* Add margin between the <p> and button */
-  /* margin-right: 3rem; */
-  background-color: aqua;
-  color: black;
+  margin-top: 1rem;
+  background-color:aqua;
+  color: black; /* Set the text color to contrast with the background */
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 25px;
   cursor: pointer;
   text-decoration: none;
-  /* width: 20%; */
 }
+
+/* .contact-button:hover {
+  background-color: rgba(0, 128, 255, 0.9); 
+} */
 
 .button-container {
   display: flex;
@@ -616,6 +628,49 @@ body {
   text-align: center;
   margin-top: 1rem; /* Add margin between the <p> and button */
 }
+
+/* .home-container .motion-video {
+  position: relative;
+  display: flex;
+  margin-top: 5rem;
+  margin-right: 3rem;
+  float: right;
+  width: 40%;
+  height: auto;
+} */
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.service-box {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  justify-content: center;
+  align-content: center;
+}
+
+.service-box:hover {
+  background-color: aliceblue; /* Darkened on hover for a clearer frosted effect */
+  transform: translateY(-10px); /* Slight lift on hover */
+}
+
+
+/* .web { background-color: lightblue; }
+.api { background-color: coral; }
+.business { background-color: yellow; }
+.mobile { background-color: green; }
+.manage { background-color: pink; } */
 
 
 /*About me*/
