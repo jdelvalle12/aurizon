@@ -32,7 +32,7 @@ const Header = () => {
     <Logo />
     {!isMobile && (
     <nav className="navi">
-      <Link className="about" to="/about">Who we are</Link>
+      <Link className="about" to="/about">Who We Are</Link>
       <div className="relative">
       <a
               href="#"
@@ -40,7 +40,7 @@ const Header = () => {
               onMouseEnter={toggleServiceDropdown}
               // onMouseLeave={toggleServiceDropdown}
             >
-              Our technologies
+              Our Technologies
               <span className={`dropdown-arrow ${isServiceDropdownOpen ? 'open' : ''}`}>&#9662;</span>
             </a>
             {isServiceDropdownOpen && (

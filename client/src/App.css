@@ -29,6 +29,7 @@ body {
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
     text-align: center;
+    width: 100%;
     /* height: 100vh; */
   }
 
@@ -471,7 +472,7 @@ body {
 .home-container .background-video {
   position: absolute;
   width: 100%;
-  height: 30%;
+  height: 35%;
 }
 
 /* Apply the animation to the slogan */
@@ -666,9 +667,9 @@ body {
 .about-link:hover {
   text-decoration: underline;
 }
+
 .what-we-do-container{
   background: linear-gradient(to bottom, aliceblue, rgb(148, 208, 228));
-  /* background-color: gray; */
   /* margin-top: 5rem; */
   justify-content: center;
   align-items: center;
@@ -680,21 +681,30 @@ body {
   font-size: 2.9rem;
   /* font-weight: bold; */
   color: black;
-  margin-top: 10.5rem; 
+  margin-top: 5.5rem; 
   justify-content: center;
   align-content: center;
   text-align: center; 
   /* margin-left: 2rem; */
 }
+
 .service-container {
   display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns */
   gap: 2rem;
-  margin-top: 5rem;
-  /* justify-items: center;
-  align-items: center; */
-  width: 75%;
+  margin: 5rem auto; /* Center the container horizontally */
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+  /* width: 75%; */
+  max-width: 95%; /* Add a maximum width to prevent it from stretching too wide */
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    grid-template-columns: 1fr; /* Change to single column layout */
+    width: 100%; /* Full width on smaller screens */
+  }
 }
 
 .service-box {
@@ -708,14 +718,25 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  margin-left: 2rem;
-  padding: 1rem;
+  /* margin-left: 0.5rem; */
+  padding: 1.3rem;
 }
 
 .service-box:hover {
   background-color: black; /* Darkened on hover for a clearer frosted effect */
   color: aqua;
   transform: translateY(-10px); /* Slight lift on hover */
+}
+
+.service-icon {
+  width: 20%; 
+  height: 15%;
+  margin-left: 8rem; 
+  margin-right: 10px; 
+  margin-bottom: 1rem;
+  /* padding: 0.5rem; */
+  align-items: center;
+  justify-content: center;
 }
 
 

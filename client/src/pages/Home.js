@@ -2,8 +2,22 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Motion from '../images/background-motion.mp4';
 import Digital from '../images/digital-motion.mp4';
+import WebDev from '../images/web-development-icon.png';
+import BizSol from '../images/business-solution-icon.png';
+import WebMan from '../images/web-management-icon.png';
+import Strategy from '../images/strategy-icon.png';
 import '../index.css';
 import '../App.css';
+
+const ServiceBox = ({ title, description, icon }) => {
+  return (
+    <div className={`service-box ${icon}`}>
+      <img src={icon} alt={title} className="service-icon" />
+      <h4>{title}</h4>
+      <p>{description}</p>
+    </div>
+  );
+};
 
 const Home = () => {
   const [showSlogan, setShowSlogan] = useState(false);
@@ -57,49 +71,53 @@ const Home = () => {
       <div className='what-we-do-container'>
         <h3 className='what-we-do'>What We Do</h3>
         <p className={showSlogan ? 'slide-in' : ''}>
-          At Aurizon, we build and manage technology that helps businesses succeed and develop intuitive
+          We build and manage technology that helps businesses succeed and develop intuitive
           and user-friendly products to simplify everyday tasks.
         </p>      
         <div className="service-container">
           <div className="service-box web">
+          <img src={WebDev} alt="Web Development" className="service-icon" />
             <h4>Web Development</h4>
               <p>Crafting user-focused websites with stunning designs and 
                 seamless functionality, transforming ideas into engaging 
                 online experiences.
               </p>
           </div>
-          <div className="service-box api">
+          {/* <div className="service-box api">
             <h4>API Development</h4>
               <p>Building powerful APIs that connect applications and services,
                 enabling smooth data exchange and enhancing software interoperability.
               </p>
-          </div>
+          </div> */}
           <div className="service-box business">
+          <img src={BizSol} alt="Business Solution" className="service-icon" />
             <h4>Business Solution</h4>
               <p>Creating tailored software solutions that streamline business processes,
                 drive efficiency, and empower organizations to thrive.
               </p>
           </div>
           <div className="service-box manage">
+          <img src={WebMan} alt="Web Management" className="service-icon" />
             <h4>Web Management</h4>
               <p>
                 Efficiently overseeing the operation, maintenance, and optimization of websites
                 to ensure seamless performance, security, and a flawless user experience.
               </p>
           </div>
-          <div className="service-box manage">
+          <div className="service-box consult">
+          <img src={Strategy} alt="Consult & Strategy" className="service-icon" />
             <h4>Consult & Strategy</h4>
               <p>
               We offer technology consulting services to help clients define their digital strategies,
               align technology solutions with business goals, and plan for future growth.
               </p>
           </div>
-          <div className="service-box mobile">
+          {/* <div className="service-box mobile">
             <h4>Mobile App Developemnt</h4>
               <p>Coming soon: Expertly crafting mobile applications that bring your ideas 
                 to life on smartphones and tablets, delivering unique user experiences.
               </p>
-          </div>
+          </div> */}
         </div>
       </div>     
     </div>
