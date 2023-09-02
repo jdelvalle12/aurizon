@@ -739,6 +739,28 @@ body {
   justify-content: center;
 }
 
+.in-depth {
+  font-size: 1.5rem;
+  color: #007bff; /* Blue color for the text */
+  display: inline-flex; /* Display as a flex container */
+  align-items: center; /* Vertically center items */
+  gap: 10px; /* Space between text and arrow */
+  padding: 5px 10px; /* Add padding to create a button-like appearance */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  cursor: pointer; /* Change cursor on hover to indicate it's clickable */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  padding: 1rem;
+  text-decoration: none;
+}
+
+/* Add hover effect */
+.in-depth:hover {
+  background-color: black; /* Darkened on hover for a clearer frosted effect */
+}
+
 
 /* .web { background-color: lightblue; }
 .api { background-color: coral; }

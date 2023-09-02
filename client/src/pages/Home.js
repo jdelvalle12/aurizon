@@ -64,7 +64,7 @@ const Home = () => {
             <p className='home-about-para'>At Aurizon, we are passionate about pushing boundaries and 
             exploring new horizons in the tech industry. We are committed to empowering businesses and 
             individuals with cutting-edge technologies that drive growth.</p>
-          <Link to="/about" className="about-link">Learn More</Link>
+            <Link to="/about" className="about-link">Learn More<span className="arrow">&rarr;</span></Link>
         </div>
       <video src={Digital} autoPlay loop muted className="motion-video"></video>
       </div>
@@ -118,6 +118,9 @@ const Home = () => {
                 to life on smartphones and tablets, delivering unique user experiences.
               </p>
           </div> */}
+          <Link to="/technologies" className="in-depth">
+            In Depth Look<span className='arrow'>&rarr;</span>
+          </Link>
         </div>
       </div>     
     </div>
