@@ -122,7 +122,11 @@ const Home = () => {
             In Depth Look<span className='arrow'>&rarr;</span>
           </Link>
         </div>
-      </div>     
+      </div>   
+      <div className='home-portfolio-container'>
+        <h3 className='our-work'>Our Work</h3>
+          <p>No matter what industryTake a sneak peek at our work with more to come...</p>
+      </div>  
     </div>
   );
 };

@@ -761,6 +761,9 @@ body {
   background-color: black; /* Darkened on hover for a clearer frosted effect */
 }
 
+.our-work {
+  font-size: 2.9rem;
+}
 
 /* .web { background-color: lightblue; }
 .api { background-color: coral; }
