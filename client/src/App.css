@@ -472,7 +472,7 @@ body {
 .home-container .background-video {
   position: absolute;
   width: 100%;
-  height: 35%;
+  height: 30%;
 }
 
 /* Apply the animation to the slogan */
@@ -682,6 +682,7 @@ body {
   /* font-weight: bold; */
   color: black;
   margin-top: 5.5rem; 
+  padding-top: 4.5rem;
   justify-content: center;
   align-content: center;
   text-align: center; 
@@ -761,8 +762,36 @@ body {
   background-color: black; /* Darkened on hover for a clearer frosted effect */
 }
 
-.our-work {
+.explore-our-work {
   font-size: 2.9rem;
+  padding-top: 0.5rem;
+}
+
+.industry-card {
+  perspective: 1000px;
+}
+
+.industry-card > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.industry-front {
+  transform: rotateY(0deg);
+}
+
+.industry-back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* .web { background-color: lightblue; }

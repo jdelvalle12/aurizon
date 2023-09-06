@@ -124,8 +124,20 @@ const Home = () => {
         </div>
       </div>   
       <div className='home-portfolio-container'>
-        <h3 className='our-work'>Our Work</h3>
-          <p>No matter what industryTake a sneak peek at our work with more to come...</p>
+        <h3 className='explore-our-work'>Explore Our Work</h3>
+          <p className={showSlogan ? 'fade-in' : ''}>We specialize in delivering innovative solutions across a wide spectrum of industries.
+            Explore our portfolio to see how we can help you achieve success and with more to come...</p>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="industry-card">
+          <div className="industry-front">
+            <img src="entertainment-image.jpg" alt="Entertainment" />
+              <h4>Entertainment</h4>
+          </div>
+          <div className="industry-back">
+            <p>Explore our innovative solutions in the entertainment industry.</p>
+          </div>
+        </div>
+      </div>
       </div>  
     </div>
   );
