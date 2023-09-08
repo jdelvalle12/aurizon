@@ -180,6 +180,9 @@ const Home = () => {
     </div>
   ))}
 </div>
+<Link to="/portfolio" className="portfolio-link">
+            Explore Portfolio<span className='arrow'>&rarr;</span>
+          </Link>
         </div>
       </div>
     );

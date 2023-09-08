@@ -742,7 +742,7 @@ body {
 }
 
 .in-depth {
-  font-size: 1.5rem;
+  font-size: 16px;
   color: #007bff; /* Blue color for the text */
   display: inline-flex; /* Display as a flex container */
   align-items: center; /* Vertically center items */
@@ -763,6 +763,14 @@ body {
   background-color: black; /* Darkened on hover for a clearer frosted effect */
 }
 
+.home-portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align content to the left corner */
+  text-align: center;
+  padding: 1rem;
+}
+
 .explore-our-work {
   font-size: 2.9rem;
   padding-top: 0.5rem;
@@ -772,10 +780,9 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 1rem;
+  gap: 1rem; /* Adjust the gap between cards */
   width: 100%;
-  /* height: 80%; */
+  margin-top: 1rem; /* Add margin to the grid container */
 }
 
 
@@ -786,11 +793,11 @@ body {
   border-radius: 10px;
   overflow: hidden; /* Hide overflow for child elements */
   cursor: pointer; /* Add a pointer cursor on hover */
-  height: 80%;
   display: flex;
   flex-direction: column;
-  width: 60%;
-  margin: 3.5rem;
+  width: 100%; /* Adjust the width to take full grid cell width */
+  height: 60%;
+  /* Remove margin here */
   justify-content: center;
   align-items: center;
 }
@@ -803,7 +810,7 @@ body {
   bottom: 0;
   object-fit: cover; /* Maintain aspect ratio */
   width: 100%;
-  height: 100%; /* Set the height to cover the top half of the card */
+  height: 65%; /* Set the height to cover the top half of the card */
 }
 
 .industry-content {
@@ -826,17 +833,16 @@ body {
 }
 
 .industry-icon {
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin: 2rem;
 }
 
 .industry-name {
-
+  margin: 2rem;
 }
 
 .industry-front {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   position: relative;
   background-color: aqua;
   display: flex;
@@ -875,7 +881,25 @@ body {
   transform: rotateY(180deg);
 }
 
+.portfolio-link {
+  display: inline-flex;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2); /* Set your desired background color */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: #007bff; /* Set your desired text color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
 
+.portfolio-link:hover {
+  background-color: black; /* Set a different color on hover if desired */
+}
 
 /*About me*/
 
