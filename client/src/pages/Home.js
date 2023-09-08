@@ -6,6 +6,12 @@ import WebDev from '../images/web-development-icon.png';
 import BizSol from '../images/business-solution-icon.png';
 import WebMan from '../images/web-management-icon.png';
 import Strategy from '../images/strategy-icon.png';
+import Entertainment from "../images/entertainment.jpg";
+import Sports from "../images/sports.jpg";
+import Journeez from '../images/Journeez.jpg';
+import Office from "../images/office-software.jpg"
+import Technology from "../images/abstract-digital-image.jpg";
+import Food from "../images/food-beverage.jpg";
 import '../index.css';
 import '../App.css';
 
@@ -18,6 +24,39 @@ const ServiceBox = ({ title, description, icon }) => {
     </div>
   );
 };
+
+const industries = [
+  {
+    name: 'Entertainment',
+    image: Entertainment,
+    description: 'Explore our innovative solutions in the entertainment industry.',
+  },
+  {
+    name: 'Sports',
+    image: Sports,
+    description: 'Explore our innovative solutions in the sports industry.',
+  },
+  {
+    name: 'Travel',
+    image: Journeez,
+    description: 'Explore our innovative solutions in the travel industry.',
+  },
+  {
+    name: 'Professional Services',
+    image: Office,
+    description: 'Explore our innovative solutions in professional services.',
+  },
+  {
+    name: 'Technology',
+    image: Technology,
+    description: 'Explore our innovative solutions in the tech industry.',
+  },
+  {
+    name: 'Food & Beverage',
+    image: Food,
+    description: 'Explore our innovative solutions in the food & beverage industry.',
+  },
+];
 
 const Home = () => {
   const [showSlogan, setShowSlogan] = useState(false);
@@ -127,20 +166,23 @@ const Home = () => {
         <h3 className='explore-our-work'>Explore Our Work</h3>
           <p className={showSlogan ? 'fade-in' : ''}>We specialize in delivering innovative solutions across a wide spectrum of industries.
             Explore our portfolio to see how we can help you achieve success and with more to come...</p>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <div className="industry-card">
-          <div className="industry-front">
-            <img src="entertainment-image.jpg" alt="Entertainment" />
-              <h4>Entertainment</h4>
-          </div>
-          <div className="industry-back">
-            <p>Explore our innovative solutions in the entertainment industry.</p>
-          </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+  {industries.map((industry, index) => (
+    <div className="industry-card" key={index}>
+      <div className="industry-content">
+        <img className="industry-image" src={industry.image} alt={`${industry.name} Image`} />
+        <img className='industry-icon'src={industry.icon} alt={`${industry.name} Icon`} />
+        <h4 className="industry-name">{industry.name}</h4>
+        <div className="industry-back">
+          <p>{industry.description}</p>
         </div>
       </div>
-      </div>  
     </div>
-  );
-};
+  ))}
+</div>
+        </div>
+      </div>
+    );
+  };
 
 export default Home;

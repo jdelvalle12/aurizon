@@ -472,7 +472,7 @@ body {
 .home-container .background-video {
   position: absolute;
   width: 100%;
-  height: 30%;
+  height: 28%;
 }
 
 /* Apply the animation to the slogan */
@@ -673,6 +673,7 @@ body {
   /* margin-top: 5rem; */
   justify-content: center;
   align-items: center;
+  /* height: 50%; */
 }
 
 .what-we-do  {
@@ -767,38 +768,113 @@ body {
   padding-top: 0.5rem;
 }
 
+/* Define a grid with 3 columns for all screen sizes */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+  width: 100%;
+  /* height: 80%; */
+}
+
+
+/* Style for each industry card */
 .industry-card {
   perspective: 1000px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden; /* Hide overflow for child elements */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 3.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.industry-card > div {
+.industry-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover; /* Maintain aspect ratio */
   width: 100%;
-  height: 100%;
-  position: absolute;
+  height: 100%; /* Set the height to cover the top half of the card */
+}
+
+.industry-content {
+  flex: 1; /* Take up remaining space */
+  position: relative;
   backface-visibility: hidden;
   transition: transform 0.5s;
-}
-
-.industry-front {
-  transform: rotateY(0deg);
-}
-
-.industry-back {
-  transform: rotateY(180deg);
-  background-color: #fff;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  /* padding: 1rem; */
+  background-color: aqua;
+  box-sizing: border-box;
+  transform-style: preserve-3d; /* Preserve 3D space for correct flips */
+  width: 100%;
+  height: 80%;
+  /* z-index: 1; Add z-index */
 }
 
-/* .web { background-color: lightblue; }
-.api { background-color: coral; }
-.business { background-color: yellow; }
-.mobile { background-color: green; }
-.manage { background-color: pink; } */
+.industry-icon {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.industry-name {
+
+}
+
+.industry-front {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotateY(0deg);
+  z-index: 2; /* Add z-index */
+}
+
+/* Style for the back side of the card */
+.industry-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotateY(180deg);
+  z-index: 1; /* Add z-index to place it below the front */
+  opacity: 0; /* Initially, hide the back side */
+  pointer-events: none; /* Disable interaction with the back side */
+}
+
+/* When hovering over the card, show the back side */
+.industry-card:hover .industry-back {
+  opacity: 1; /* Show the back side on hover */
+  pointer-events: auto; /* Enable interaction with the back side on hover */
+}
+
+.industry-card:hover .industry-content {
+  transform: rotateY(180deg);
+}
+
 
 
 /*About me*/
