@@ -12,6 +12,13 @@ import Journeez from '../images/Journeez.jpg';
 import Office from "../images/office-software.jpg"
 import Technology from "../images/abstract-digital-image.jpg";
 import Food from "../images/food-beverage.jpg";
+import EnterIcon from "../images/entertainment-icon.png";
+import SportIcon from "../images/sports-icon.png";
+import TravelIcon from "../images/travel.png";
+import ProfessionalIcon from "../images/professional-service-icon.png";
+import TechIcon from "../images/microchip-icon.png";
+import FBIcon from "../images/food-beverage-icon.png";
+
 import '../index.css';
 import '../App.css';
 
@@ -29,31 +36,37 @@ const industries = [
   {
     name: 'Entertainment',
     image: Entertainment,
+    icon: EnterIcon,
     description: 'Explore our innovative solutions in the entertainment industry.',
   },
   {
     name: 'Sports',
     image: Sports,
+    icon: SportIcon,
     description: 'Explore our innovative solutions in the sports industry.',
   },
   {
     name: 'Travel',
     image: Journeez,
+    icon: TravelIcon,
     description: 'Explore our innovative solutions in the travel industry.',
   },
   {
     name: 'Professional Services',
     image: Office,
+    icon: ProfessionalIcon,
     description: 'Explore our innovative solutions in professional services.',
   },
   {
     name: 'Technology',
     image: Technology,
+    icon: TechIcon,
     description: 'Explore our innovative solutions in the tech industry.',
   },
   {
     name: 'Food & Beverage',
     image: Food,
+    icon: FBIcon,
     description: 'Explore our innovative solutions in the food & beverage industry.',
   },
 ];
@@ -174,6 +187,7 @@ const Home = () => {
         <img className='industry-icon'src={industry.icon} alt={`${industry.name} Icon`} />
         <h4 className="industry-name">{industry.name}</h4>
         <div className="industry-back">
+          <h4 className='industry-name'>{industry.name}</h4>
           <p>{industry.description}</p>
         </div>
       </div>
