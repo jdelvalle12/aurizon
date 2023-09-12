@@ -12,12 +12,20 @@ import Journeez from '../images/Journeez.jpg';
 import Office from "../images/office-software.jpg"
 import Technology from "../images/abstract-digital-image.jpg";
 import Food from "../images/food-beverage.jpg";
+import RealEstate from "../images/real-estate.jpg";
+import Logistics from "../images/logistics.jpg";
 import EnterIcon from "../images/entertainment-icon.png";
 import SportIcon from "../images/sports-icon.png";
 import TravelIcon from "../images/travel.png";
 import ProfessionalIcon from "../images/professional-service-icon.png";
 import TechIcon from "../images/microchip-icon.png";
 import FBIcon from "../images/food-beverage-icon.png";
+import RealEstateIcon from "../images/real-estate-icon.png";
+import LogisticsIcon from "../images/logistics-icon.png";
+
+// import Testimonials from '../components/Testimonials';
+import SubscribeForm from '../components/SubscribeForm.js';
+// import News from '../components/News.js';
 
 import '../index.css';
 import '../App.css';
@@ -37,38 +45,50 @@ const industries = [
     name: 'Entertainment',
     image: Entertainment,
     icon: EnterIcon,
-    description: 'Explore our innovative solutions in the entertainment industry.',
+    description: 'Elevate the entertainment experience with our cutting-edge solutions. From immersive VR experiences to content streaming platforms, we redefine entertainment',
   },
   {
     name: 'Sports',
     image: Sports,
     icon: SportIcon,
-    description: 'Explore our innovative solutions in the sports industry.',
+    description: 'Join the winning team with our sports industry solutions. We provide analytics, fan engagement, and tech-driven training for athletes and organizations.',
   },
   {
     name: 'Travel',
     image: Journeez,
     icon: TravelIcon,
-    description: 'Explore our innovative solutions in the travel industry.',
+    description: 'Embark on a journey of innovation in the travel sector. Discover how we enhance travel booking, accommodation, and experiences with technology.',
   },
   {
     name: 'Professional Services',
     image: Office,
     icon: ProfessionalIcon,
-    description: 'Explore our innovative solutions in professional services.',
+    description: 'Transform your professional services with our expertise. We offer digital solutions, data analytics, and automation for streamlined operations.',
   },
   {
     name: 'Technology',
     image: Technology,
     icon: TechIcon,
-    description: 'Explore our innovative solutions in the tech industry.',
+    description: 'Unleash the power of technology with our solutions. Explore AI, IoT, and blockchain to stay at the forefront of the tech revolution.',
   },
   {
     name: 'Food & Beverage',
     image: Food,
     icon: FBIcon,
-    description: 'Explore our innovative solutions in the food & beverage industry.',
+    description: 'Savor success in the food & beverage industry. Discover our solutions for online ordering, supply chain optimization, and customer engagement.',
   },
+  {
+    name: 'Real-Estate',
+    image: RealEstate,
+    icon: RealEstateIcon,
+    description: 'Discover our real estate innovations. We are revolutionizing property management and market analysis, making real estate transactions more efficient and profitable.',
+  },
+  {
+    name: 'Logistics',
+    image: Logistics,
+    icon: LogisticsIcon,
+    description: 'Explore our cutting-edge logistics solutions. We optimize supply chains and enhance global transportation, improving efficiency and reducing costs.',
+  }
 ];
 
 const Home = () => {
@@ -180,23 +200,34 @@ const Home = () => {
           <p className={showSlogan ? 'fade-in' : ''}>We specialize in delivering innovative solutions across a wide spectrum of industries.
             Explore our portfolio to see how we can help you achieve success and with more to come...</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-  {industries.map((industry, index) => (
-    <div className="industry-card" key={index}>
-      <div className="industry-content">
-        <img className="industry-image" src={industry.image} alt={`${industry.name} Image`} />
-        <img className='industry-icon'src={industry.icon} alt={`${industry.name} Icon`} />
-        <h4 className="industry-name">{industry.name}</h4>
-        <div className="industry-back">
-          <h4 className='industry-name'>{industry.name}</h4>
-          <p>{industry.description}</p>
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
-<Link to="/portfolio" className="portfolio-link">
+              {industries.map((industry, index) => (
+              <div className="industry-card" key={index}>
+                <div className="industry-content">
+                  <img className="industry-image" src={industry.image} alt={`${industry.name} Image`} />
+                  <img className='industry-icon'src={industry.icon} alt={`${industry.name} Icon`} />
+                  <h4 className="industry-name">{industry.name} <span className='arrow'>&rarr;</span></h4>
+                  <div className="industry-back">
+                    <h4 className='industry-name'>{industry.name}</h4>
+                      <p>{industry.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <Link to="/portfolio" className="portfolio-link">
             Explore Portfolio<span className='arrow'>&rarr;</span>
           </Link>
+          {/* <div className="testimonials-section">
+            <Testimonials />
+          </div> */}
+          <div className="subscribe-section">
+            <SubscribeForm />
+          </div>
+          {/* <div className="news-section">
+            <News />
+          </div> */}
+            {/* Your existing content */}
+            {/* ... */}
         </div>
       </div>
     );

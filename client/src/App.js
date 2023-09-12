@@ -12,7 +12,7 @@ import MobileDevelopment from './pages/Mobile-Development';
 import WebDevelopment from './pages/Web-Development';
 import Portfolio from './pages/Portfolio';
 import Careers from './pages/Careers';
-import News from './pages/News';
+import News from './pages/Insider';
 import Contact from './pages/Contact';
 import './index.css';
 import './App.css';
