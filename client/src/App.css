@@ -761,6 +761,7 @@ body {
 /* Add hover effect */
 .in-depth:hover {
   background-color: black; /* Darkened on hover for a clearer frosted effect */
+  color: aqua;
 }
 
 /* .home-portfolio-container {
@@ -836,17 +837,6 @@ body {
     height: 50%; /* Adjust the image height as needed for mobile view */
   }
 }
-
-/* .industry-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background-color: aqua;
-  width: 100%;
-  height: 100%;
-} */
 
 .industry-content {
   flex: 1; /* Take up remaining space */
@@ -929,12 +919,132 @@ body {
   border-radius: 5px;
   font-weight: bold;
   font-size: 20px;
-  margin-top: 10rem;
+  margin-top: 5rem;
   transition: background-color 0.3s ease-in-out;
 }
 
 .portfolio-link:hover {
   background-color: black; /* Set a different color on hover if desired */
+}
+
+/*Testimonial Section*/
+
+.testimonials-section {
+  width: 100%;
+  /* height: 100%; */
+  max-width: 2000px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container */
+  margin-top: 2rem;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to top, #000000, #001f3f);
+}
+
+.testimonial-content {
+  background-color: #fff; /* Background color for each testimonial */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.testimonial-company {
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+}
+
+.testimonial-text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.testimonial-author {
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Styles for the carousel dots */
+.slick-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.slick-dots li button {
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #777;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+  color: #333;
+}
+
+/*Subscribe Section*/
+
+.subscribe-section {
+  background: linear-gradient(to bottom, aliceblue, rgb(148, 208, 228), aqua); /* Add aqua color to the gradient */
+  /* margin-top: 5rem; */
+  padding: 2rem; /* Add padding to increase the width */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+}
+
+.subscribe-section p {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.subscribe-form {
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.2); /* Set your desired background color */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Use a percentage to take full width within the padding */
+  max-width: 500px; /* Set a maximum width to control the width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  margin-top: 5rem;
+  padding: 2rem; /* Add padding for spacing inside the form */
+  text-decoration: underline;
+  margin-bottom: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-form input {
+  width: 100%;
+  max-width: 500px;
+  font-size: 1rem;
+}
+
+.subscribe-button {
+  background-color: #007bff; /* Set the background color of the button */
+  color: white; /* Set the text color to white */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 10px 20px; /* Add padding to the button */
+  margin-top: 1rem;
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  font-size: 16px; /* Set the font size */
+  transition: background-color 0.3s ease; /* Add a smooth background color transition */
+}
+
+.subscribe-button:hover {
+  background-color: black; /* Change the background color on hover */
 }
 
 /*About me*/

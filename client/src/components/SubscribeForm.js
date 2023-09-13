@@ -30,7 +30,7 @@ const SubscribeForm = () => {
           value={email}
           onChange={handleEmailChange}
         />
-        <button onClick={handleSubscribe}>Subscribe</button>
+        <button onClick={handleSubscribe} className="subscribe-button">Subscribe</button>
       </div>
     );
   };

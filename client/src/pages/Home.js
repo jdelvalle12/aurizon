@@ -23,7 +23,7 @@ import FBIcon from "../images/food-beverage-icon.png";
 import RealEstateIcon from "../images/real-estate-icon.png";
 import LogisticsIcon from "../images/logistics-icon.png";
 
-// import Testimonials from '../components/Testimonials';
+import Testimonials from '../components/Testimonials';
 import SubscribeForm from '../components/SubscribeForm.js';
 // import News from '../components/News.js';
 
@@ -217,10 +217,13 @@ const Home = () => {
           <Link to="/portfolio" className="portfolio-link">
             Explore Portfolio<span className='arrow'>&rarr;</span>
           </Link>
-          {/* <div className="testimonials-section">
+          <div className="testimonials-section">
             <Testimonials />
-          </div> */}
+          </div>
           <div className="subscribe-section">
+            <p>Stay ahead of the tech curve! Subscribe to our newsletter and be the first to access new insights,
+               tech updates, and exclusive offers for your business.
+            </p>
             <SubscribeForm />
           </div>
           {/* <div className="news-section">
