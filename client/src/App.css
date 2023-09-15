@@ -1014,6 +1014,7 @@ body {
 
 @media (max-width: 768px) {
   .testimonial-content {
+
       width: 90%; /* Reduce the width for smaller screens */
       padding: 10px; /* Adjust padding for spacing */
   }
