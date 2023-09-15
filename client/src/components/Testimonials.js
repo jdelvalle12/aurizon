@@ -35,7 +35,7 @@ const Testimonial = () => {
 
     return (
         <div className="testimonial-section">
-            <Slider {...settings}>
+            {/* <Slider {...settings}> */}
                 {testimonialData.map((testimonial, index) => (
                     <div key={index} className="testimonial-content">
                         <div className="testimonial-left">
@@ -48,7 +48,7 @@ const Testimonial = () => {
                         </div>
                     </div>
                 ))}
-            </Slider>
+            {/* </Slider> */}
         </div>
     );
 };

@@ -957,7 +957,7 @@ body {
 }
 
 .testimonial-content {
-  background-color: #fff; /* Background color for each testimonial */
+  background-color: #fff;
   max-width: 800px;
   padding: 20px;
   border-radius: 10px;
@@ -966,7 +966,6 @@ body {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   width: 50%; /* Adjust the width as needed */
-  /* height: 100%; */
 }
 
 .testimonial-company {
@@ -1014,10 +1013,21 @@ body {
 }
 
 @media (max-width: 768px) {
-  .testimonials-section {
-    flex-direction: column; /* Stack elements vertically on small screens */
-    align-items: flex-start; /* Adjust alignment for vertical stacking */
-    padding: 1rem; /* Add padding for spacing on small screens */
+  .testimonial-content {
+      width: 90%; /* Reduce the width for smaller screens */
+      padding: 10px; /* Adjust padding for spacing */
+  }
+
+  .testimonial-company {
+    font-size: 18px; /* Decrease font size for company name */
+  }
+
+  .testimonial-text {
+    font-size: 16px; /* Decrease font size for testimonial text */
+  }
+
+  .testimonial-author {
+    font-size: 14px; /* Decrease font size for author name */
   }
 }
 
@@ -1077,6 +1087,27 @@ body {
   background-color: black; /* Change the background color on hover */
 }
 
+@media (max-width: 768px) {
+  .subscribe-form {
+    width: 90%; /* Make the form wider on mobile */
+    margin: 10px auto; /* Center the form */
+    padding: 10px; /* Reduce padding */
+  }
+
+  input[type="email"],
+  button {
+    width: 100%; /* Expand input and button to full width */
+  }
+
+  input[type="email"] {
+    font-size: 16px; /* Decrease font size for the input */
+  }
+
+  button {
+    font-size: 18px; /* Decrease font size for the button */
+  }
+}
+
 /*News Section*/
 
 .news-section {
@@ -1100,6 +1131,7 @@ body {
   backdrop-filter: blur(10px); /* Apply a blur effect */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 .news-photo {
@@ -1153,18 +1185,20 @@ body {
   margin-left: 5px;
 }
 
-@media (max-width: 767px) {
-  .grid {
-    grid-template-columns: repeat(1, 1fr); /* Switch to a single column layout on smaller screens */
-  }
-  
+@media (max-width: 768px) {
   .news-card {
-    max-width: 100%; /* Allow cards to occupy full width on mobile */
-    height: auto; /* Allow cards to expand based on content */
+    width: 100%; /* Make each news card wider on mobile */
+    height: 100%;
+    margin: 10px auto; /* Center the news card */
+    padding: 10px; /* Reduce padding */
   }
 
-  .news-image {
-    height: 50%; /* Adjust the image height as needed for mobile view */
+  .news-title {
+    font-size: 18px; /* Decrease font size for the title */
+  }
+
+  .news-content {
+    font-size: 16px; /* Decrease font size for the content */
   }
 }
 
