@@ -12,11 +12,13 @@ const Testimonial = () => {
             company: 'Company A',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum...',
             name: 'John Doe',
+            photo: ''
         },
         {
             company: 'Company B',
             content: 'In eget est a dui lacinia laoreet eu et elit. Donec nec facilisis...',
             name: 'Jane Smith',
+            photo: '',
         },
         // Add more testimonial objects as needed
     ];
@@ -24,23 +26,30 @@ const Testimonial = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
     };
 
     return (
-        <Slider {...settings}>
-            {testimonialData.map((testimonial, index) => (
-                <div key={index}>
-                    <h3>{testimonial.company}</h3>
-                    <p>{testimonial.content}</p>
-                    <p>- {testimonial.name}</p>
-                </div>
-            ))}
-        </Slider>
+        <div className="testimonial-section">
+            <Slider {...settings}>
+                {testimonialData.map((testimonial, index) => (
+                    <div key={index} className="testimonial-content">
+                        <div className="testimonial-left">
+                            <img src={testimonial.photo} alt={`${testimonial.name} Photo`} className="testimonial-photo" />
+                        </div>
+                        <div className="testimonial-right">
+                            <h3 className="testimonial-company">{testimonial.company}</h3>
+                            <p className="testimonial-text">{testimonial.content}</p>
+                            <p className="testimonial-author">- {testimonial.name}</p>
+                        </div>
+                    </div>
+                ))}
+            </Slider>
+        </div>
     );
 };
 

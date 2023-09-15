@@ -40,7 +40,7 @@ const Header = () => {
               onMouseEnter={toggleServiceDropdown}
               // onMouseLeave={toggleServiceDropdown}
             >
-              Our Technologies
+              Solutions
               <span className={`dropdown-arrow ${isServiceDropdownOpen ? 'open' : ''}`}>&#9662;</span>
             </a>
             {isServiceDropdownOpen && (
@@ -49,20 +49,20 @@ const Header = () => {
                   
                 <li>
                   <Link
-                    to="/technologies/web-development"
+                    to="/solutions/web-development"
                     className="flex px-4 py-2 hover:bg-gray-100"
                   >
                     Web Development
                   </Link>
                 </li>
               <li>
-                <Link to="/technologies/api-development" className="flex px-4 py-2 hover:bg-gray-100">API Development</Link>
+                <Link to="/solutions/api-development" className="flex px-4 py-2 hover:bg-gray-100">API Development</Link>
               </li>
               <li>
-                <Link to="/technologies/mobile-app-development" className="block px-4 py-2 hover:bg-gray-100">Mobile App Development</Link>
+                <Link to="/solutions/mobile-app-development" className="block px-4 py-2 hover:bg-gray-100">Mobile App Development</Link>
               </li>
               <li>
-                <Link to="/technologies/business-solutions" className="block px-4 py-2 hover:bg-gray-100">Business Solutions</Link>
+                <Link to="/solutions/business-solutions" className="block px-4 py-2 hover:bg-gray-100">Business Solutions</Link>
               </li>      
                 <h2>Explore our apps</h2>
                 <li>
@@ -76,14 +76,14 @@ const Header = () => {
                 <h2>Work tools</h2>
               <li>
                 <Link 
-                // to="/technologies/accorplan" 
+                // to="/solutions/accorplan" 
                 className="flex px-4 py-2 hover:bg-gray-100">In development</Link>
               </li>
               {/* <li>
-                <Link to="/technologies/front-end-development">Frontend-Development</Link>
+                <Link to="/solutions/front-end-development">Frontend-Development</Link>
               </li>
               <li>
-                <Link to="/technologies/back-end-development">Backend-Development</Link>
+                <Link to="/solutions/back-end-development">Backend-Development</Link>
               </li> */}
               
             </ul>

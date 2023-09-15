@@ -134,7 +134,7 @@ body {
   margin-top: -0.5rem;
   padding: 1.5rem;
   color: aliceblue;
-  background-color: black;
+  background: linear-gradient(to bottom, #000000, #003468);
   font-family: 'Source Code Pro', 'Space Grotesk', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
@@ -472,7 +472,7 @@ body {
 .home-container .background-video {
   position: absolute;
   width: 100%;
-  height: 17%;
+  height: 12%;
 }
 
 /* Apply the animation to the slogan */
@@ -652,7 +652,7 @@ body {
 }
 
 .who-we-are {
-  font-size: 2.9rem;
+  font-size: 2.5rem;
   margin-top: 0;
   text-align: center; /* Center text in the glass box */
 }
@@ -679,7 +679,7 @@ body {
 .what-we-do  {
   display: flex;
   /* width: 80%; */
-  font-size: 2.9rem;
+  font-size: 2.5rem;
   /* font-weight: bold; */
   color: black;
   margin-top: 5.5rem; 
@@ -742,7 +742,8 @@ body {
 }
 
 .in-depth {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
   color: #007bff; /* Blue color for the text */
   display: inline-flex; /* Display as a flex container */
   align-items: center; /* Vertically center items */
@@ -773,7 +774,7 @@ body {
 } */
 
 .explore-our-work {
-  font-size: 2.9rem;
+  font-size: 2.5rem;
   padding-top: 0.5rem;
 }
 
@@ -920,11 +921,13 @@ body {
   font-weight: bold;
   font-size: 20px;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   transition: background-color 0.3s ease-in-out;
 }
 
 .portfolio-link:hover {
   background-color: black; /* Set a different color on hover if desired */
+  color: aqua;
 }
 
 /*Testimonial Section*/
@@ -932,32 +935,51 @@ body {
 .testimonials-section {
   width: 100%;
   /* height: 100%; */
-  max-width: 2000px; /* Adjust the width as needed */
+  background: linear-gradient(to bottom, #000000, #003468);
+  padding: 2rem;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  color: aqua;
+  margin-top: 1rem;
+}
+
+.testimonial-container {
+  width: 100%;
+  max-width: 500px; 
+  /* height: 100%; */
   margin: 0 auto; /* Center the container */
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 20px;
   text-align: center;
-  background: linear-gradient(to top, #000000, #001f3f);
+  /* background-color: aliceblue; */
 }
 
 .testimonial-content {
   background-color: #fff; /* Background color for each testimonial */
+  max-width: 800px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px;
+  margin: 0 auto; /* Center the box horizontally */
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  width: 50%; /* Adjust the width as needed */
+  /* height: 100%; */
 }
 
 .testimonial-company {
   font-weight: bold;
-  color: #333;
-  font-size: 18px;
+  color: black;
+  font-size: 2rem;
 }
 
-.testimonial-text {
+.testimonial-text{
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.4;
+  color:#007bff;
 }
 
 .testimonial-author {
@@ -989,6 +1011,14 @@ body {
 
 .slick-dots li.slick-active button {
   color: #333;
+}
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: flex-start; /* Adjust alignment for vertical stacking */
+    padding: 1rem; /* Add padding for spacing on small screens */
+  }
 }
 
 /*Subscribe Section*/
@@ -1045,6 +1075,97 @@ body {
 
 .subscribe-button:hover {
   background-color: black; /* Change the background color on hover */
+}
+
+/*News Section*/
+
+.news-section {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #fff; 
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  gap: 20px; /* Gap between grid items */
+}
+
+.news-card {
+  padding: 20px;
+  text-align: left;
+  background: rgba(0, 255, 255, 0.2); /* Set your desired background color */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.news-photo {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.news-section p{
+  font-weight: bold;
+  font-size: 18px;
+  color: #007bff; /* Date text color */
+}
+
+.news-title {
+  font-size: 24px; /* Title font size */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.news-content {
+  font-size: 16px; /* Content font size */
+  margin-bottom: 20px;
+}
+
+.insider-link {
+  display: inline-flex;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2); /* Set your desired background color */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: #007bff; /* Set your desired text color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.insider-link:hover {
+  background-color: black; /* Change the background color on hover */
+  color: aqua;
+}
+
+
+/* Styles for the arrow (you can use a suitable arrow icon) */
+.arrow {
+  margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr); /* Switch to a single column layout on smaller screens */
+  }
+  
+  .news-card {
+    max-width: 100%; /* Allow cards to occupy full width on mobile */
+    height: auto; /* Allow cards to expand based on content */
+  }
+
+  .news-image {
+    height: 50%; /* Adjust the image height as needed for mobile view */
+  }
 }
 
 /*About me*/
@@ -1427,7 +1548,7 @@ body {
   height: 60px; 
   width: 100%;
   line-height: 60px;
-  background: black;
+  background: linear-gradient(to top, #000000, #003468);
   position: relative;
   /* margin-top: rem; */
   /* margin-bottom: 0; */

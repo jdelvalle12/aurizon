@@ -25,7 +25,7 @@ import LogisticsIcon from "../images/logistics-icon.png";
 
 import Testimonials from '../components/Testimonials';
 import SubscribeForm from '../components/SubscribeForm.js';
-// import News from '../components/News.js';
+import News from '../components/News.js';
 
 import '../index.css';
 import '../App.css';
@@ -218,7 +218,13 @@ const Home = () => {
             Explore Portfolio<span className='arrow'>&rarr;</span>
           </Link>
           <div className="testimonials-section">
+            <h2>Testimonials</h2>
+              <p>See what our customers have to say...</p>
             <Testimonials />
+          </div>
+          <div className="news-section">
+          <h3>Latest News</h3>
+            <News />
           </div>
           <div className="subscribe-section">
             <p>Stay ahead of the tech curve! Subscribe to our newsletter and be the first to access new insights,
@@ -226,9 +232,6 @@ const Home = () => {
             </p>
             <SubscribeForm />
           </div>
-          {/* <div className="news-section">
-            <News />
-          </div> */}
             {/* Your existing content */}
             {/* ... */}
         </div>

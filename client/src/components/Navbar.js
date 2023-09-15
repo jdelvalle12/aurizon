@@ -64,16 +64,16 @@ const Navbar = () => {
                onClick={toggleDropdown}
           >
           <Link to="#" className="nav-link">
-            Our technologies
+            Solutions
             <span className={`dropdown-arrow ${isDropdownOpen ? 'open' : ''}`}>&#9662;</span></Link>
           <div className={`mobile-dropdown-menu ${isDropdownOpen ? 'open' : ''}`}>
               {/* Dropdown menu content */}
               <ul>
                 <h3>Services</h3>
-                  <li><Link className='sub-nav-link' to="/technologies/web-development">Web Development</Link></li>
-                  <li><Link className='sub-nav-link' to="/technologies/api-development">API Development</Link></li>
-                  <li><Link className='sub-nav-link' to="/technologies/mobile-development">Mobile Development</Link></li>
-                  <li><Link className='sub-nav-link' to="/technologies/business-solutions">Business Solutions</Link></li>
+                  <li><Link className='sub-nav-link' to="/solutions/web-development">Web Development</Link></li>
+                  <li><Link className='sub-nav-link' to="/solutions/api-development">API Development</Link></li>
+                  <li><Link className='sub-nav-link' to="/solutions/mobile-development">Mobile Development</Link></li>
+                  <li><Link className='sub-nav-link' to="/solutions/business-solutions">Business Solutions</Link></li>
                 <h3>Explore Apps</h3>
                   <li><Link
                     // to="https://www.journeeztrip.com"
