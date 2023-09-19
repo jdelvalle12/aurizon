@@ -40,31 +40,31 @@ const Header = () => {
               onMouseEnter={toggleServiceDropdown}
               // onMouseLeave={toggleServiceDropdown}
             >
-              Solutions
+              Our Technologies
               <span className={`dropdown-arrow ${isServiceDropdownOpen ? 'open' : ''}`}>&#9662;</span>
             </a>
             {isServiceDropdownOpen && (
               <ul className="dropdown-menu absolute z-10 hidden mt-2 py-1 text-gray-700 bg-white border rounded shadow">
-                  <h2>Services</h2>
+                  <h2>Solutions</h2>
                   
                 <li>
                   <Link
-                    to="/solutions/web-development"
+                    to="/technologies/web-development"
                     className="flex px-4 py-2 hover:bg-gray-100"
                   >
                     Web Development
                   </Link>
                 </li>
               <li>
-                <Link to="/solutions/api-development" className="flex px-4 py-2 hover:bg-gray-100">API Development</Link>
+                <Link to="/technologies/api-development" className="flex px-4 py-2 hover:bg-gray-100">API Development</Link>
               </li>
               <li>
-                <Link to="/solutions/mobile-app-development" className="block px-4 py-2 hover:bg-gray-100">Mobile App Development</Link>
+                <Link to="/technologies/mobile-app-development" className="block px-4 py-2 hover:bg-gray-100">Mobile App Development</Link>
               </li>
               <li>
-                <Link to="/solutions/business-solutions" className="block px-4 py-2 hover:bg-gray-100">Business Solutions</Link>
+                <Link to="/technologies/business-solutions" className="block px-4 py-2 hover:bg-gray-100">Business Solutions</Link>
               </li>      
-                <h2>Explore our apps</h2>
+                <h2>Products</h2>
                 <li>
                   <Link
                     // to="https://www.journeeztrip.com"

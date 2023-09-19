@@ -482,7 +482,7 @@ body {
   font-style: italic; /* Apply italic to the font */
   color: aqua;
   margin-top: 2.5rem;
-  /* margin-left: 1rem; */
+  /* margin-left: 3rem; */
   /* width: 80%; */
   height: auto;
   opacity: 0;
@@ -621,7 +621,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 17rem;
 }
 
 @media (max-width: 768px) {
@@ -1066,9 +1066,115 @@ body {
   .testimonial-text {
     font-size: 16px; /* Decrease font size for testimonial text */
   }
-
+  
   .testimonial-author {
     font-size: 14px; /* Decrease font size for author name */
+  }
+}
+
+
+/*News Section*/
+
+.news-section {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #fff; 
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.news-section h2 {
+  font-size: 2.5rem;
+  color: black;
+  margin-top: 1.5rem;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  gap: 20px; /* Gap between grid items */
+}
+
+.news-section .news-card {
+  padding: 20px;
+  text-align: left;
+  background: rgba(0, 255, 255, 0.2); /* Set your desired background color */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  justify-content: center;  
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.news-photo {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.news-section p{
+  font-weight: bold;
+  font-size: 18px;
+  color: #007bff; /* Date text color */
+}
+
+.news-section h3{
+  font-size: 26px; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.news-content {
+  font-size: 16px; /* Content font size */
+  margin-bottom: 20px;
+}
+
+.insider-link {
+  display: inline-flex;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2); /* Set your desired background color */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: #007bff; /* Set your desired text color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.insider-link:hover {
+  background-color: black; /* Change the background color on hover */
+  color: aqua;
+}
+
+
+/* Styles for the arrow (you can use a suitable arrow icon) */
+.arrow {
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .news-card {
+    width: 100%; /* Make each news card wider on mobile */
+    height: 100%;
+    margin: 10px auto; /* Center the news card */
+    padding: 10px; /* Reduce padding */
+  }
+  
+  .news-title {
+    font-size: 18px; /* Decrease font size for the title */
+  }
+  
+  .news-content {
+    font-size: 16px; /* Decrease font size for the content */
   }
 }
 
@@ -1120,7 +1226,8 @@ body {
   padding: 10px 20px; /* Add padding to the button */
   margin-top: 1rem;
   cursor: pointer; /* Change the cursor to a pointer on hover */
-  font-size: 16px; /* Set the font size */
+  font-size: 1rem; /* Set the font size */
+  font-weight: bold;
   transition: background-color 0.3s ease; /* Add a smooth background color transition */
 }
 
@@ -1134,12 +1241,12 @@ body {
     margin: 10px auto; /* Center the form */
     padding: 10px; /* Reduce padding */
   }
-
+  
   input[type="email"],
   button {
     width: 100%; /* Expand input and button to full width */
   }
-
+  
   input[type="email"] {
     font-size: 16px; /* Decrease font size for the input */
   }
@@ -1149,98 +1256,52 @@ body {
   }
 }
 
-/*News Section*/
+/* Careers Section */
 
-.news-section {
-  text-align: center;
-  padding: 20px;
-  /* background-color: #fff; 
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
-}
-
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
-  gap: 20px; /* Gap between grid items */
-}
-
-.news-card {
-  padding: 20px;
-  text-align: left;
-  background: rgba(0, 255, 255, 0.2); /* Set your desired background color */
-  backdrop-filter: blur(10px); /* Apply a blur effect */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  width: 100%;
-}
-
-.news-photo {
-  max-width: 100%; /* Ensure images don't exceed their container width */
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.news-section p{
-  font-weight: bold;
-  font-size: 18px;
-  color: #007bff; /* Date text color */
-}
-
-.news-title {
-  font-size: 24px; /* Title font size */
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.news-content {
-  font-size: 16px; /* Content font size */
-  margin-bottom: 20px;
-}
-
-.insider-link {
-  display: inline-flex;
-  padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.2); /* Set your desired background color */
-  backdrop-filter: blur(10px); /* Apply a blur effect */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  color: #007bff; /* Set your desired text color */
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 5rem;
+.careers-section {
   margin-bottom: 5rem;
-  transition: background-color 0.3s ease-in-out;
 }
 
-.insider-link:hover {
-  background-color: black; /* Change the background color on hover */
+.career-section h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.careers-section h3 {
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: black;
+  margin-top: 2rem;
+}
+
+.careers-section p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.careers-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.careers-link:hover {
+  background-color: black;
   color: aqua;
-}
-
-
-/* Styles for the arrow (you can use a suitable arrow icon) */
-.arrow {
-  margin-left: 5px;
-}
-
-@media (max-width: 768px) {
-  .news-card {
-    width: 100%; /* Make each news card wider on mobile */
-    height: 100%;
-    margin: 10px auto; /* Center the news card */
-    padding: 10px; /* Reduce padding */
-  }
-
-  .news-title {
-    font-size: 18px; /* Decrease font size for the title */
-  }
-
-  .news-content {
-    font-size: 16px; /* Decrease font size for the content */
-  }
 }
 
 /*About me*/
@@ -1620,7 +1681,7 @@ body {
 
 /* Footer.css */
 .footer-container {
-  height: 60px; 
+  height: 100%; 
   width: 100%;
   line-height: 60px;
   background: linear-gradient(to top, #000000, #003468);

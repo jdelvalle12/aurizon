@@ -26,6 +26,7 @@ import LogisticsIcon from "../images/logistics-icon.png";
 import Testimonials from '../components/Testimonials';
 import SubscribeForm from '../components/SubscribeForm.js';
 import News from '../components/News.js';
+import Careers from '../components/Careers.js';
 
 import '../index.css';
 import '../App.css';
@@ -223,7 +224,7 @@ const Home = () => {
             <Testimonials />
           </div>
           <div className="news-section">
-          <h3>Latest News</h3>
+          <h2>Latest News</h2>
             <News />
           </div>
           <div className="subscribe-section">
@@ -231,6 +232,9 @@ const Home = () => {
                tech updates, and exclusive offers for your business.
             </p>
             <SubscribeForm />
+          </div>
+          <div className='careers-section'>
+            <Careers />
           </div>
             {/* Your existing content */}
             {/* ... */}

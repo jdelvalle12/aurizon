@@ -6,7 +6,7 @@ import Logo from "./components/Logo";
 import Footer from "./components/Footer";
 import Home from './pages/Home';
 import About from './pages/About';
-import Solutions from './pages/Solutions';
+import Technologies from './pages/Technologies';
 import ApiDevelopment from './pages/Api-Development';
 import MobileDevelopment from './pages/Mobile-Development';
 import WebDevelopment from './pages/Web-Development';
@@ -35,10 +35,10 @@ return (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/solutions" element={<Solutions />} />
-          <Route path="/solutions/api-development" element={<ApiDevelopment />} />
-          <Route path="/solutions/mobile-development" element={<MobileDevelopment />} />
-          <Route path="/solutions/web-development" element={<WebDevelopment />} />
+          <Route path="/technologies" element={<Technologies />} />
+          <Route path="/technologies/api-development" element={<ApiDevelopment />} />
+          <Route path="/technologies/mobile-development" element={<MobileDevelopment />} />
+          <Route path="/technologies/web-development" element={<WebDevelopment />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/news" element={<News />} />
