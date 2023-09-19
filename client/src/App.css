@@ -801,7 +801,7 @@ body {
   width: 100%; 
   height: 90%;
   margin-top: 5rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-bottom: 1rem;
   align-items: center;
   justify-content: center;
@@ -945,9 +945,42 @@ body {
   margin-top: 1rem;
 }
 
+/* .testimonial-section {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+
+} */
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the column width as needed */
+  gap: 20px; /* Adjust the gap between cards */
+}
+
+.testimonial-card {
+  background-color: rgba(255, 255, 255, 0.2); /* Frosted glass background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-photo img {
+  max-width: 100px; /* Set a maximum width for the photo */
+  border-radius: 50%; /* Round the photo */
+  margin-right: 1rem;
+}
+
 .testimonial-container {
-  width: 100%;
-  max-width: 500px; 
+  width: 20%;
+  max-width: 300px; 
   /* height: 100%; */
   margin: 0 auto; /* Center the container */
   margin-top: 1rem;
@@ -956,21 +989,23 @@ body {
   /* background-color: aliceblue; */
 }
 
-.testimonial-content {
-  background-color: #fff;
-  max-width: 800px;
+/* .testimonial-content {
+  background-color: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  max-width: 500px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  margin: 0 auto; /* Center the box horizontally */
+  margin: 0 auto;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
-  width: 50%; /* Adjust the width as needed */
-}
+  width: 50%; 
+} */
 
 .testimonial-company {
   font-weight: bold;
-  color: black;
+  color: aqua;
+  height: auto;
   font-size: 2rem;
 }
 
@@ -991,6 +1026,7 @@ body {
 .slick-dots {
   text-align: center;
   margin-top: 20px;
+  color:azure;
 }
 
 .slick-dots li {
@@ -1004,7 +1040,7 @@ body {
   background-color: transparent;
   border: none;
   outline: none;
-  color: #777;
+  color: azure;
   cursor: pointer;
 }
 
@@ -1017,6 +1053,10 @@ body {
 
       width: 90%; /* Reduce the width for smaller screens */
       padding: 10px; /* Adjust padding for spacing */
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
   }
 
   .testimonial-company {
