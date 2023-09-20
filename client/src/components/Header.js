@@ -90,7 +90,7 @@ const Header = () => {
           )}
           </div>
       <Link className="portfolio" to="/portfolio">Portfolio</Link>
-      <Link className="careers" to="/process">Careers</Link>
+      <Link className="careers" to="/careers">Careers</Link>
       <Link className="insider" to="/insider">Insider</Link>
       <Link className="contact" to="/contact">Contact</Link>
     </nav>
