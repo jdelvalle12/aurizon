@@ -69,12 +69,12 @@ const Navbar = () => {
           <div className={`mobile-dropdown-menu ${isDropdownOpen ? 'open' : ''}`}>
               {/* Dropdown menu content */}
               <ul>
-                <h3>Services</h3>
+                <h3>Solutions</h3>
                   <li><Link className='sub-nav-link' to="/technologies/web-development">Web Development</Link></li>
                   <li><Link className='sub-nav-link' to="/technologies/api-development">API Development</Link></li>
                   <li><Link className='sub-nav-link' to="/technologies/mobile-development">Mobile Development</Link></li>
                   <li><Link className='sub-nav-link' to="/technologies/business-solutions">Business Solutions</Link></li>
-                <h3>Explore Apps</h3>
+                <h3>Products</h3>
                   <li><Link
                     // to="https://www.journeeztrip.com"
                     className='sub-nav-link'

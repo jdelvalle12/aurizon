@@ -34,15 +34,15 @@ const Header = () => {
     <nav className="navi">
       <Link className="about" to="/about">Who We Are</Link>
       <div className="relative">
-      <a
-              href="#"
+      <div
+              // to="/technologies"
               className={`technologies inline-flex items-center space-x-1 font-medium text-gray-700 hover:text-gray-900 ${isServiceDropdownOpen ? 'active' : ''}`}
-              onMouseEnter={toggleServiceDropdown}
+              onClick={toggleServiceDropdown}
               // onMouseLeave={toggleServiceDropdown}
             >
               Our Technologies
               <span className={`dropdown-arrow ${isServiceDropdownOpen ? 'open' : ''}`}>&#9662;</span>
-            </a>
+            </div>
             {isServiceDropdownOpen && (
               <ul className="dropdown-menu absolute z-10 hidden mt-2 py-1 text-gray-700 bg-white border rounded shadow">
                   <h2>Solutions</h2>
