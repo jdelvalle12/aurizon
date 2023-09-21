@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import SunEarth from '../images/Sun Lighting Earth Surface.mp4';
+import DigiEarth from '../images/rotating-digital-planet.mp4';
 import Digital from '../images/digital-motion.mp4';
 import WebDev from '../images/web-development-icon.png';
 import BizSol from '../images/business-solution-icon.png';
@@ -117,7 +117,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <video src={SunEarth} autoPlay loop muted className="background-video"></video>
+      <video src={DigiEarth} autoPlay loop muted className="background-video"></video>
       <h1 className={showSlogan ? 'fade-in' : ''}>"Aeon Innovations, Illuminating Tomorrow"</h1>
       <h2>
         <span id="typing-text"></span>
