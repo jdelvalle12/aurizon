@@ -158,9 +158,9 @@ const Home = () => {
           </div>
           {/* <div className="service-box api">
             <h4>API Development</h4>
-              <p>Building powerful APIs that connect applications and services,
-                enabling smooth data exchange and enhancing software interoperability.
-              </p>
+            <p>Building powerful APIs that connect applications and services,
+            enabling smooth data exchange and enhancing software interoperability.
+            </p>
           </div> */}
           <div className="service-box business">
           <img src={BizSol} alt="Business Solution" className="service-icon" />
@@ -187,9 +187,9 @@ const Home = () => {
           </div>
           {/* <div className="service-box mobile">
             <h4>Mobile App Developemnt</h4>
-              <p>Coming soon: Expertly crafting mobile applications that bring your ideas 
-                to life on smartphones and tablets, delivering unique user experiences.
-              </p>
+            <p>Coming soon: Expertly crafting mobile applications that bring your ideas 
+            to life on smartphones and tablets, delivering unique user experiences.
+            </p>
           </div> */}
           <Link to="/technologies" className="in-depth">
             In Depth Look<span className='arrow'>&rarr;</span>
@@ -202,7 +202,7 @@ const Home = () => {
             Explore our portfolio to see how we can help you achieve success and with more to come...</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {industries.map((industry, index) => (
-              <div className="industry-card" key={index}>
+                <div className="industry-card" key={index}>
                 <div className="industry-content">
                   <img className="industry-image" src={industry.image} alt={`${industry.name} Image`} />
                   <img className='industry-icon'src={industry.icon} alt={`${industry.name} Icon`} />
@@ -240,6 +240,7 @@ const Home = () => {
             {/* ... */}
         </div>
       </div>
+            
     );
   };
 

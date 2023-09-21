@@ -32,7 +32,6 @@ const Header = () => {
     <Logo />
     {!isMobile && (
     <nav className="navi">
-      <Link className="about" to="/about">Who We Are</Link>
       <div className="relative">
       <div
               // to="/technologies"
@@ -59,10 +58,10 @@ const Header = () => {
                 <Link to="/technologies/api-development" className="flex px-4 py-2 hover:bg-gray-100">API Development</Link>
               </li>
               <li>
-                <Link to="/technologies/mobile-app-development" className="block px-4 py-2 hover:bg-gray-100">Mobile App Development</Link>
+                <Link to="/technologies/mobile-app-development" className="flex px-4 py-2 hover:bg-gray-100">Mobile App Development</Link>
               </li>
               <li>
-                <Link to="/technologies/business-solutions" className="block px-4 py-2 hover:bg-gray-100">Business Solutions</Link>
+                <Link to="/technologies/business-solutions" className="flex px-4 py-2 hover:bg-gray-100">Business Solutions</Link>
               </li>      
                 <h2>Products</h2>
                 <li>
@@ -81,14 +80,15 @@ const Header = () => {
               </li>
               {/* <li>
                 <Link to="/solutions/front-end-development">Frontend-Development</Link>
-              </li>
-              <li>
+                </li>
+                <li>
                 <Link to="/solutions/back-end-development">Backend-Development</Link>
               </li> */}
               
             </ul>
           )}
           </div>
+      <Link className="about" to="/about">Who We Are</Link>
       <Link className="portfolio" to="/portfolio">Portfolio</Link>
       <Link className="careers" to="/careers">Careers</Link>
       <Link className="insider" to="/insider">Insider</Link>

@@ -7,11 +7,17 @@ import '../App.css';
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <h3>AURIZON</h3>
+      <h3>
+        <Link className='back-home' to='/' >AURIZON</Link>
+      </h3>
       <div className='footer-column'>
         <h4>Products</h4>
           <ul>
-            <li>Journeez</li>
+            <li><Link
+                    // to="https://www.journeeztrip.com"
+                    >
+                    In development
+                  </Link></li>
             <li></li>
             <li></li>
           </ul>
@@ -19,10 +25,10 @@ const Footer = () => {
       <div className='footer-column'>
         <h4>Service</h4>
           <ul>
-            <li>Web Development</li>
-            <li>API Developemnt</li>
-            <li>Mobile App Developemnt</li>
-            <li>Business Solutions</li>
+            <li><Link to='/technologies/web-development' >Web Development</Link></li>
+            <li><Link to='/technologies/api-development' >API Development</Link></li>
+            <li>Mobile App Development</li>
+            <li><Link to='/technologies/business-solutions' >Business Solutions</Link></li>
           </ul>
       </div>
       <div className='footer-column'>
@@ -35,15 +41,25 @@ const Footer = () => {
           </ul>
       </div>
       <div className='footer-column'>
+        <h4>Expand Your Aurizons</h4>
+          <ul>
+            <li>Aurizon University</li>
+            <li>Documentation</li>
+            <li>Developer Resources</li>
+            <li>Partners</li>
+            <li>Webinars</li>
+          </ul>
+      </div>
+      <div className='footer-column'>
         <h4>Company</h4>
           <ul>
-            <li>Who we are</li>
-            <li>Careers</li>
+            <li><Link to='/about' >Who we are</Link></li>
+            <li><Link to='/careers' >Careers</Link></li>
             <li>Events</li>
             <li>Blogs</li>
-            <li>Insider</li>
-            <li>Partners</li>
-            <li>Contact Us</li>
+            <li><Link to='/insider' >Insider</Link></li>
+            <li><Link to='/contact' >Contact Us</Link></li>
+            <li>FAQ</li>
           </ul>
       </div>
       <div className="footer-legal">
