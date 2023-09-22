@@ -275,56 +275,6 @@ body {
   cursor: pointer;
 }
 
-/* .header-container .projects {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color:aliceblue;
-  justify-content: flex-start;
-}
-
-.header-container .contact {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color:aliceblue;
-  justify-content: flex-start;
-} */
-
-/* .header-container .resume {
-  text-decoration: none;
-} */
-
-      
-/* .projects,
-.contact,
-.about-me {
- color: aliceblue;
- padding-right: 0;
- font-family: "Source Code Pro", "Space Grotesk", sans-serif;
- font-size: 1.2rem;
- list-style-type: none;
- text-align: center; 
- align-items: right;
- justify-content: flex-start;
-} */
-
-
-/* .header-container .logo-relative::before,
-      .logo-relative::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-      }
-      
-.header-container .logo-relative::before {
-        background-color: #0BC5EA; 
-        animation: glitch-1 2s infinite;
-      } */
-
-
   /* Navbar */
       
   nav {
@@ -349,27 +299,6 @@ body {
     border: solid 7px aqua; 
     border-radius: 25px;
   }
-  
-  /* nav::before,
-  nav::after {
-    content: '';
-    flex-grow: 1;
-    height: 5px;
-    background-color: aqua;
-  }
-  
-  nav::before {
-    margin-right: 1rem;
-  }
-  
-  nav::after {
-    margin-left: 1rem;
-  } */
-  
-  /* .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  } */
   
   .menu {
     display: none;
@@ -767,14 +696,6 @@ body {
   background-color: black; /* Darkened on hover for a clearer frosted effect */
   color: aqua;
 }
-
-/* .home-portfolio-container {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  text-align: center;
-  padding: 1rem;
-} */
 
 .explore-our-work {
   font-size: 2.5rem;
@@ -1309,18 +1230,15 @@ body {
 
 /*About me*/
 
-.aboutme-container {
-  background-image: url('./images/Background.jpg');
+.aboutm-container {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  display: flex;  
   justify-content: center;
   align-items: center;
+  background-color: aliceblue;
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
-  padding-bottom: 18rem; /* adjust the value to your desired amount */
 }
 
 
@@ -1347,33 +1265,6 @@ body {
   margin-top: 3rem;
   /* Add any other styling for the profile picture here */
 }
-
-
-
-
-/* Hamburger Menu Styling */
-/* .navbar-toggler {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-}
-
-.navbar-toggler-icon {
-  background-color: #fff; 
-}
-
-.navbar-collapse {
-  background-color: #333; 
-}
-
-.nav-link {
-  color: #fff !important; 
-}
-
-.nav-link:hover {
-  color: #f00 !important; 
-} */
 
 /*Projects Section*/
 
