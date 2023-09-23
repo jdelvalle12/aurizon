@@ -12,7 +12,7 @@ import MobileDevelopment from './pages/Mobile-Development';
 import WebDevelopment from './pages/Web-Development';
 import Portfolio from './pages/Portfolio';
 import Careers from './pages/Careers';
-import News from './pages/Insider';
+import Insider from './pages/Insider';
 import Contact from './pages/Contact';
 import './index.css';
 import './App.css';
@@ -41,7 +41,7 @@ return (
           <Route path="/technologies/web-development" element={<WebDevelopment />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/careers" element={<Careers />} />
-          <Route path="/news" element={<News />} />
+          <Route path="/insider" element={<Insider />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
