@@ -1233,28 +1233,50 @@ body {
 .about-container {
   width: 100%;
   height: 100%;
-  display: flex;  
+  margin-top: -1.5rem;
+  /* display: flex;   */
+  /* flex-wrap: wrap;   */
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: aliceblue;
 }
 
 .about-container h1 {
-
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
 }
 
-.about-container h2 {
-
+.our-culture {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.about-container p {
-
+.our-culture p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  baackdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .about-our-story {
   font-size: 1rem;
   color: black;
-  width: 50%;
   justify-content: center;
   align-items: center;
   background: linear-gradient(to bottom, aliceblue, rgb(148, 208, 228), aqua);
@@ -1262,25 +1284,84 @@ body {
 }
 
 .about-our-story h2 {
-
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .about-our-story p {
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-our-mission {
 
 }
 
+.about-our-mission h2 {
 
-
-
-.aboutme {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  color: black;
-  margin-left: 7rem;
 }
 
-.profile-picture {
+.about-our-mission p {
+
+}
+
+.about-our-value {
+  background: linear-gradient(to bottom, aliceblue, rgb(148, 208, 228));
+}
+
+.about-our-value h2 {
+
+}
+
+.about-our-value p {
+
+}
+
+.about-our-value ul {
+
+}
+
+.about-our-value ul li {
+
+}
+
+.about-our-history {
+
+}
+
+.about-our-history h2 {
+
+}
+
+.about-our-history p {
+
+}
+
+.about-the-team {
+  background: linear-gradient(to bottom, #000000, #003468);
+}
+
+.about-the-team h2 {
+  color: aqua;
+}
+
+.about-the-team p {
+  color: aliceblue;
+}
+
+.about-the-team h5 {
+  color: aqua;
+}
+
+.about-the-team .profile-picture {
   max-width: 15%;
   height: auto;
   border-radius: 2%;
@@ -1289,12 +1370,58 @@ body {
   /* Add any other styling for the profile picture here */
 }
 
+.about-facts-figures {
+  background-color: #007bff;
+}
 
+.about-facts-figures h2 {
 
+}
 
-.timeline {
+.about-partners {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: black;
+  margin-left: 7rem;
+}
+
+.about-partners h2 {
+
+}
+
+.about-partners p {
+
+}
+
+.about-goals-vision {
+  background: linear-gradient(to bottom, aliceblue, rgb(148, 208, 228), aqua);
+}
+
+.about-goals-vision h2 {
+
+}
+
+.about-goals-vision p {
+
+}
+
+.about-community {
+
+}
+
+.about-community h2 {
+
+}
+
+.about-timeline {
   position: relative;
   padding: 20px;
+  background: linear-gradient(to bottom, aliceblue, rgb(148, 208, 228));
+}
+
+.about-timeline h2 {
+
 }
 
 .timeline-item {
@@ -1308,6 +1435,14 @@ body {
 
 .timeline-content {
   margin-left: 30px;
+}
+
+.faq {
+
+}
+
+.faq h3 {
+
 }
 
 /*Projects Section*/

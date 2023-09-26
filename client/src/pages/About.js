@@ -9,7 +9,7 @@ export default function About() {
     <div className="about-container" >
     {/* <img style={{ backgroundImage: `url(${Background})` }}/> */}
         <h1>Who We Are</h1>
-          <h2>Our Culture</h2>
+          <h2 className='our-culture'>Our Culture</h2>
             <p>Discover the core values, mission, and vision that drive us 
                at Aurizon Technologies. Explore the vibrant tapestry of our 
                team, where innovation meets inclusivity, and endless possibilities 
@@ -78,6 +78,7 @@ export default function About() {
               <li>Innovation: Cultivating creative brilliance to pioneer innovative 
                   solutions and drive industry progress
               </li>
+              <li>Autonomy: we empower our team to innovate and take ownership.</li>
             </ul>
             <p>
               These values shape our commitment to excellence and inclusivity in the tech industry and beyond.
