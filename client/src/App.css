@@ -1275,30 +1275,32 @@ body {
   }
 }
 
-.content-container .about-who-we-are {
+.content-container h1{
   font-size: 3rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   padding-top: 2rem;
 }
 
-.our-culture-container {
-  font-size: 1.5rem;
+.content-container h2 {
+  font-size: 2rem;
   width: 100%;
-  height: 100%;
+  margin-top: 1.5rem;
+  /* height: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.our-culture-container p {
+.content-container p {
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 .about-our-story {

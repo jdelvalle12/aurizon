@@ -15,8 +15,8 @@ const About = () => {
     <div className="about-container" > 
         <video src={Culture} play loop muted className='about-background-video'></video>
             <div className="content-container">
-                <h1 className='about-who-we-are'>Who We Are</h1>
-                    <h2 className='our-culture-container'>Our Culture</h2>
+                <h1>Who We Are</h1>
+                    <h2>Our Culture</h2>
                         <p>Discover the core values, mission, and vision that drive us 
                            at Aurizon Technologies. Explore the vibrant tapestry of our 
                            team, where innovation meets inclusivity, and endless possibilities 
