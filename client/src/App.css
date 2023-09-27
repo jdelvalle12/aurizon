@@ -132,7 +132,7 @@ body {
   height: auto;
   line-height: 30px;
   margin-top: -0.5rem;
-  padding: 1.5rem;
+  padding: 1rem;
   color: aliceblue;
   background: linear-gradient(to bottom, #000000, #003468);
   font-family: 'Source Code Pro', 'Space Grotesk', sans-serif;
@@ -1231,27 +1231,57 @@ body {
 /*About me*/
 
 .about-container {
-  width: 100%;
-  height: 100%;
-  margin-top: -1.5rem;
-  /* display: flex;   */
-  /* flex-wrap: wrap;   */
+  display: block;
+  position: relative;
+  margin-top: -1.8rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: aliceblue;
-}
-
-.about-container h1 {
   width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
+  height: 100%;
+  /* background-color: aliceblue; */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
 }
 
-.our-culture {
+
+.about-background-video {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 30%;
+}
+
+.content-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  color: white; /* Set the text color to white or a color that contrasts with the background */
+  padding: 20px; /* Add padding for better readability */
+  text-align: center;
+  z-index: 1; /* Ensure the content appears above the video */
+}
+
+@media (max-width: 767px) {
+  .about-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.content-container .about-who-we-are {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+.our-culture-container {
   font-size: 1.5rem;
   width: 100%;
   height: 100%;
@@ -1260,7 +1290,7 @@ body {
   align-items: center;
 }
 
-.our-culture p {
+.our-culture-container p {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1268,10 +1298,7 @@ body {
   align-items: center;
   text-align: center;
   font-size: 1rem;
-  background: rgba(255, 255, 255, 0.2);
-  baackdrop-filter: blur(10px);
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
 }
 
 .about-our-story {
@@ -1281,6 +1308,7 @@ body {
   align-items: center;
   background: linear-gradient(to bottom, aliceblue, rgb(148, 208, 228), aqua);
   width: 100%;
+  margin-top: 2rem;
 }
 
 .about-our-story h2 {
@@ -1300,6 +1328,7 @@ body {
   align-items: center;
   text-align: center;
 }
+
 
 .about-our-mission {
 

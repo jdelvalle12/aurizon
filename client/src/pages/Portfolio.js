@@ -8,7 +8,7 @@ import Weather from '../images/weather-forecast.jpg';
 import Planner from '../images/day-planner.jpg';
 import Notepad from '../images/notepad.jpg';
 import Winery from '../images/Winery.jpg';
-import Fireworks from '../images/digital-fireworks.mp4';
+// import Fireworks from '../images/digital-fireworks.mp4';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -91,7 +91,7 @@ const Carousel = () => {
 const Projects = () => {
   return (
     <div>
-      <video src={Fireworks} autoPlay loop muted className="projects-background-video"></video>      
+      {/* <video src={Fireworks} autoPlay loop muted className="projects-background-video"></video>       */}
       <div>
         <div className='title'>
           <h2>Projects</h2>

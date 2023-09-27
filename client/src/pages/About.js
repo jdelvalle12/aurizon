@@ -1,20 +1,28 @@
-import React from 'react';
+import React, {useEffect}from 'react';
 import Me from '../images/Me.jpg';
-// import Background from '../images/Background.jpg';
+import Culture from '../images/our-culture-video.mp4';
 import '../index.css';
 import '../App.css';
 
-export default function About() {
+const About = () => {
+
+    useEffect(() => {
+        const video = document.querySelector('.about-background-video');
+        video.play();
+      }, []);
+
   return (
-    <div className="about-container" >
-    {/* <img style={{ backgroundImage: `url(${Background})` }}/> */}
-        <h1>Who We Are</h1>
-          <h2 className='our-culture'>Our Culture</h2>
-            <p>Discover the core values, mission, and vision that drive us 
-               at Aurizon Technologies. Explore the vibrant tapestry of our 
-               team, where innovation meets inclusivity, and endless possibilities 
-               are nurtured.
-            </p>
+    <div className="about-container" > 
+        <video src={Culture} play loop muted className='about-background-video'></video>
+            <div className="content-container">
+                <h1 className='about-who-we-are'>Who We Are</h1>
+                    <h2 className='our-culture-container'>Our Culture</h2>
+                        <p>Discover the core values, mission, and vision that drive us 
+                           at Aurizon Technologies. Explore the vibrant tapestry of our 
+                           team, where innovation meets inclusivity, and endless possibilities 
+                           are nurtured.
+                        </p>
+            </div>
      <div className='about-our-story'> 
         <h2>What's our story?</h2>         
             <p>
@@ -171,4 +179,6 @@ export default function About() {
         </div>
     </div>
   );
-}
+};
+
+export default About;

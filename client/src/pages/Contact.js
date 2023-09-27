@@ -1,6 +1,6 @@
 import React from 'react';
 // import emailjs from 'emailjs-com'; // Import email.js library
-import Rotating from '../images/rotating-planet.mp4';
+// import Rotating from '../images/rotating-planet.mp4';
 import '../styles/Contact.css';
 import '../App.css';
 
@@ -19,7 +19,7 @@ export default function Contact() {
 
   return (
     <section>
-      <video src={Rotating} autoPlay loop muted className="background-video"></video>
+      {/* <video src={Rotating} autoPlay loop muted className="background-video"></video> */}
       <div className='contact-container'>
         <h1 className='contact-title'>Contact</h1>
         <div className="design-inquiries">
