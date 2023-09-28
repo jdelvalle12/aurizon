@@ -1244,30 +1244,6 @@ body {
   /* background-repeat: no-repeat; */
 }
 
-
-.about-background-video {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 30%;
-}
-
-.content-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-  color: white; /* Set the text color to white or a color that contrasts with the background */
-  padding: 20px; /* Add padding for better readability */
-  text-align: center;
-  z-index: 1; /* Ensure the content appears above the video */
-}
-
 @media (max-width: 767px) {
   .about-container {
     width: 100%;
@@ -1275,32 +1251,59 @@ body {
   }
 }
 
+.about-background-video {
+  /* position: absolute; */
+  /* display: block; */
+  width: 100%;
+  height: auto; /* Allow the video to maintain its aspect ratio */
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.content-container {
+  position: absolute;
+  margin-top: 4rem;
+  /* margin-left: 1rem; */
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  /* height: 10%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;   
+  /* text-align: center; */
+  color: aqua; 
+  padding: 20px; 
+  z-index: 1; 
+  background: rgba(255, 255, 255, 0.2); /* Set your desired background color */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
 .content-container h1{
-  font-size: 3rem;
-  /* margin-bottom: 1rem; */
-  padding-top: 2rem;
+ font-size: 3rem;
+ margin-top: 2rem;
+ margin-bottom: 1rem;
+ color: aliceblue;
+ /* align-items: center; */
 }
 
 .content-container h2 {
   font-size: 2rem;
-  width: 100%;
   margin-top: 1.5rem;
-  /* height: 100%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+
 }
 
 .content-container p {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-size: 1.5rem;
-  /* margin-bottom: 1.5rem; */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .about-our-story {

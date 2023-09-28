@@ -23,7 +23,7 @@ const About = () => {
                            are nurtured.
                         </p>
             </div>
-     <div className='about-our-story'> 
+     {/* <div className='about-our-story'> 
         <h2>What's our story?</h2>         
             <p>
               At Aurizon Technologies, we're on a mission to pioneer 
@@ -48,8 +48,8 @@ const About = () => {
               With Aurizon, you step into a world of boundless possibilities. Contact us today to 
               discuss your project, and let Aurizon Technologies turn your vision into reality. 
             </p>
-        </div>        
-        <div className='about-our-mission'>
+        </div>         */}
+        {/* <div className='about-our-mission'>
           <h2>Our Mission</h2>
             <p>
               we're on a mission to lead technological advancements by providing innovative solutions 
@@ -65,8 +65,8 @@ const About = () => {
             <p>
               Join us on this journey, where your talents will shape tomorrow's technology landscape.
             </p>
-        </div>
-        <div className='about-our-value'>
+        </div> */}
+        {/* <div className='about-our-value'>
           <h2>Our Value</h2>
             <p>
               At Aurizon, our culture is guided by core values:
@@ -91,8 +91,8 @@ const About = () => {
             <p>
               These values shape our commitment to excellence and inclusivity in the tech industry and beyond.
             </p>
-        </div>
-        <div className='about-our-history'>
+        </div> */}
+        {/* <div className='about-our-history'>
             <h2>The rest is history...</h2>
               <p>
                 The Founder and CEO Jose Del Valle always wondered what he wanted to do as a career. 
@@ -121,28 +121,28 @@ const About = () => {
                 to grow the company and make his vision become a reality, just like he would 
                 do for his customers. 
               </p>
-        </div>
-        <div className='about-the-team'>
+        </div> */}
+        {/* <div className='about-the-team'>
           <h2>The Team</h2>
             <p>Meet the team that make it all happen...</p>
           <img src={Me} alt="Jose" className="profile-picture" />
             <h5>Founder and CEO</h5>
-        </div>
-        <div className='about-facts-figures'>
+        </div> */}
+        {/* <div className='about-facts-figures'>
           <h2>Facts & Figures</h2>
-        </div>
-        <div className='about-partners'>
+        </div> */}
+        {/* <div className='about-partners'>
           <h2>Our Partners</h2>
             <p>We recognize that achieving success in the ever-evolving tech landscape 
                requires collaboration; we cannot do it alone. That's why we are committed 
                to forming strategic partnerships that amplify our strengths and open doors 
                to new opportunities.
             </p>
-        </div>
+        </div> */}
         {/* <div className='about-awards'>
           <h2>Achievements & Awards</h2>
         </div> */}
-        <div className='about-goals-vision'>
+        {/* <div className='about-goals-vision'>
           <h2>Our Goals & Vision</h2>
             <p>
               Our Vision is to be a leading tech company as we embark on a journey of 
@@ -176,7 +176,7 @@ const About = () => {
         </div>
         <div className='faq'>
           <h3>FAQs</h3>
-        </div>
+        </div> */}
     </div>
   );
 };
