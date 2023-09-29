@@ -1244,44 +1244,49 @@ body {
   /* background-repeat: no-repeat; */
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .about-container {
     width: 100%;
     height: 100%;
   }
+
+  .content-container p {
+    /* color: initial; */
+    color:#007bff;
+  }
 }
 
 .about-background-video {
-  /* position: absolute; */
+  position: absolute;
   /* display: block; */
   width: 100%;
   height: auto; /* Allow the video to maintain its aspect ratio */
   max-height: 80vh;
   object-fit: cover;
+  /* padding-bottom: 14rem; */
+  /* margin-bottom: 2rem; */
 }
 
 .content-container {
-  position: absolute;
-  margin-top: 4rem;
-  /* margin-left: 1rem; */
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
+  /* position: relative; */
+  margin: 0 auto;
+  /* margin-top: 2rem; */
+  /* transform: translate(-50%, -50%); */
   width: 100%;
-  max-width: 500px;
-  /* height: 10%; */
+  max-width: 700px;
+  height: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;   
   /* text-align: center; */
-  color: aqua; 
+  /* color: #007bff;  */
   padding: 20px; 
   z-index: 1; 
-  background: rgba(255, 255, 255, 0.2); /* Set your desired background color */
-  backdrop-filter: blur(10px); /* Apply a blur effect */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  /* background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
 }
 
 
@@ -1297,13 +1302,14 @@ body {
   font-size: 2rem;
   margin-top: 1.5rem;
   /* align-items: center; */
-
+  color: aqua;
 }
 
 .content-container p {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  color: aqua;
 }
 
 .about-our-story {
@@ -1313,25 +1319,37 @@ body {
   align-items: center;
   background: linear-gradient(to bottom, aliceblue, rgb(148, 208, 228), aqua);
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 16rem;
 }
 
 .about-our-story h2 {
+  font-size: 2rem;
   width: 100%;
   height: 100%;
   display: flex;  
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 2rem;
 }
 
-.about-our-story p {
-  width: 100%;
-  height: 100%;
+.story-description {
+  color: #007bff;
+  font-size: 1rem;
+  width: 80%;
+  height: 50%;
   display: flex;  
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 

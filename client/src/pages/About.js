@@ -18,48 +18,46 @@ const About = () => {
                 <h1>Who We Are</h1>
                     <h2>Our Culture</h2>
                         <p>Discover the core values, mission, and vision that drive us 
-                           at Aurizon Technologies. Explore the vibrant tapestry of our 
+                           at Aurizon. Explore the vibrant tapestry of our 
                            team, where innovation meets inclusivity, and endless possibilities 
                            are nurtured.
                         </p>
             </div>
-     {/* <div className='about-our-story'> 
-        <h2>What's our story?</h2>         
+     <div className='about-our-story'> 
+        <h2>What's our story?</h2>  
+            <div className='story-description'>
             <p>
-              At Aurizon Technologies, we're on a mission to pioneer 
+              At Aurizon, we're on a mission to pioneer 
               a brighter future through innovative technology solutions. 
               Our passionate team pushes boundaries and explores new horizons
               in the tech industry, delivering cutting-edge solutions that empower
-              businesses and individuals. 
-            </p>
-            <p>  
-              We're committed to nurturing incredible software development talent 
-              and providing them with a platform to showcase their work. Our expertise 
-              spans web development, software solutions, mobile apps, and more, addressing 
-              critical areas like cybersecurity and infrastructure.
+              businesses and individuals. We're committed to nurturing incredible 
+              software development talent and providing them with a platform to 
+              showcase their work. Our expertise spans web development, software 
+              solutions, mobile apps, and more, addressing critical areas like 
+              cybersecurity and infrastructure.
             </p>
             <p>
               Our vision is to make technology accessible to everyone by creating intuitive, 
               user-friendly products and services that simplify daily tasks. We're your partner 
               for success, leveraging the latest advancements to elevate your business. Our solutions 
-              exceed expectations and drive meaningful impact in the digital landscape.
-            </p>
-            <p>
-              With Aurizon, you step into a world of boundless possibilities. Contact us today to 
+              exceed expectations and drive meaningful impact in the digital landscape. With Aurizon, 
+              you step into a world of boundless possibilities. Contact us today to 
               discuss your project, and let Aurizon Technologies turn your vision into reality. 
             </p>
-        </div>         */}
+            </div>       
+        </div>        
         {/* <div className='about-our-mission'>
           <h2>Our Mission</h2>
-            <p>
-              we're on a mission to lead technological advancements by providing innovative solutions 
-              that empower businesses and individuals. We're driven by our passion for innovation, 
-              creativity, and user-centric design, making technology accessible to all and illuminating 
-              a brighter future.
-            </p>
-            <p>
-              We believe in the power of collaboration and talent. That's why we've assembled a team 
-              of industry-leading experts who leverage cutting-edge tools to exceed client expectations 
+          <p>
+          we're on a mission to lead technological advancements by providing innovative solutions 
+          that empower businesses and individuals. We're driven by our passion for innovation, 
+          creativity, and user-centric design, making technology accessible to all and illuminating 
+          a brighter future.
+          </p>
+          <p>
+          We believe in the power of collaboration and talent. That's why we've assembled a team 
+          of industry-leading experts who leverage cutting-edge tools to exceed client expectations 
               and drive growth.
             </p>
             <p>
