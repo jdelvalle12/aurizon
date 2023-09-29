@@ -1,4 +1,5 @@
 import React, {useEffect}from 'react';
+import Innovation from '../images/innovation.jpg';
 import Me from '../images/Me.jpg';
 import Culture from '../images/our-culture-video.mp4';
 import '../index.css';
@@ -24,8 +25,8 @@ const About = () => {
                         </p>
             </div>
      <div className='about-our-story'> 
-        <h2>What's our story?</h2>  
-            <div className='story-description'>
+        <div className='story-description'>
+            <h2>What's our story?</h2>  
             <p>
               At Aurizon, we're on a mission to pioneer 
               a brighter future through innovative technology solutions. 
@@ -46,6 +47,7 @@ const About = () => {
               discuss your project, and let Aurizon Technologies turn your vision into reality. 
             </p>
             </div>       
+            <img src={Innovation} alt='innovation' className='innovation'></img>
         </div>        
         {/* <div className='about-our-mission'>
           <h2>Our Mission</h2>
