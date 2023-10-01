@@ -1260,7 +1260,7 @@ body {
   position: absolute;
   /* display: block; */
   width: 100%;
-  height: 55%; /* Allow the video to maintain its aspect ratio */
+  height: 15%; /* Allow the video to maintain its aspect ratio */
   /* max-height: 80vh; */
   object-fit: cover;
   /* padding-bottom: 14rem; */
@@ -1308,23 +1308,23 @@ body {
 
 .about-our-story {
   font-size: 1rem;
-  margin-top: 1rem;
+  margin-top: 5rem;
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, aliceblue, rgb(148, 208, 228), aqua);
+  background: linear-gradient(to top, aliceblue, rgb(148, 208, 228), aqua);
   width: 100%;
 }
 
 .innovation {
   /* float: right; */
-  display: flex;
-  width: 30%;
+  /* display: flex; */
+  width: 35%;
   height: auto;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  padding: 2rem;
+  margin-top: 3rem;
+  /* margin-left: 2rem; */
+  padding: 2.5rem;
 }
 
 .about-our-story h2 {
@@ -1340,14 +1340,83 @@ body {
 
 .story-description {
   color: black;
-  font-size: 1rem;
-  width: 80%;
+  font-size: 1.1rem;
+  width: 50%;
   height: 50%;
   display: flex;  
   justify-content: center;
   align-items: center;
   text-align: left;
   flex-direction: column;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .about-our-story {
+    align-items: flex-start; /* Align items to the left on mobile */
+    flex-direction: column;
+  }
+
+  .innovation {
+    width: 100%; /* Adjust image width for mobile */
+    margin-top: 1rem;
+  }
+
+  .story-description {
+    width: 80%;
+  }
+}
+
+
+.about-our-mission {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #007bff;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.passion {
+  /* float: left; */
+  /* display: flex; */
+  width: 40%;
+  height: auto;
+  margin-top: 3rem;
+  /* margin-left: 2rem; */
+  padding: 2.5rem;
+}
+
+.about-our-mission h2 {
+  color: black;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.mission-description {
+  font-size: 1.1rem;
+  width: 50%;
+  height: 50%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+  /* float: right; */
   margin-top: 2rem;
   margin-left: 2rem;
   padding: 1rem;
@@ -1357,17 +1426,20 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+  .about-our-mission {
+    align-items: flex-start; /* Align items to the left on mobile */
+    flex-direction: column;
+  }
 
-.about-our-mission {
+  .passion {
+    width: 100%; /* Adjust image width for mobile */
+    margin-top: 1rem;
+  }
 
-}
-
-.about-our-mission h2 {
-
-}
-
-.about-our-mission p {
-
+  .mission-description {
+    width: 80%;
+  }
 }
 
 .about-our-value {
