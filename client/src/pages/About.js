@@ -89,9 +89,6 @@ const About = () => {
               </li>
               <li>Autonomy: we empower our team to innovate and take ownership.</li>
             </ul>
-            <p>
-              These values shape our commitment to excellence and inclusivity in the tech industry and beyond.
-            </p>
         </div>
         <div className='about-our-history'>
             <h2>The rest is history...</h2>

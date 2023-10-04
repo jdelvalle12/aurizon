@@ -1443,23 +1443,111 @@ body {
 }
 
 .about-our-value {
+  font-size: 1rem;
+  margin-top: 3rem;
+  color: #007bff;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(to bottom, aliceblue, rgb(148, 208, 228));
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .about-our-value h2 {
-
+  color: black;
+  text-align: center;
 }
 
 .about-our-value p {
-
+  text-align: center; /* Center the text */
 }
 
 .about-our-value ul {
-
+  list-style: none; /* Remove the default list styles */
+  padding: 0; /* Remove default padding */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin-left: 9rem;
 }
 
 .about-our-value ul li {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Glass effect background */
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px; /* Add padding to separate the cards */
+  margin: 10px 0; /* Add margin to separate the cards vertically */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+  
+  /* Define different background colors and box shadow colors */
+}
 
+.about-our-value ul li:nth-child(1),
+.about-our-value ul li:nth-child(2),
+.about-our-value ul li:nth-child(3),
+.about-our-value ul li:nth-child(4),
+.about-our-value ul li:nth-child(5),
+.about-our-value ul li:nth-child(6),
+.about-our-value ul li:nth-child(7),
+.about-our-value ul li:nth-child(8) {
+  width: 50%; /* Make all list items full width on mobile */
+}
+
+/* Define different colors for each list item */
+.about-our-value ul li:nth-child(1):hover {
+  box-shadow: 0px 0px 15px #ff9900; 
+}
+
+.about-our-value ul li:nth-child(2):hover {
+  box-shadow: 0px 0px 15px #00cc66;
+}
+
+.about-our-value ul li:nth-child(3):hover {
+  box-shadow: 0px 0px 15px cyan;
+}
+
+.about-our-value ul li:nth-child(4):hover {
+  box-shadow: 0px 0px 15px magenta;
+}
+
+.about-our-value ul li:nth-child(5):hover {
+  box-shadow: 0px 0px 15px#6600cc; /* Purple */
+}
+
+.about-our-value ul li:nth-child(6):hover {
+  box-shadow: 0px 0px 15px #0099cc; /* Blue */
+}
+
+.about-our-value ul li:nth-child(7):hover {
+  box-shadow: 0px 0px 15px#ffcc00; /* Yellow */
+}
+
+.about-our-value ul li:nth-child(8):hover {
+  box-shadow: 0px 0px 15px #ff33cc; /* Pink */
+}
+
+/* Add more colors for additional list items as needed */
+
+/* Change the box shadow color on hover */
+.about-our-value ul li:hover {
+  /* box-shadow: 0px 0px 15px #ff9900; 
+  background-color: #ff9900;  */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+@media (max-width: 768px) {
+  .about-our-value ul {
+    grid-template-columns: repeat(1, 1fr); /* Change to a single column on mobile */
+    margin-left: 0; /* Remove left margin */
+    /* width: 100%; */
+  }
+
+  .about-our-value ul li {
+    margin-left: 0; /* Remove any additional margin on mobile */
+  }
 }
 
 .about-our-history {
