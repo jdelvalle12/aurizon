@@ -1308,7 +1308,7 @@ body {
 
 .about-our-story {
   font-size: 1rem;
-  margin-top: 5rem;
+  margin-top: 9rem;
   color: black;
   display: flex;
   justify-content: center;
@@ -1461,6 +1461,14 @@ body {
 
 .about-our-value p {
   text-align: center; /* Center the text */
+  color: black;
+}
+
+.value-icon {
+  width: 30%;
+  margin-left: 4rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-our-value ul {
@@ -1473,6 +1481,8 @@ body {
 }
 
 .about-our-value ul li {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background: rgba(255, 255, 255, 0.2); /* Glass effect background */
   backdrop-filter: blur(10px); /* Apply the blur effect */
@@ -1498,15 +1508,15 @@ body {
 
 /* Define different colors for each list item */
 .about-our-value ul li:nth-child(1):hover {
-  box-shadow: 0px 0px 15px #ff9900; 
+  box-shadow: 0px 0px 15px #ffa216; 
 }
 
 .about-our-value ul li:nth-child(2):hover {
-  box-shadow: 0px 0px 15px #00cc66;
+  box-shadow: 0px 0px 15px #17ff8b;
 }
 
 .about-our-value ul li:nth-child(3):hover {
-  box-shadow: 0px 0px 15px cyan;
+  box-shadow: 0px 0px 15px rgb(31, 255, 255);
 }
 
 .about-our-value ul li:nth-child(4):hover {
@@ -1518,7 +1528,7 @@ body {
 }
 
 .about-our-value ul li:nth-child(6):hover {
-  box-shadow: 0px 0px 15px #0099cc; /* Blue */
+  box-shadow: 0px 0px 15px #11c3ff; /* Blue */
 }
 
 .about-our-value ul li:nth-child(7):hover {
@@ -1533,33 +1543,79 @@ body {
 
 /* Change the box shadow color on hover */
 .about-our-value ul li:hover {
-  /* box-shadow: 0px 0px 15px #ff9900; 
-  background-color: #ff9900;  */
+  color: aqua; 
+  background-color: black;  
   cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 @media (max-width: 768px) {
+  .about-our-value {
+    align-items: center; /* Center the container vertically */
+    text-align: center; /* Center the text within each card */
+  }
+
+  .about-our-value p {
+    margin-right: 1.3rem;
+  }
+
   .about-our-value ul {
     grid-template-columns: repeat(1, 1fr); /* Change to a single column on mobile */
     margin-left: 0; /* Remove left margin */
+    padding-left: 6rem;
     /* width: 100%; */
+    /* height: 50%; */
+    /* max-width: 1000px; */
   }
 
   .about-our-value ul li {
     margin-left: 0; /* Remove any additional margin on mobile */
+    /* width: 100%; */
+  }
+
+  .value-icon {
+    width: 30%;
+    margin-left: 2.5rem;
   }
 }
 
 .about-our-history {
-
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .about-our-history h2 {
-
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
 }
 
-.about-our-history p {
-
+.history-description {
+  color: black;
+  font-size: 1.1rem;
+  width: 60%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+  margin-top: 3rem;
+  margin-left: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .about-the-team {

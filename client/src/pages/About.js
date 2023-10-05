@@ -3,6 +3,14 @@ import Innovation from '../images/innovation.jpg';
 import Passion from '../images/passion.jpg';
 import Me from '../images/Me.jpg';
 import Culture from '../images/our-culture-video.mp4';
+import BalanceIcon from '../images/work-life-balance.png';
+import TransparencyIcon from '../images/transparency.png';
+import DiversityIcon from '../images/diversity.png';
+import PositivityIcon from '../images/positivity.png';
+import TeamworkIcon from '../images/teamwork.png';
+import GrowthIcon from '../images/personal-growth.png';
+import InnovationIcon from '../images/innovation-value.png';
+import AutonomyIcon from '../images/autonomy.png';
 import '../index.css';
 import '../App.css';
 
@@ -68,50 +76,58 @@ const About = () => {
             </div>
         </div>
         <div className='about-our-value'>
+            
           <h2>Our Value</h2>
             <p>
               At Aurizon, our culture is guided by core values:
             </p>
-            <ul>
-              <li>Work-Life Balance: Promoting harmony between professional 
+            <ul>              
+              <li><img className='value-icon' src={BalanceIcon} alt='Icon Description' />
+              <strong>Work-Life Balance</strong> Promoting harmony between professional 
                   and personal life for a fulfilling journey.
+              </li>              
+              <li><img className='value-icon' src={TransparencyIcon} alt='Icon Description' />
+              <strong>Transparency</strong> Open and honest communication builds trust.</li>              
+              <li><img className='value-icon' src={DiversityIcon} alt='Icon Description' />
+              <strong>Diversity</strong> We embrace diverse backgrounds and perspectives.</li>              
+              <li><img className='value-icon' src={PositivityIcon} alt='Icon Description' />
+              <strong>Positivity</strong> We approach challenges with optimism and creativity.</li>              
+              <li><img className='value-icon' src={TeamworkIcon} alt='Icon Description' />
+              <strong>Teamwork</strong> Collaboration drives our success. We foster an environment 
+                    where every team member's voice is heard, ideas are valued, and 
+                    innovation flourishes.
               </li>
-              <li>Transparency: Open and honest communication builds trust.</li>
-              <li>Diversity: We embrace diverse backgrounds and perspectives.</li>
-              <li>Positivity: We approach challenges with optimism and creativity.</li>
-              <li>Teamwork: Collaboration drives our success.</li>
-              <li>Personal Growth: We believe in fostering an environment where each 
+              <li><img className='value-icon' src={GrowthIcon} alt='Icon Description' />
+              <strong>Personal Growth</strong> We believe in fostering an environment where each 
                   team member has the opportunity to learn, grow, and reach their 
                   full potential.
-              </li>
-              <li>Innovation: Cultivating creative brilliance to pioneer innovative 
+              </li>              
+              <li><img className='value-icon' src={InnovationIcon} alt='Icon Description' />
+              <strong>Innovation</strong> Cultivating creative brilliance to pioneer innovative 
                   solutions and drive industry progress
-              </li>
-              <li>Autonomy: we empower our team to innovate and take ownership.</li>
+              </li>              
+              <li><img className='value-icon' src={AutonomyIcon} alt='Icon Description' />
+              <strong>Autonomy</strong> we empower our team to innovate and take ownership.</li>
             </ul>
         </div>
         <div className='about-our-history'>
-            <h2>The rest is history...</h2>
+            <div className='history-description'>
+             <h2>The rest is history...</h2>
               <p>
-                The Founder and CEO Jose Del Valle always wondered what he wanted to do as a career. 
-                After attending the University of Central Florida to pursue a degree in Criminal Justice 
-                and work in Law enforcement, things didn’t go as planned and it wasn’t meant to be, however he 
-                knew he likes to build something from the ground up and wanted to start a business of some kind. 
-                A few years later in 2021, he realized he had an interest in Software Engineering, but to go back
-                to school to pursue another degree was pricey, so instead he learned how code on his own for only 
+                ...the Founder and CEO Jose Del Valle originally did not think about starting a business, 
+                much less get into the tech industry. He attended the University of Central Florida to pursue 
+                a degree in Criminal Justice and work in Law enforcement, things didn’t go as planned and 
+                it wasn’t meant to be, however he knew he likes to build something from the ground up and 
+                wanted to start a business of some kind. He eventually realized he had an interest in Software Engineering,
+                but going back to school to pursue another degree was pricey, so instead he learned how code on his own for only 
                 a fraction of the price. Months later, he decided to enter a 6 month bootcamp to streamline the 
-                process of learning to code and didn’t know what to expect in the class, but met incredible people, 
-                worked alongside with them on different projects and also did one on his own. After a grueling 
-                6 month bootcamp, he took a bit of a break, but went right back at it and applied for 
-                several jobs to enter the industry, however, after more than 50 job applied, half of them 
-                rejecting him the opportunity for even an interview, and on July 2023, he decided to start 
-                a company and founded Aurizon, which is a name he found by accident, but realized it made 
-                sense, a new beginning with endless possibilities, and with that in mind, he had many ideas 
-                to develop web apps or software for businesses and individuals alike. However, he quickly 
-                realized it became even more personal for him when he started the company, given how many 
-                posts he read from many people wanting to get into the industry, but not given the chance 
-                to get an interview and so he started the company to give talented developers a chance 
-                to utilize their skills and make a difference. 
+                process of learning to code and met incredible people, worked alongside with them on different 
+                projects and also did one on his own. After a grueling 6 month bootcamp, he applied for several jobs 
+                to enter the industry, however, after more than 50 jobs applied, with many rejecting him the opportunity 
+                for even an interview, he was motivated and decided to start a company and founded Aurizon, which is a name 
+                he found by accident, but realized it made sense, a new beginning with endless possibilities, to give other developers
+                a chance to utilize their skills and a make a difference, and with that in mind, he had many ideas to develop web apps 
+                and/or software for businesses and individuals alike. 
               </p>
               <p>
                 Today, he continues to work hard, with being an entrepreneur 
@@ -119,6 +135,7 @@ const About = () => {
                 to grow the company and make his vision become a reality, just like he would 
                 do for his customers. 
               </p>
+            </div>
         </div>
         <div className='about-the-team'>
           <h2>The Team</h2>
