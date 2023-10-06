@@ -116,32 +116,31 @@ const About = () => {
               <p>
                 ...the Founder and CEO Jose Del Valle originally did not think about starting a business, 
                 much less get into the tech industry. He attended the University of Central Florida to pursue 
-                a degree in Criminal Justice and work in Law enforcement, things didn’t go as planned and 
-                it wasn’t meant to be, however he knew he likes to build something from the ground up and 
-                wanted to start a business of some kind. He eventually realized he had an interest in Software Engineering,
-                but going back to school to pursue another degree was pricey, so instead he learned how code on his own for only 
+                a degree in Criminal Justice and work in Law enforcement, but things didn’t go as planned and 
+                it wasn’t meant to be, however he knew he liked to take on projects and build something from the ground up. 
+                He eventually realized he had an interest in Software Engineering, but going back to school to 
+                pursue another degree was pricey, so instead, he learned how code on his own for only 
                 a fraction of the price. Months later, he decided to enter a 6 month bootcamp to streamline the 
                 process of learning to code and met incredible people, worked alongside with them on different 
                 projects and also did one on his own. After a grueling 6 month bootcamp, he applied for several jobs 
                 to enter the industry, however, after more than 50 jobs applied, with many rejecting him the opportunity 
-                for even an interview, he was motivated and decided to start a company and founded Aurizon, which is a name 
-                he found by accident, but realized it made sense, a new beginning with endless possibilities, to give other developers
-                a chance to utilize their skills and a make a difference, and with that in mind, he had many ideas to develop web apps 
-                and/or software for businesses and individuals alike. 
-              </p>
-              <p>
-                Today, he continues to work hard, with being an entrepreneur 
-                and starting a company, as well being a leader is no easy task, but he is still determined 
-                to grow the company and make his vision become a reality, just like he would 
-                do for his customers. 
+                for even an interview, he was motivated and decided to start a company with little money and founded Aurizon, 
+                which is a name he found by accident, but realized it made sense, a new beginning with endless possibilities, 
+                to provide other developers with opportunities to hone their skills, achieve personal growth and a make a 
+                meaningful impact. Today, he is determined more than ever as a new entrepreneur, to grow the company and make 
+                his vision become a reality, just like he would do for his customers and others, make their vision a reality.
               </p>
             </div>
         </div>
         <div className='about-the-team'>
           <h2>The Team</h2>
             <p>Meet the team that make it all happen...</p>
-          <img src={Me} alt="Jose" className="profile-picture" />
-            <h5>Founder and CEO</h5>
+           <h5>
+        <div className="profile-picture-container">
+        <img src={Me} alt="Jose" className="profile-picture" />
+        </div>
+            Founder and CEO
+            </h5>
         </div>
         <div className='about-facts-figures'>
           <h2>Facts & Figures</h2>
