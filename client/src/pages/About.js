@@ -11,6 +11,9 @@ import TeamworkIcon from '../images/teamwork.png';
 import GrowthIcon from '../images/personal-growth.png';
 import InnovationIcon from '../images/innovation-value.png';
 import AutonomyIcon from '../images/autonomy.png';
+
+import Team from '../components/Team.js';
+
 import '../index.css';
 import '../App.css';
 
@@ -142,6 +145,7 @@ const About = () => {
             Founder and CEO
             </h5>
         </div>
+        {/* <Team/> */}
         <div className='about-facts-figures'>
           <h2>Facts & Figures</h2>
         </div>
