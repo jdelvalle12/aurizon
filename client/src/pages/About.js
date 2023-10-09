@@ -1,7 +1,7 @@
 import React, {useEffect}from 'react';
 import Innovation from '../images/innovation.jpg';
 import Passion from '../images/passion.jpg';
-import Me from '../images/Me.jpg';
+// import Me from '../images/Me.jpg';
 import Culture from '../images/our-culture-video.mp4';
 import BalanceIcon from '../images/work-life-balance.png';
 import TransparencyIcon from '../images/transparency.png';
@@ -135,7 +135,7 @@ const About = () => {
               </p>
             </div>
         </div>
-        <div className='about-the-team'>
+        {/* <div className='about-the-team'>
           <h2>The Team</h2>
             <p>Meet the team that make it all happen...</p>
            <h5>
@@ -144,8 +144,8 @@ const About = () => {
         </div>
             Founder and CEO
             </h5>
-        </div>
-        {/* <Team/> */}
+        </div> */}
+        <Team/>
         <div className='about-facts-figures'>
           <h2>Facts & Figures</h2>
         </div>

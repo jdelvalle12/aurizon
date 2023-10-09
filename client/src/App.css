@@ -1635,23 +1635,32 @@ body {
   color: aliceblue;
 }
 
-.about-the-team h5 {
+.team-member p {
   color: aqua;
-  margin-left: 2rem;
-  text-align: left; /* Center the text */
+  display: block;
+  width: 50%;
+  margin-left: 4rem;
 }
 
-.profile-picture-container {
-  text-align: left; /* Center the image and text horizontally */
-}
-
-.about-the-team .profile-picture {
+.team-member {
+  text-align: center; /* Center the image and text horizontally */
   width: 15%;
   height: auto;
   border-radius: 2%;
-  /* margin-left: 1rem; Remove this margin to center the image */
-  margin-top: 1rem; /* Add margin to separate the image and text vertically */
-  /* Add any other styling for the profile picture here */
+  margin-left: 1rem;
+  margin-top: 1rem;   
+}
+
+.team-member-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0; /* Remove any default padding */
+  outline: none; /* Remove the button outline on focus if needed */
+}
+
+.team-member:hover {
+  cursor: pointer;
 }
 
 /* Style for the entire modal container */

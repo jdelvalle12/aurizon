@@ -7,7 +7,7 @@ function AboutTheTeam() {
 
   const teamMembers = [
     {
-      name: 'Founder and CEO',
+      name: 'Jose Del Valle Founder and CEO',
       photoSrc: Me,
       description: 'Founder and CEO description goes here.',
     },
@@ -15,11 +15,13 @@ function AboutTheTeam() {
   ];
 
   const openModal = (teamMember) => {
+    console.log('Open modal');
     setSelectedTeamMember(teamMember);
     setModalVisible(true);
   };
 
   const closeModal = () => {
+    console.log('Closing modal');
     setSelectedTeamMember(null);
     setModalVisible(false);
   };
@@ -32,11 +34,15 @@ function AboutTheTeam() {
       {/* Render team members */}
       {teamMembers.map((member, index) => (
         <div key={index} className="team-member">
-          <img
+          <button
+            className='team-member-button' 
+            onClick={() => openModal(member)}
+          >
+            <img
             src={member.photoSrc}
             alt={member.name}
-            onClick={() => openModal(member)}
-          />
+            />
+          </button>
           <p>{member.name}</p>
         </div>
       ))}
