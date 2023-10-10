@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import Me from '../images/Me.jpg';
+import {Modal} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import '../index.css';
+import '../App.css';
 
 function AboutTheTeam() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -15,13 +20,11 @@ function AboutTheTeam() {
   ];
 
   const openModal = (teamMember) => {
-    console.log('Open modal');
     setSelectedTeamMember(teamMember);
     setModalVisible(true);
   };
 
   const closeModal = () => {
-    console.log('Closing modal');
     setSelectedTeamMember(null);
     setModalVisible(false);
   };
@@ -39,8 +42,8 @@ function AboutTheTeam() {
             onClick={() => openModal(member)}
           >
             <img
-            src={member.photoSrc}
-            alt={member.name}
+              src={member.photoSrc}
+              alt={member.name}
             />
           </button>
           <p>{member.name}</p>
@@ -48,18 +51,19 @@ function AboutTheTeam() {
       ))}
 
       {/* Modal */}
-      {modalVisible && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={closeModal}>
-              &times;
-            </span>
-            <h2>{selectedTeamMember.name}</h2>
-            <img src={selectedTeamMember.photoSrc} alt={selectedTeamMember.name} />
-            <p>{selectedTeamMember.description}</p>
-          </div>
-        </div>
-      )}
+      <Modal show={modalVisible} onHide={closeModal}>
+        {selectedTeamMember && ( // Check if selectedTeamMember is not null
+      <>
+      <Modal.Header closeButton>
+        <Modal.Title>{selectedTeamMember.name}</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <img src={selectedTeamMember.photoSrc} alt={selectedTeamMember.name} />
+        <p>{selectedTeamMember.description}</p>
+      </Modal.Body>
+    </>
+  )}
+</Modal>
     </div>
   );
 }
