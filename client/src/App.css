@@ -1322,7 +1322,7 @@ body {
   /* display: flex; */
   width: 35%;
   height: auto;
-  margin-top: 3rem;
+  margin-top: 5rem;
   /* margin-left: 2rem; */
   padding: 2.5rem;
 }
@@ -1348,7 +1348,7 @@ body {
   align-items: center;
   text-align: left;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-left: 2rem;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.2); 
@@ -1629,6 +1629,7 @@ body {
 .about-the-team h2 {
   color: aqua;
   font-size: 2rem;
+  padding-top: 2rem;
 }
 
 .about-the-team p {
@@ -1749,27 +1750,96 @@ body {
 }
 
 .about-facts-figures {
-  background-color: #007bff;
+  color: #007bff;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .about-facts-figures h2 {
+  padding-top: 1rem;
+  color: black;
+  text-align: center;
+}
 
+.about-facts-figures p {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 13rem;
+}
+
+.facts-figures-icons {
+  width: 30%;
+  margin-left: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-facts-figures ul {
+  list-style: none;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 75%;
+  margin-left: 1rem;
+}
+
+.about-facts-figures ul li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 10px 0;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .about-facts-figures {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-facts-figures p {
+    margin-left: 2rem;
+  }
+
+  .about-facts-figures ul {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0;
+    padding-left: 6rem;
+  }
 }
 
 .about-partners {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  color: black;
-  margin-left: 7rem;
+  font-size: 2rem;  
+  color: aliceblue;
+  background-color: #007bff;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .about-partners h2 {
-
+  color: aqua;
 }
 
 .about-partners p {
-
+  font-size: 1.2rem;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 13rem;
 }
 
 .about-goals-vision {

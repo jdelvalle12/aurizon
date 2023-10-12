@@ -1,7 +1,6 @@
 import React, {useEffect}from 'react';
 import Innovation from '../images/innovation.jpg';
 import Passion from '../images/passion.jpg';
-// import Me from '../images/Me.jpg';
 import Culture from '../images/our-culture-video.mp4';
 import BalanceIcon from '../images/work-life-balance.png';
 import TransparencyIcon from '../images/transparency.png';
@@ -148,6 +147,25 @@ const About = () => {
         <Team/>
         <div className='about-facts-figures'>
           <h2>Facts & Figures</h2>
+          <p>
+            As a young and dynamic company, we're committed to growth and excellence. 
+            While our journey has just begun, we're excited about the path ahead. 
+            Here are some key facts and figures about us:
+          </p>
+          <ul>
+            <li>
+              <strong>Founded:</strong> [Year]
+            </li>
+            <li>
+              <strong>Team Members:</strong> [Number]
+            </li>
+            <li>
+              <strong>Clients Served:</strong> [Number]
+            </li>
+            <li>
+              <strong>Projects Completed:</strong> [Number]
+            </li>
+          </ul>
         </div>
         <div className='about-partners'>
           <h2>Our Partners</h2>
