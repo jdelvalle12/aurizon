@@ -29,6 +29,7 @@ const Footer = () => {
             <li><Link to='/technologies/api-development' >API Development</Link></li>
             <li>Mobile App Development</li>
             <li><Link to='/technologies/business-solutions' >Business Solutions</Link></li>
+            <li>Network Services</li>
           </ul>
       </div>
       <div className='footer-column'>
