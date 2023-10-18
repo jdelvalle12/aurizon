@@ -109,7 +109,7 @@ const About = () => {
                   solutions and drive industry progress
               </li>              
               <li><img className='value-icon' src={AutonomyIcon} alt='Icon Description' />
-              <strong>Autonomy</strong> we empower our team to innovate and take ownership.</li>
+              <strong>Autonomy</strong> We empower our team to innovate and take ownership.</li>
             </ul>
         </div>
         <div className='about-our-history'>
@@ -154,16 +154,16 @@ const About = () => {
           </p>
           <ul>
             <li>
-              <strong>Founded:</strong> [Year]
+              <strong>Founded:</strong> [2023]
             </li>
             <li>
-              <strong>Team Members:</strong> [Number]
+              <strong>Team Members:</strong> [1]
             </li>
             <li>
-              <strong>Clients Served:</strong> [Number]
+              <strong>Clients Served:</strong> [1]
             </li>
             <li>
-              <strong>Projects Completed:</strong> [Number]
+              <strong>Projects Completed:</strong> [1]
             </li>
           </ul>
         </div>
@@ -179,6 +179,8 @@ const About = () => {
           <h2>Achievements & Awards</h2>
         </div>
         <div className='about-goals-vision'>
+          <div className='vision'>
+
           <h2>Our Goals & Vision</h2>
             <p>
               Our Vision is to be a leading tech company as we embark on a journey of 
@@ -203,6 +205,7 @@ const About = () => {
             <p>
               Join us on this exciting journey, and together, let's shape a future that goes beyond the horizon.
             </p>
+          </div>
         </div>
         <div className='about-community'>
           <h2>Community Involvement</h2>
