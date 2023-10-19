@@ -10,6 +10,10 @@ import TeamworkIcon from '../images/teamwork.png';
 import GrowthIcon from '../images/personal-growth.png';
 import InnovationIcon from '../images/innovation-value.png';
 import AutonomyIcon from '../images/autonomy.png';
+import CalenderIcon from '../images/calendar.png';
+import TeamIcon from '../images/team-icon.png';
+import HandshakeIcon from '../images/handshake.png';
+import ConstructionIcon from '../images/construction.png';
 
 import Team from '../components/Team.js';
 
@@ -153,17 +157,17 @@ const About = () => {
             Here are some key facts and figures about us:
           </p>
           <ul>
-            <li>
-              <strong>Founded:</strong> [2023]
+            <li><img className='facts-icon' src={CalenderIcon} alt='Fact' />
+              <strong>Company Founded in</strong> 2023
             </li>
-            <li>
-              <strong>Team Members:</strong> [1]
+            <li><img className='facts-icon' src={TeamIcon} alt='Fact' />
+              <strong>The number of team members</strong> 1
             </li>
-            <li>
-              <strong>Clients Served:</strong> [1]
+            <li><img className='facts-icon' src={HandshakeIcon} alt='Fact' />
+              <strong>Number of Clients Served</strong> 1
             </li>
-            <li>
-              <strong>Projects Completed:</strong> [1]
+            <li><img className='facts-icon' src={ConstructionIcon} alt='Fact' />
+              <strong>Projects in Progress</strong> 3
             </li>
           </ul>
         </div>
@@ -175,9 +179,9 @@ const About = () => {
                to new opportunities.
             </p>
         </div>
-        <div className='about-awards'>
+        {/* <div className='about-awards'>
           <h2>Achievements & Awards</h2>
-        </div>
+        </div> */}
         <div className='about-goals-vision'>
           <div className='vision'>
 
@@ -207,9 +211,9 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className='about-community'>
+        {/* <div className='about-community'>
           <h2>Community Involvement</h2>
-        </div>
+        </div> */}
         <div className='about-timeline'>
           <h2>Travel In time...</h2>
         </div>

@@ -1250,9 +1250,18 @@ body {
     height: 100%;
   }
 
+  .content-container h1 {
+    margin-right: 2.5rem;
+  }
+
+  .content-container h2 {
+    margin-right: 2.5rem;
+  }
+
   .content-container p {
     /* color: initial; */
     color:#007bff;
+    margin-right: 2.5rem;
   }
 }
 
@@ -1364,8 +1373,9 @@ body {
   }
 
   .innovation {
-    width: 100%; /* Adjust image width for mobile */
-    margin: 1rem;    
+    width: 90%; /* Adjust image width for mobile */
+    justify-content: center;
+    margin-right: 15rem;    
   }
 
   .story-description {
@@ -1434,9 +1444,9 @@ body {
   }
 
   .passion {
-    width: 100%; /* Adjust image width for mobile */
+    width: 90%; /* Adjust image width for mobile */
     margin-top: 1rem;
-    margin-left: 1.5rem;
+    margin-right: 13rem;
   }
 
   .mission-description {
@@ -1557,8 +1567,14 @@ body {
     text-align: center; /* Center the text within each card */
   }
 
+  .about-our-value h2 {
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+
   .about-our-value p {
-    margin-right: 1.3rem;
+    width: 80%;
+    margin-right: 2.5rem;
   }
 
   .about-our-value ul {
@@ -1629,7 +1645,7 @@ body {
   }
 
   .history-description {
-    margin: 4rem 0;
+    margin-right: 5rem;
   }
 }
 
@@ -1752,10 +1768,19 @@ body {
     text-align: center;
   }
 
-  .team-member {
-    width: 60%;
+  .about-the-team h2 {
+    margin-right: 3rem;
   }
 
+  .about-the-team p {
+    margin-right: 3rem;
+  }
+  
+  .team-member {
+    width: 70%;
+    margin-right: 3.5rem;
+  }
+  
   .team-member p {
     text-align: center;
     align-items: center;
@@ -1787,9 +1812,9 @@ body {
   margin-left: 13rem;
 }
 
-.facts-figures-icons {
-  width: 30%;
-  margin-left: 4rem;
+.facts-icon {
+  width: 50%;
+  margin-left: 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -1800,7 +1825,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 75%;
-  /* margin-left: 1rem; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-left: 12rem;
 }
 
 .about-facts-figures ul li {
@@ -1823,14 +1850,23 @@ body {
     align-items: center;
     text-align: center;
   }
+
+  .facts-icon {
+    margin-left: 1rem;
+  }
+
+  .about-facts-figures h2 {
+    font-size: 2rem;
+    margin-right: 3rem;
+  }
   
   .about-facts-figures p {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   .about-facts-figures ul {
     grid-template-columns: repeat(1, 1fr);
-    /* margin-left: 0; */
+    margin-left: 1rem;
     /* padding-left: 1rem; */
   }
 }
@@ -1869,7 +1905,7 @@ body {
   .about-partners h2 {
     align-items: center;
     text-align: center;
-    margin-left: 1rem;
+    margin-right: 2.5rem;
   }
 
   .about-partners p {
@@ -1897,8 +1933,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: left;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  margin: 3rem;
+  /* margin-bottom: 2rem; */
   padding: 1rem;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
@@ -1913,8 +1949,14 @@ body {
     text-align: center;
   }
 
+  /* .about-goals-vision h2 {
+    text-align: center;
+    margin-left: 1rem;
+  } */
+
   .vision {
     width: 80%;
+    margin-left: 1rem;
   }
 
 }
