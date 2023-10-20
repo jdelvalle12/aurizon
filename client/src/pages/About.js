@@ -1,7 +1,10 @@
 import React, {useEffect}from 'react';
 import Innovation from '../images/innovation.jpg';
 import Passion from '../images/passion.jpg';
+import Vision from '../images/vision.jpg';
+
 import Culture from '../images/our-culture-video.mp4';
+
 import BalanceIcon from '../images/work-life-balance.png';
 import TransparencyIcon from '../images/transparency.png';
 import DiversityIcon from '../images/diversity.png';
@@ -184,8 +187,7 @@ const About = () => {
         </div> */}
         <div className='about-goals-vision'>
           <div className='vision'>
-
-          <h2>Our Goals & Vision</h2>
+            <h2>Our Goals & Vision</h2>
             <p>
               Our Vision is to be a leading tech company as we embark on a journey of 
               innovation and transformation, illuminating the path to a better tomorrow. 
@@ -210,6 +212,7 @@ const About = () => {
               Join us on this exciting journey, and together, let's shape a future that goes beyond the horizon.
             </p>
           </div>
+          <img src={Vision} alt='vision' className='horizon-vision'></img>
         </div>
         {/* <div className='about-community'>
           <h2>Community Involvement</h2>
