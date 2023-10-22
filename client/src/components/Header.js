@@ -63,6 +63,12 @@ const Header = () => {
               <li>
                 <Link to="/technologies/business-solutions" className="flex px-4 py-2 hover:bg-gray-100">Business Solutions</Link>
               </li>      
+              <li>
+                <Link to="/technologies/network-services" className="flex px-4 py-2 hover:bg-gray-100">Network Services</Link>
+              </li> 
+              <li>
+                <Link to="/technologies/security-solutions" className="flex px-4 py-2 hover:bg-gray-100">Security Solutions</Link>
+              </li> 
                 <h2>Products</h2>
                 <li>
                   <Link

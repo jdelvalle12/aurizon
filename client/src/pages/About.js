@@ -19,6 +19,7 @@ import HandshakeIcon from '../images/handshake.png';
 import ConstructionIcon from '../images/construction.png';
 
 import Team from '../components/Team.js';
+import Timeline from '../components/Timeline.js';
 
 import '../index.css';
 import '../App.css';
@@ -219,6 +220,13 @@ const About = () => {
         </div> */}
         <div className='about-timeline'>
           <h2>Travel In time...</h2>
+            {/* <ul>
+              <li>
+                <strong>July 2023</strong>
+                  <p></p>
+              </li>
+            </ul> */}
+            <Timeline/>
         </div>
         <div className='faq'>
           <h3>FAQs</h3>

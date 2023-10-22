@@ -30,6 +30,7 @@ const Footer = () => {
             <li>Mobile App Development</li>
             <li><Link to='/technologies/business-solutions' >Business Solutions</Link></li>
             <li>Network Services</li>
+            <li>Security Solutions</li>
           </ul>
       </div>
       <div className='footer-column'>

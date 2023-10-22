@@ -1,23 +1,36 @@
 import React from 'react';
 
-function Timeline() {
+import '../index.css';
+import '../App.css';
+
+const Timeline = () => {
+  const timelineData = [
+    {
+      year: 'July 2023',
+      content: 'Jose founded Aurizon and is officially registered as a business name.',
+    },
+    {
+      year: 'November 2023',
+      content: 'Aurizon is fully launched and operations begin.',
+    },
+  ];
+
   return (
     <div className="timeline">
-      <div className="timeline-item">
-        <div className="timeline-content">
-          <h3>Year 1</h3>
-          <p>Event description for Year 1.</p>
+      {timelineData.map((event, index) => (
+        <div key={index} className='timeline-item'>
+          <div className='timeline-content'>
+            <h3>{event.year}</h3>
+            <p>{event.content}</p>
+          </div>
         </div>
-      </div>
-      <div className="timeline-item">
-        <div className="timeline-content">
-          <h3>Year 2</h3>
-          <p>Event description for Year 2.</p>
-        </div>
-      </div>
-      {/* Add more timeline items as needed */}
+      ))}
     </div>
   );
-}
+};
 
 export default Timeline;
+
+
+
+
