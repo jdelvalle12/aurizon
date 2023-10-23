@@ -1975,17 +1975,17 @@ body {
   }
 }
 
-.about-community {
+/* .about-community {
   
 }
 
 .about-community h2 {
 
-}
+} */
 
 .about-timeline {
   position: relative;
-  padding: 20px;
+  padding: 40px;
   background: linear-gradient(to bottom, aliceblue, rgb(148, 208, 228));
 }
 
@@ -1997,23 +1997,35 @@ body {
 .timeline {
   display: flex;
   flex-direction: row;
-  /* overflow-x: auto;  */
   /* white-space: nowrap;  */
   height: 300px; 
+  margin-top: 2rem;
+  overflow-y: auto; 
 }
 
 
 .timeline-item {
   position: relative;
-  margin-right: 20px;
+  margin-right: 50px;
   padding: 4rem;
   /* border: 2px solid #333; */
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  width: 300px;
+  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  transition: box-shadow 0.3s ease, background-color 0.3s;
   /* height: 100%; */
+}
+
+.timeline-branch {
+  position: absolute;
+  width: 10px; /* Adjust this for the desired line thickness */
+  background-color: #007bff; /* Line color */
+  left: 50%; /* Position the line in the center */
+  /* top: 0;
+  bottom: 0; */
+  /* transform: translateX(-50%); */
 }
 
 
@@ -2027,7 +2039,7 @@ body {
 .timeline-content p {
   font-size: 1.5rem;
   text-align: left;
-  width: 200px;
+  width: 400px;
 }
 
 @media (max-width: 768px) {

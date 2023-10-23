@@ -19,6 +19,7 @@ const Timeline = () => {
     <div className="timeline">
       {timelineData.map((event, index) => (
         <div key={index} className='timeline-item'>
+          <div className='timeline-branch'></div>
           <div className='timeline-content'>
             <h3>{event.year}</h3>
             <p>{event.content}</p>
