@@ -20,6 +20,7 @@ import ConstructionIcon from '../images/construction.png';
 
 import Team from '../components/Team.js';
 import Timeline from '../components/Timeline.js';
+import FAQ from '../components/FAQ.js';
 
 import '../index.css';
 import '../App.css';
@@ -142,16 +143,6 @@ const About = () => {
               </p>
             </div>
         </div>
-        {/* <div className='about-the-team'>
-          <h2>The Team</h2>
-            <p>Meet the team that make it all happen...</p>
-           <h5>
-        <div className="profile-picture-container">
-        <img src={Me} alt="Jose" className="profile-picture" />
-        </div>
-            Founder and CEO
-            </h5>
-        </div> */}
         <Team/>
         <div className='about-facts-figures'>
           <h2>Facts & Figures</h2>
@@ -220,17 +211,9 @@ const About = () => {
         </div> */}
         <div className='about-timeline'>
           <h2>Travel In time...</h2>
-            {/* <ul>
-              <li>
-                <strong>July 2023</strong>
-                  <p></p>
-              </li>
-            </ul> */}
             <Timeline/>
         </div>
-        <div className='faq'>
-          <h3>FAQs</h3>
-        </div>
+        <FAQ/>
     </div>
   );
 };
