@@ -48,23 +48,27 @@ const FAQ = () => {
         },
         {
             question: 'What industries have you worked with in the past?',
-            answer: '',
+            answer: 'Up to this point, our journey has taken us through the realms of travel, real estate, food & beverage, entertainment, marketing and sports. But we are not content to stop there. Our commitment to innovation drives us to explore opportunities in all industries. We are on a mission to provide solutions, develop products, and offer our services to businesses across the spectrum, no matter the field. At Aurizon, we thrive on the challenge of turning ideas into reality, regardless of the industry they come from.',
         },
         {
             question: 'Are there examples of previous work?',
-            answer: '',
+            answer: 'There are examples of our previous work. Click on the portfolio link and you will see a gallery of previous work that were done and even our own products as well. Keep checking back as we are constantlyy working on a product.',
         },
         {
             question: 'What is your approach to data privacy and security?',
-            answer: '',
+            answer: 'At Aurizon, we take data privacy and security very seriously. We adhere to industry best practices and continually update our security measures to protect your data. Our approach includes robust data encryption, regular security audits, and strict access controls. We are committed to compliance with data protection regulations, ensuring that your sensitive information is safeguarded. You can trust that your data is in safe hands when you partner with us.',
         },
         {
             question: 'What is your pricing structure for software development service?',
-            answer: '',
+            answer: 'How we price our services is based by the scope of the project, whether it is custome software and/or web development.',
         },
         {
             question: 'What support and maintenance services do you offer post-project completion?',
-            answer: '',
+            answer: 'Our relationship with clients extends far beyond project completion. We offer comprehensive support and maintenance services to ensure your solution continues to perform at its best. This includes regular updates, bug fixes, and technical support. We also provide tailored service level agreements (SLAs) to meet your specific needs. Our goal is to be your long-term technology partner, assisting you in your journey as your business evolves and grows.',
+        },
+        {
+            question: 'Will Aurizon offer other services other than web and software development?',
+            answer: 'There are plans offer different services that are being looked into. Subscribe to our newsletter to get updates.',
         },
     ];
 
