@@ -12,7 +12,7 @@ import Winery from '../images/Winery.jpg';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import '../styles/Projects.css';
+import '../styles/Portfolio.css';
 import '../App.css';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaJs } from 'react-icons/fa';
 import { DiMongodb, DiBootstrap } from 'react-icons/di';

@@ -1248,6 +1248,8 @@ body {
   .about-container {
     width: 100%;
     height: 100%;
+    align-items: center;
+    flex-direction: column;
   }
 
   .content-container h1 {
@@ -1262,11 +1264,12 @@ body {
     /* color: initial; */
     color:#007bff;
     margin-right: 2.5rem;
+    width: 40%;
   }
 
   .about-background-video {
     width: 20%;
-    /* height: 20%; */
+    height: 20%;
   }
 }
 
@@ -1378,14 +1381,16 @@ body {
   }
 
   .innovation {
-    width: 90%; /* Adjust image width for mobile */
+    width: 60%; /* Adjust image width for mobile */
     justify-content: center;
-    margin-right: 15rem;    
+    margin-left: 6rem;    
+    margin-top: 2rem;
   }
 
   .story-description {
-    width: 80%;
-    margin: 1rem;
+    width: 40%;
+    margin-left: 10rem;
+    margin-top: 2rem;
   }
 }
 
@@ -1449,14 +1454,14 @@ body {
   }
 
   .passion {
-    width: 90%; /* Adjust image width for mobile */
-    margin-top: 1rem;
-    margin-right: 13rem;
+    width: 60%; /* Adjust image width for mobile */
+    margin-top: 2rem;
+    margin-left: 6rem;
   }
 
   .mission-description {
-    width: 80%;
-    margin-left: 1rem;
+    width: 40%;
+    margin-left: 9.5rem;
   }
 }
 
@@ -1574,19 +1579,20 @@ body {
 
   .about-our-value h2 {
     font-size: 2rem;
+    margin-top: 2rem;
     margin-right: 2rem;
   }
 
   .about-our-value p {
-    width: 80%;
-    margin-right: 2.5rem;
+    width: 40%;
+    margin-right: 3rem;
   }
 
   .about-our-value ul {
     grid-template-columns: repeat(1, 1fr); /* Change to a single column on mobile */
-    margin-left: 0; /* Remove left margin */
-    padding-left: 6rem;
-    /* width: 100%; */
+    margin-left: 3rem; /* Remove left margin */
+    padding-left: 5rem;
+    width: 70%;
     /* height: 50%; */
     /* max-width: 1000px; */
   }
@@ -1598,7 +1604,7 @@ body {
 
   .value-icon {
     width: 30%;
-    margin-left: 2.5rem;
+    margin-left: 3rem;
   }
 }
 
@@ -1651,6 +1657,7 @@ body {
 
   .history-description {
     margin-right: 5rem;
+    width: 35%;
   }
 }
 
@@ -1780,16 +1787,19 @@ body {
 
   .about-the-team p {
     margin-right: 3rem;
+    width: 40%;
   }
   
   .team-member {
-    width: 70%;
-    margin-right: 3.5rem;
+    width: 30%;
+    margin-right: 4rem;
   }
   
   .team-member p {
     text-align: center;
     align-items: center;
+    width: 70%;
+    margin-left: 2rem;
   }
 }
 
@@ -1867,13 +1877,15 @@ body {
   }
   
   .about-facts-figures p {
-    margin-left: 1rem;
+    margin-left: 9rem;
+    width: 40%;
   }
 
   .about-facts-figures ul {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 1rem;
+    margin-left: 8rem;
     /* padding-left: 1rem; */
+    width: 50%;
   }
 }
 
@@ -1917,7 +1929,8 @@ body {
   .about-partners p {
     align-items: center;
     text-align: center;
-    margin-left: 1rem;
+    margin-left: 10rem;
+    width: 40%;
   }
 }
 
@@ -1971,11 +1984,11 @@ body {
   } */
   
   .vision {
-    width: 80%;
-    margin-left: 1rem;
+    width: 35%;
+    margin-left: 0.5rem;
   }
   .horizon-vision {
-    width: 90%;
+    width: 40%;
     margin-top: 1rem;
     margin-right: 7.5rem;
   }
@@ -2068,18 +2081,23 @@ body {
   }
 
   .timeline-item {
-    width: 100%;
+    width: 90%;
+    height: auto;
     margin-top: 1rem;
+    margin-left: 4.5rem;
   }
 
   .timeline-content h3 {
     font-size: 1.5rem;
     padding: 1rem;
+    width: 100%;
+    margin-right: 3.5rem;
   }
 
   .timeline-content p {
     font-size: 1.5rem;
-    padding: 1rem;
+    /* padding: 1rem; */
+    width: 100%;
   }
 
 }
@@ -2137,11 +2155,16 @@ body {
 
 @media (max-width: 768px) {
   .faq-section {
-    width: 80%;
+    width: 40%;
     /* height: 50%; */
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 7.5rem;
+  }
+
+  .faq-section h3 {
+    margin-left: 5rem;
   }
 }
 
