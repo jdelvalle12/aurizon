@@ -26,7 +26,7 @@ const SubscribeForm = () => {
       <div className="subscribe-form">
         <input
           type="email"
-          placeholder="Enter email to subscribe and receive tech updates and news"
+          placeholder="Enter email to subscribe and get updates"
           value={email}
           onChange={handleEmailChange}
         />
