@@ -23,7 +23,7 @@ const Footer = () => {
           </ul>
       </div>
       <div className='footer-column'>
-        <h4>Service</h4>
+        <h4>Solutions</h4>
           <ul>
             <li><Link to='/technologies/web-development' >Web Development</Link></li>
             <li><Link to='/technologies/api-development' >API Development</Link></li>
@@ -55,13 +55,14 @@ const Footer = () => {
       <div className='footer-column'>
         <h4>Company</h4>
           <ul>
+            <li><Link to='/technologies' >Our Technologies</Link></li>
             <li><Link to='/about' >Who we are</Link></li>
             <li><Link to='/careers' >Careers</Link></li>
             <li>Events</li>
             <li>Blogs</li>
             <li><Link to='/insider' >Insider</Link></li>
             <li><Link to='/contact' >Contact Us</Link></li>
-            <li>FAQ</li>
+            <li><Link to='/about#faq'>FAQ</Link></li>
           </ul>
       </div>
       <div className="footer-legal">

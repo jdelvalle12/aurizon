@@ -70,12 +70,12 @@ const Navbar = () => {
               {/* Dropdown menu content */}
               <ul>
                 <h3>Solutions</h3>
-                  <li><Link className='sub-nav-link' to="/technologies/web-development">Web Development</Link></li>
-                  <li><Link className='sub-nav-link' to="/technologies/api-development">API Development</Link></li>
-                  <li><Link className='sub-nav-link' to="/technologies/mobile-development">Mobile Development</Link></li>
-                  <li><Link className='sub-nav-link' to="/technologies/business-solutions">Business Solutions</Link></li>
-                  <li><Link className='sub-nav-link' to="/technologies/network-services">Network Services</Link></li>
-                  <li><Link className='sub-nav-link' to="/technologies/security-solutions">Security Solutions</Link></li>
+                  <li><Link className='sub-nav-link' to="/technologies#web-development">Web Development</Link></li>
+                  <li><Link className='sub-nav-link' to="/technologies#api-development">API Development</Link></li>
+                  <li><Link className='sub-nav-link' to="/technologies#mobile-development">Mobile Development</Link></li>
+                  <li><Link className='sub-nav-link' to="/technologies#business-solutions">Business Solutions</Link></li>
+                  <li><Link className='sub-nav-link' to="/technologies#network-services">Network Services</Link></li>
+                  <li><Link className='sub-nav-link' to="/technologies#security-solutions">Security Solutions</Link></li>
                 <h3>Products</h3>
                   <li><Link
                     // to="https://www.journeeztrip.com"
