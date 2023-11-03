@@ -2,6 +2,7 @@ import React, {useEffect}from 'react';
 import Innovation from '../images/innovation.jpg';
 import Passion from '../images/passion.jpg';
 import Vision from '../images/vision.jpg';
+import History from '../images/history-2.jpg';
 
 import Culture from '../images/our-culture-video.mp4';
 
@@ -122,6 +123,7 @@ const About = () => {
             </ul>
         </div>
         <div className='about-our-history'>
+            <img src={History} alt='history' className='history-pic'></img>
             <div className='history-description'>
              <h2>The rest is history...</h2>
               <p>

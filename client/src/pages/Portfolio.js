@@ -8,7 +8,9 @@ import Weather from '../images/weather-forecast.jpg';
 import Planner from '../images/day-planner.jpg';
 import Notepad from '../images/notepad.jpg';
 import Winery from '../images/Winery.jpg';
-import Codes from '../images/coding.mp4';
+import Portfolio from '../images/portfolio-background-3.jpg'
+
+// import Codes from '../images/coding.mp4';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -90,8 +92,9 @@ const Carousel = () => {
 
 const Projects = () => {
   return (
-    <div>
-      <video src={Codes} autoPlay loop muted className="projects-background-video"></video>      
+    <div className='portfolio-container'>
+      <img src={Portfolio} alt='portfolio-background' className='portfolio-background'></img>
+      {/* // <video src={Codes} autoPlay loop muted className="projects-background-video"></video>       */}
       <div>
         <div className='title'>
           <h2>Projects</h2>
