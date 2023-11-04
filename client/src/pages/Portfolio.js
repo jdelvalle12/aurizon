@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
 import Flick from '../images/Flick-Tracker.jpg';
 // import manifesto from '../images/manifesto.jpg';
@@ -8,7 +9,7 @@ import Weather from '../images/weather-forecast.jpg';
 import Planner from '../images/day-planner.jpg';
 import Notepad from '../images/notepad.jpg';
 import Winery from '../images/Winery.jpg';
-import Portfolio from '../images/portfolio-background-3.jpg'
+import Portfolio from '../images/digital background.jpg'
 
 // import Codes from '../images/coding.mp4';
 import Slider from 'react-slick';
@@ -90,17 +91,51 @@ const Carousel = () => {
   );
 };
 
+const SubNavbar = () => {
+  return (
+    <nav className='sub-navbar'>
+      <ul>
+        <li><Link>All</Link></li>
+        <li><Link>Front-End Developemnt</Link></li>
+        <li><Link>Web-Development</Link></li>
+        <li><Link>Software Development</Link></li>
+        <li><Link>Mobile App Development</Link></li>
+      </ul>
+    </nav>
+  );
+}
+
 const Projects = () => {
+  const [showTitle, setShowTitle] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState('All'); // Track the selected category
+
+    useEffect(() => {
+      setShowTitle(true); //When the component mounts, set showTitle to true.
+    }, []);  
+
+    // Filter projects based on the selctced category
+    const filteredProjects = projects.filter(project => {
+      if (selectedCategory === 'All') {
+        return true; // Show all projects
+      }
+      return project.category === selectedCategory; //Show projects of the selected category
+    });
+    
   return (
     <div className='portfolio-container'>
       <img src={Portfolio} alt='portfolio-background' className='portfolio-background'></img>
       {/* // <video src={Codes} autoPlay loop muted className="projects-background-video"></video>       */}
-      <div>
-        <div className='title'>
-          <h2>Projects</h2>
+        <div className={`title ${showTitle ? 'fade-in' : ''}`}>
+          <h2>Our Portfolio</h2>
         </div>
+      <div>
+       <SubNavbar
+        selectedCategory={selectedCategory} 
+        onSelectedCategory={(category) => setSelectedCategory(category)} // Set the selcted category
+        />
+        {/*Display the filtered projects */}
         <div className="carousel-container relative w-full items-center ">
-          <Carousel />
+          <Carousel projects={filteredProjects} />
         </div>
       </div>
     </div>
