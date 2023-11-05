@@ -2333,19 +2333,19 @@ body {
   margin-top: -1.8rem;
   /* margin-bottom: 12rem; */
   width: 100%; 
-  height: 17%; 
+  height: 24%; 
   object-fit: cover;
   /* background-size: contain; */
 }
 
-.title {
-  font-size: 1.5rem;
+.title h2{
+  font-size: 2.5rem;
   position: absolute;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: -1.5rem;
-  margin-top: 7rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: left;
+  margin-left: 16rem;
+  margin-top: 11rem;
   color: aliceblue;
   width: 100%;
 }
@@ -2362,6 +2362,16 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.sub-text {
+  font-size: 1.3rem;
+  position: absolute;
+  margin-top: 15rem;
+  margin-left: 2rem;
+  align-items: center;
+  text-align: center;
+  width: 40%;
 }
 
 /* .projects-section span {
@@ -2543,6 +2553,31 @@ body {
   width: 25rem;
   /* object-fit: cover;
   transition: transform 0.3s ease-in-out; */
+}
+
+/* Technologies */
+
+.technologies-container {
+  display: block;
+  /* position: relative; */
+  /* margin-top: -5.3rem; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  /* background-size: cover;  */
+}
+
+.background-design {
+  position: absolute;
+  margin-top: -1.8rem;
+  margin-bottom: 12rem;
+  width: 100%; 
+  height: 24%; 
+  object-fit: cover;
+  /* background-size: contain; */
 }
 
 /* Resume */

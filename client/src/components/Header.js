@@ -48,26 +48,26 @@ const Header = () => {
                   
                 <li>
                   <Link
-                    to="/technologies/web-development"
+                    to="/technologies#web-development"
                     className="flex px-4 py-2 hover:bg-gray-100"
                   >
                     Web Development
                   </Link>
                 </li>
               <li>
-                <Link to="/technologies/api-development" className="flex px-4 py-2 hover:bg-gray-100">API Development</Link>
+                <Link to="/technologies#api-development" className="flex px-4 py-2 hover:bg-gray-100">API Development</Link>
               </li>
               <li>
-                <Link to="/technologies/mobile-app-development" className="flex px-4 py-2 hover:bg-gray-100">Mobile App Development</Link>
+                <Link to="/technologies#mobile-app-development" className="flex px-4 py-2 hover:bg-gray-100">Mobile App Development</Link>
               </li>
               <li>
-                <Link to="/technologies/business-solutions" className="flex px-4 py-2 hover:bg-gray-100">Business Solutions</Link>
+                <Link to="/technologies#business-solutions" className="flex px-4 py-2 hover:bg-gray-100">Business Solutions</Link>
               </li>      
               <li>
-                <Link to="/technologies/network-services" className="flex px-4 py-2 hover:bg-gray-100">Network Services</Link>
+                <Link to="/technologies#network-services" className="flex px-4 py-2 hover:bg-gray-100">Network Services</Link>
               </li> 
               <li>
-                <Link to="/technologies/security-solutions" className="flex px-4 py-2 hover:bg-gray-100">Security Solutions</Link>
+                <Link to="/technologies#security-solutions" className="flex px-4 py-2 hover:bg-gray-100">Security Solutions</Link>
               </li> 
                 <h2>Products</h2>
                 <li>

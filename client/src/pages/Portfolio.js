@@ -9,7 +9,7 @@ import Weather from '../images/weather-forecast.jpg';
 import Planner from '../images/day-planner.jpg';
 import Notepad from '../images/notepad.jpg';
 import Winery from '../images/Winery.jpg';
-import Portfolio from '../images/digital background.jpg'
+import Background from '../images/Background.jpg';
 
 // import Codes from '../images/coding.mp4';
 import Slider from 'react-slick';
@@ -105,12 +105,29 @@ const SubNavbar = () => {
   );
 }
 
+
+
 const Projects = () => {
   const [showTitle, setShowTitle] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('All'); // Track the selected category
 
     useEffect(() => {
       setShowTitle(true); //When the component mounts, set showTitle to true.
+
+      const typingText = 'Take a look at our work that we have done so far, but there are more to come...';
+      const typingSpeed = 50; // Speed in milliseconds between each character
+
+      const typingContainer = document.getElementById('typing-text');
+      let charIndex = 0;
+
+      function typeText() {
+        if (charIndex < typingText.length) {
+          typingContainer.textContent += typingText.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeText, typingSpeed);
+        }
+      }
+      typeText();
     }, []);  
 
     // Filter projects based on the selctced category
@@ -123,10 +140,13 @@ const Projects = () => {
 
 return (
   <div className='portfolio-container'>
-      <img src={Portfolio} alt='portfolio-background' className='portfolio-background'></img>
+      <img src={Background} alt='portfolio-background' className='portfolio-background'></img>
       {/* // <video src={Codes} autoPlay loop muted className="projects-background-video"></video>       */}
         <div className={`title ${showTitle ? 'fade-in' : ''}`}>
           <h2>Our Portfolio</h2>
+        </div>
+        <div className='sub-text'>
+            <p id='typing-text'></p>
         </div>
       <div>
        <SubNavbar
