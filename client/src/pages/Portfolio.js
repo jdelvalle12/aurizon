@@ -9,7 +9,7 @@ import Weather from '../images/weather-forecast.jpg';
 import Planner from '../images/day-planner.jpg';
 import Notepad from '../images/notepad.jpg';
 import Winery from '../images/Winery.jpg';
-import Background from '../images/Background.jpg';
+import Background from '../images/digital background.jpg';
 
 // import Codes from '../images/coding.mp4';
 import Slider from 'react-slick';
@@ -95,11 +95,11 @@ const SubNavbar = () => {
   return (
     <nav className='sub-navbar'>
       <ul>
-        <li><Link>All</Link></li>
-        <li><Link>Front-End Developemnt</Link></li>
-        <li><Link>Web-Development</Link></li>
-        <li><Link>Software Development</Link></li>
-        <li><Link>Mobile App Development</Link></li>
+        <li><Link to='/portfolio#all'>All</Link></li>
+        <li><Link to='/portfolio#front-end-development'>Front-End Developemnt</Link></li>
+        <li><Link to='/portfolio#web-development'>Full Stack Development</Link></li>
+        <li><Link to='/portfolio#software-development'>Software Development</Link></li>
+        <li><Link to='/portfolio#mobile-app-development'>Mobile App Development</Link></li>
       </ul>
     </nav>
   );
@@ -114,7 +114,7 @@ const Projects = () => {
     useEffect(() => {
       setShowTitle(true); //When the component mounts, set showTitle to true.
 
-      const typingText = 'Take a look at our work that we have done so far, but there are more to come...';
+      const typingText = 'Take a look at our work that we have done so far, with more to come. If you like any of the designs, go to our marketplace and select the designs you like, and we can make it to your liking.';
       const typingSpeed = 50; // Speed in milliseconds between each character
 
       const typingContainer = document.getElementById('typing-text');
@@ -148,16 +148,16 @@ return (
         <div className='sub-text'>
             <p id='typing-text'></p>
         </div>
-      <div>
+      <div className='sub-navbar'>
        <SubNavbar
         selectedCategory={selectedCategory} 
         onSelectedCategory={(category) => setSelectedCategory(category)} // Set the selcted category
         />
+      </div>
         {/*Display the filtered projects */}
         <div className="carousel-container relative w-full items-center ">
           <Carousel projects={filteredProjects} />
         </div>
-      </div>
     </div>
   );
 }

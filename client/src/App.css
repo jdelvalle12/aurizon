@@ -2316,9 +2316,6 @@ body {
 /*Projects Section*/
 
 .portfolio-container {
-  display: block;
-  /* position: relative; */
-  /* margin-top: -5.3rem; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -2330,22 +2327,22 @@ body {
 
 .portfolio-background {
   position: absolute;
-  margin-top: -1.8rem;
-  /* margin-bottom: 12rem; */
+  margin-top: -2.3rem;
+  /* margin-bottom: 22rem; */
   width: 100%; 
-  height: 24%; 
+  height: 30%; 
   object-fit: cover;
   /* background-size: contain; */
 }
 
-.title h2{
+.title h2 {
   font-size: 2.5rem;
-  position: absolute;
-  /* justify-content: center; */
-  /* align-items: center; */
-  text-align: left;
-  margin-left: 16rem;
-  margin-top: 11rem;
+  /* position: relative; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin-right: 5.5rem; */
+  margin-top: 2rem;
   color: aliceblue;
   width: 100%;
 }
@@ -2366,12 +2363,34 @@ body {
 
 .sub-text {
   font-size: 1.3rem;
-  position: absolute;
-  margin-top: 15rem;
-  margin-left: 2rem;
+  color: aliceblue;
+  position: relative;
+  margin-top: 3rem;
+  margin-left: 22rem;
+  margin-bottom: 24rem;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  width: 40%;
+  width: 55%;
+}
+
+.sub-navbar {
+  position: absolute;
+  margin-top: -7rem;
+  font-size: 1.2rem;
+  /* flex-direction: row; */
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.sub-navbar ul {
+  display: flex;
+  text-decoration: none;
+}
+
+.sub-navbar ul li {
+  padding: 2rem;
 }
 
 /* .projects-section span {
@@ -2380,20 +2399,31 @@ body {
   color: aliceblue;
 } */
 
+.carousel-container {
+  position: absolute;
+  /* display: block; */
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  /* align-items: flex-start; */
+  margin-top: -5rem ;
+  width: 25rem;
+  /* object-fit: cover;
+  transition: transform 0.3s ease-in-out; */
+}
 
 
 .project-card {
   position: relative; 
   width: 100%;
   height: 20%; 
-  margin-top: 15rem;
+  margin-top: 5rem;
   margin-left: 0.2rem;
   margin-right: 0.2rem; 
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-  top: 7rem;
+  /* top: 7rem; */
   align-items: center; 
   /* animation: slide-in 20s infinite; */
   color: aliceblue;
@@ -2543,17 +2573,6 @@ body {
   color:blue;
 }
 
-.carousel-container {
-  position: relative;
-  display: block;
-  /* flex-wrap: wrap; */
-  justify-content: space-between;
-  /* align-items: flex-start; */
-  margin: 0 auto;
-  width: 25rem;
-  /* object-fit: cover;
-  transition: transform 0.3s ease-in-out; */
-}
 
 /* Technologies */
 
