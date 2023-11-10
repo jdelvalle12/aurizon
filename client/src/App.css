@@ -2382,15 +2382,24 @@ body {
   width: 100%;
   justify-content: center;
   text-align: center;
+  text-decoration: none;
+  /* color: black; */
 }
 
 .sub-navbar ul {
   display: flex;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .sub-navbar ul li {
   padding: 2rem;
+}
+
+.sub-navbar ul li a.hover-effect:hover {
+  color: aqua ;
+  background:black ;
+  padding: 0.7rem;
+  border-radius: 5px;
 }
 
 /* .projects-section span {

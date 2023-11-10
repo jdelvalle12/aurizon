@@ -95,11 +95,11 @@ const SubNavbar = () => {
   return (
     <nav className='sub-navbar'>
       <ul>
-        <li><Link to='/portfolio#all'>All</Link></li>
-        <li><Link to='/portfolio#front-end-development'>Front-End Developemnt</Link></li>
-        <li><Link to='/portfolio#web-development'>Full Stack Development</Link></li>
-        <li><Link to='/portfolio#software-development'>Software Development</Link></li>
-        <li><Link to='/portfolio#mobile-app-development'>Mobile App Development</Link></li>
+        <li><Link to='/portfolio#all' style={{ textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} className="hover-effect">All</Link></li>
+        <li><Link to='/portfolio#front-end-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Front-End Development</Link></li>
+        <li><Link to='/portfolio#web-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Full Stack Development</Link></li>
+        <li><Link to='/portfolio#software-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Software Development</Link></li>
+        <li><Link to='/portfolio#mobile-app-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Mobile App Development</Link></li>
       </ul>
     </nav>
   );
@@ -151,13 +151,13 @@ return (
       <div className='sub-navbar'>
        <SubNavbar
         selectedCategory={selectedCategory} 
-        onSelectedCategory={(category) => setSelectedCategory(category)} // Set the selcted category
+        onSelectedCategory={(category) => setSelectedCategory(category)} // Set the selected category
         />
       </div>
         {/*Display the filtered projects */}
-        <div className="carousel-container relative w-full items-center ">
+        {/* <div className="carousel-container relative w-full items-center ">
           <Carousel projects={filteredProjects} />
-        </div>
+        </div> */}
     </div>
   );
 }
