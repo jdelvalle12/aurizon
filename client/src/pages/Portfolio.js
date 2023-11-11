@@ -92,14 +92,65 @@ const Carousel = ({projects}) => {
 };
 
 const SubNavbar = () => {
+  const [isDevelopmentDropdownOpen, setIsDevelopmentDropdownOpen] = useState(false);
+  const [isIndustryDropdownOpen, setIsIndustryDropdownOpen] = useState(false);
+
+  const toggleDevelopmentDropdown = () => {
+    setIsDevelopmentDropdownOpen(!isDevelopmentDropdownOpen);
+    // Close Industry dropdown when Development dropdown is opened
+    if (!isDevelopmentDropdownOpen && isIndustryDropdownOpen) {
+      setIsIndustryDropdownOpen(false);
+    }
+  };
+
+  const toggleIndustryDropdown = () => {
+    setIsIndustryDropdownOpen(!isIndustryDropdownOpen);
+    // Close Development dropdown when Industry dropdown is opened
+    if (!isIndustryDropdownOpen && isDevelopmentDropdownOpen) {
+      setIsDevelopmentDropdownOpen(false);
+    }
+  };
+
   return (
-    <nav className='sub-navbar'>
+    <nav className={`sub-navbar ${isDevelopmentDropdownOpen || isIndustryDropdownOpen ? 'active' : ''}`}>
       <ul>
         <li><Link to='/portfolio#all' style={{ textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} className="hover-effect">All</Link></li>
-        <li><Link to='/portfolio#front-end-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Front-End Development</Link></li>
-        <li><Link to='/portfolio#web-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Full Stack Development</Link></li>
-        <li><Link to='/portfolio#software-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Software Development</Link></li>
-        <li><Link to='/portfolio#mobile-app-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Mobile App Development</Link></li>
+        <li>
+          <span onClick={toggleDevelopmentDropdown} 
+                style={{cursor: 'pointer', textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} 
+                className="hover-effect">
+            Development Type
+          <span className={`portolio-dropdown-arrow ${isDevelopmentDropdownOpen ? 'open' : ''}`}>&#9662;</span></span></li>
+          {/*Nested unordered list for the dropdown */}
+          {isDevelopmentDropdownOpen && (
+            <ul className='development-dropdown'>
+              <li><Link to='/portfolio#front-end-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Front-End Development</Link></li>
+              <li><Link to='/portfolio#web-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Full Stack Development</Link></li>
+              <li><Link to='/portfolio#software-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Software Development</Link></li>
+              <li><Link to='/portfolio#mobile-app-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Mobile App Development</Link></li>
+            </ul>
+          )}
+        <li>
+          <span 
+            onClick={toggleIndustryDropdown} 
+            style={{cursor: 'pointer', textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} 
+            className="hover-effect">
+            Industry
+          <span className={`portolio-dropdown-arrow ${isIndustryDropdownOpen ? 'open' : ''}`}>&#9662;</span></span></li>
+          {/*Nested unordered list for the dropdown */}
+          {isIndustryDropdownOpen && (
+            <ul className='industry-dropdown'>
+              <li><Link to='/portfolio#entertainment' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Entertainment</Link></li>
+              <li><Link to='/portfolio#sports' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Sports</Link></li>
+              <li><Link to='/portfolio#travel' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Travel</Link></li>
+              <li><Link to='/portfolio#technology' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Technology</Link></li>
+              <li><Link to='/portfolio#food-beverage' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Food & Beverage</Link></li>
+              <li><Link to='/portfolio#real-estate' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Real-Estate</Link></li>
+              <li><Link to='/portfolio#logistics' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Logistics</Link></li>
+              <li><Link to='/portfolio#ecommerce' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">E-commerce</Link></li>
+              <li><Link to='/portfolio#finance' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Finance</Link></li>
+            </ul>
+          )}
       </ul>
     </nav>
   );
