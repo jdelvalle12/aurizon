@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
-import Flick from '../images/Flick-Tracker.jpg';
+// import Flick from '../images/Flick-Tracker.jpg';
 // import manifesto from '../images/manifesto.jpg';
 import SEO from '../images/SEO.jpg';
 import Journeez from '../images/Journeez.jpg';
@@ -22,8 +22,8 @@ import { DiMongodb, DiBootstrap } from 'react-icons/di';
 
 
 const projects = [
-  { image: Flick, name: "Flick Tracker", description: "Flick Tracker is looking to create a new way to engage with fellow movie lovers, through a user database system. Each user will have a profile where you can view their followed users, following, watched movies, etc. We want to show you analytics based off of the information you provide, to help refine and diversify your taste. We will allow people to post reviews on movies they have seen, in order for their followers to potentially add new items into their watchlist that wouldn't be curated from their own analytics.", 
-    technologies: [<FaNodeJs />, <FaHtml5 />, <FaCss3 />, <FaJs />, "Express"], category: "Full Stack", link: "https://flick-tracker.herokuapp.com/" },
+  // { image: Flick, name: "Flick Tracker", description: "Flick Tracker is looking to create a new way to engage with fellow movie lovers, through a user database system. Each user will have a profile where you can view their followed users, following, watched movies, etc. We want to show you analytics based off of the information you provide, to help refine and diversify your taste. We will allow people to post reviews on movies they have seen, in order for their followers to potentially add new items into their watchlist that wouldn't be curated from their own analytics.", 
+  //   technologies: [<FaNodeJs />, <FaHtml5 />, <FaCss3 />, <FaJs />, "Express"], category: "Full Stack", link: "https://flick-tracker.herokuapp.com/" },
   // { image: manifesto, name: "Gambling Manifesto", link: "https://stickkman.github.io/gamblingManifesto-Proj01/" },
   { image: SEO, name: "Horiseon", description: "This project is a visually stunning representation of modern web design principles, showcasing the perfect blend of aesthetics and functionality. Explore the beautifully crafted user interface, seamless navigation, and eye-catching visual elements that make a true visual delight. Immerse yourself in the world of elegant design and get inspired by the possibilities of web development.", 
     technologies: [<FaHtml5 />, <FaCss3 />] , category: "Front-end", link: "https://jdelvalle12.github.io/horiseon-webpage/" },
@@ -187,9 +187,9 @@ return (
         />
       </div>
         {/*Display the filtered projects */}
-        {/* <div>
-          <ProjectCard/>
-        </div> */}
+        <div>
+          <ProjectsGrid projects={filteredProjects} onButtonClick />
+        </div>
     </div>
   );
 }
