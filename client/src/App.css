@@ -2377,7 +2377,8 @@ body {
 
 .sub-navbar {
   position: absolute;
-  margin-top: -1rem;
+  margin-top: -4rem;
+  /* margin-right: 4rem; */
   font-size: 1.2rem;
   /* flex-direction: row; */
   width: 100%;
@@ -2439,32 +2440,31 @@ body {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 70%;  
+  width: 30%;
+  margin-left: 5rem;  
   /* gap: 20px; */
 }
 
 .project-card {
-  /* position: relative;  */
-  width: 70%;
-  height: 40%; 
+  position: relative; 
+  width: 50%;
+  height: 30%; 
   margin-top: 6rem;
-  margin-left: 2rem;
-  margin-right: 0.2rem; 
   justify-content: center;
+  align-items: center; 
+  color: black;
+  /* margin-left: 2rem; */
+  /* margin-right: 0.2rem;  */
   /* display: flex; */
   /* flex-wrap: wrap; */
-  overflow: hidden;
   /* top: 7rem; */
-  align-items: center; 
   /* animation: slide-in 20s infinite; */
-  color: black;
 }
 
 .project-card img {
-  /* display: block; */
-  width: 100%; 
+  /* overflow: hidden; */
+  width: 70%; 
   height: 100%;
-  padding: 1rem;
   justify-content: center;
   align-items: center;
   object-fit: cover;
@@ -2472,46 +2472,12 @@ body {
   /* margin-top: 4rem; */
 }
 
-/* .project-card {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  padding: 2rem;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .projects-section span {
-  font-size: 28px;
-  position: relative;
-  color: aliceblue;
-} */
-
-/* .carousel-container {
-  position: absolute;
-  display: block;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: -5rem ;
-  width: 25rem;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
-} */
-
-
-/* @keyframes slide-in {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(50%);
-  }
-} */
-
 
 .project-card-overlay {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -2536,19 +2502,19 @@ body {
 }
 
 .project-card-details {
-  position: relative;
+  /* position: relative; */
   z-index: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; 
-  width: 121%;
-  /* margin: 4rem auto; */
+  width: 90%;
   margin-bottom: 4rem;
-  height: 45rem;
-  padding: 20px 10px 20px 10px;
   font-size: 15px;
   color: aliceblue;
+  /* margin: 4rem auto; */
+  /* height: 45rem; */
+  /* padding: 20px 10px 20px 10px; */
 } 
 
 .project-card-details p {
