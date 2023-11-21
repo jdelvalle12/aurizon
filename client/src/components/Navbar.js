@@ -96,6 +96,7 @@ const Navbar = () => {
           <li><Link to="/careers" className="nav-link">Careers</Link></li>
           <li><Link to="/insider" className="nav-link">Insider</Link></li>
           <li><Link to="/contact" className="nav-link">Contact</Link></li>
+          <li><Link to="/signin" className="nav-link">Sign In</Link></li>
         </ul>
       </div>
       {/* Hamburger menu button */}

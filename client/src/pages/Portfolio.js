@@ -146,7 +146,7 @@ const Projects = () => {
     useEffect(() => {
       setShowTitle(true); //When the component mounts, set showTitle to true.
 
-      const typingText = 'Take a look at our work that we have done so far, with more to come. If you like any of the designs, go to our marketplace and select the designs you like, and we can make it to your liking.';
+      const typingText = 'Take a look at our work that we have done so far, with more to come...';
       const typingSpeed = 30; // Speed in milliseconds between each character
 
       const typingContainer = document.getElementById('typing-text');

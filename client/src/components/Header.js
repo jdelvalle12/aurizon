@@ -99,6 +99,7 @@ const Header = () => {
       <Link className="careers" to="/careers">Careers</Link>
       <Link className="insider" to="/insider">Insider</Link>
       <Link className="contact" to="/contact">Contact</Link>
+      <Link className="sign-in" to="/signin">Sign In</Link>
     </nav>
     )}
     <div className="mobile-menu">
