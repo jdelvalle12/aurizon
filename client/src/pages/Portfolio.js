@@ -51,8 +51,8 @@ const ProjectCard = ({project, onClick}) => (
       <h3>{project.category}</h3>
       <h4>{project.name}</h4>
       <p>{project.description}</p>
-      <div className='project-card-icons'>
         <h5>Technologies</h5>
+      <div className='project-card-icons'>
         {project.technologies.map((technology, i) => (
           <span key={i} className='technology-icon'>
             {technology}
@@ -132,6 +132,7 @@ const SubNavbar = () => {
               <li><Link to='/portfolio#finance' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Finance</Link></li>
             </ul>
           )}
+          <li><Link to='/portfolio#our-products' style={{ textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Our Products</Link></li>
       </ul>
     </nav>
   );
@@ -146,7 +147,7 @@ const Projects = () => {
     useEffect(() => {
       setShowTitle(true); //When the component mounts, set showTitle to true.
 
-      const typingText = 'Take a look at our work that we have done so far, with more to come...';
+      const typingText = 'Take a look at our work that we have done so far, and we have more to come. We are always developing new projects and updating previous projects with new technologies.';
       const typingSpeed = 30; // Speed in milliseconds between each character
 
       const typingContainer = document.getElementById('typing-text');
@@ -189,6 +190,10 @@ return (
         {/*Display the filtered projects */}
         <div>
           <ProjectsGrid projects={filteredProjects} onButtonClick />
+        </div>
+        <div className='post-text'>
+          <p>If you like the designs you see from our work or our software products, go to our marketplace for more.</p> 
+            <Link to='/marketplace' className='marketplace-link'>Marketplace<span className='arrow'>&rarr;</span></Link>
         </div>
     </div>
   );
