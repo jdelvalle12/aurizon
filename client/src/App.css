@@ -2432,7 +2432,7 @@ body {
   width: 20%;
   position: absolute;
   top: 70%; /* Position dropdown below the list item */
-  right: 25rem;
+  right: 35rem;
   list-style-type: none;
   background-color: #fff; /* Adjust background color as needed */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */

@@ -40,6 +40,7 @@ return (
           <Route path="/technologies/mobile-development" element={<MobileDevelopment />} />
           <Route path="/technologies/web-development" element={<WebDevelopment />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          {/* <Route path="/portfolio/:category?" component={Projects} /> */}
           <Route path="/careers" element={<Careers />} />
           <Route path="/insider" element={<Insider />} />
           <Route path="/contact" element={<Contact />} />

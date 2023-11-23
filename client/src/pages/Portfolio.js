@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
 // import Flick from '../images/Flick-Tracker.jpg';
@@ -22,21 +22,57 @@ import { DiMongodb, DiBootstrap } from 'react-icons/di';
 
 
 const projects = [
-  // { image: Flick, name: "Flick Tracker", description: "Flick Tracker is looking to create a new way to engage with fellow movie lovers, through a user database system. Each user will have a profile where you can view their followed users, following, watched movies, etc. We want to show you analytics based off of the information you provide, to help refine and diversify your taste. We will allow people to post reviews on movies they have seen, in order for their followers to potentially add new items into their watchlist that wouldn't be curated from their own analytics.", 
-  //   technologies: [<FaNodeJs />, <FaHtml5 />, <FaCss3 />, <FaJs />, "Express"], category: "Full Stack", link: "https://flick-tracker.herokuapp.com/" },
-  // { image: manifesto, name: "Gambling Manifesto", link: "https://stickkman.github.io/gamblingManifesto-Proj01/" },
-  { image: SEO, name: "Horiseon", description: "This project is a visually stunning representation of modern web design principles, showcasing the perfect blend of aesthetics and functionality. Explore the beautifully crafted user interface, seamless navigation, and eye-catching visual elements that make a true visual delight. Immerse yourself in the world of elegant design and get inspired by the possibilities of web development.", 
-    technologies: [<FaHtml5 />, <FaCss3 />] , category: "Front-end", link: "https://jdelvalle12.github.io/horiseon-webpage/" },
-  { image: Journeez, name: "JourneEZ", description: "Many people travel to many parts of the world everyday, and some of them are first time solo travelers, but they get overwhelmed with all the information that is out there, about where to go, where to stay, where to eat, what to do, etc. This app aims to ease those nerves for first time travelers in the most simplistic way by providing information and tips as well as share their experience with other solo travelers and a way to document their experiences.", 
-    technologies: [<FaReact />, <FaNodeJs />, <FaHtml5 />, <FaCss3 />, <FaJs />, <DiBootstrap />, "GraphQL"] , category: "Full Stack", ink: "https://www.journeeztrip.com/" },
-  { image: Weather, name: "Weather Forecast", description: "Stay prepared for any weather condition with this intuitive app. Get real-time weather updates and accurate forecasts for your location and other areas of interest. Plan your activities, trips, and outdoor adventures with confidence, knowing you have reliable weather information at your fingertips. Stay informed and make the most of your day with the Weather Forecast app", 
-    technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />] , category: "Front-end", link: "https://jdelvalle12.github.io/5-day-national-weather-forecast/" },
-  { image: Planner, name: "Day Planner", description: "A user-friendly app that helps you organize your daily schedule. Input appointments, meetings, and important events, and save them in a day planner. Stay organized and never miss a task with this intuitive and convenient tool.", 
-    technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />, <FaNodeJs />] , category: "Front-end", link: "https://jdelvalle12.github.io/day-planner/" },
-  { image: Notepad, name: "Notepad", description: "Capture and organize your thoughts with ease using this versatile note-taking app. Jot down important information, ideas, and reminders, and conveniently access them whenever you need. Stay productive and never forget a thing with this handy digital notebook.", 
-    technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />, <FaNodeJs />, "Express"] , category: "Back-end", link: "https://notetaken.herokuapp.com/" },
-  { image: Winery, name: "The Valley Winery", description: "This project is a visually stunning representation of modern web design principles, showcasing the perfect blend of aesthetics and functionality. Explore the beautifully crafted user interface, seamless navigation, and eye-catching visual elements that make a true visual delight. Immerse yourself in the world of elegant design and get inspired by the possibilities of web development.", 
-  technologies: [<FaHtml5 />, <FaCss3 />] , category: "Front-end", link: "https://jdelvalle12.github.io/thevalleywinery/" }
+  // { image: Flick, 
+  //   name: "Flick Tracker", 
+  //   description: "Flick Tracker is looking to create a new way to engage with fellow movie lovers, through a user database system. Each user will have a profile where you can view their followed users, following, watched movies, etc. We want to show you analytics based off of the information you provide, to help refine and diversify your taste. We will allow people to post reviews on movies they have seen, in order for their followers to potentially add new items into their watchlist that wouldn't be curated from their own analytics.", 
+  //   technologies: [<FaNodeJs />, <FaHtml5 />, <FaCss3 />, <FaJs />, "Express"], 
+  //   category: "Full Stack", link: "https://flick-tracker.herokuapp.com/" },
+  // { image: manifesto, 
+  //   name: "Gambling Manifesto", 
+  //   link: "https://stickkman.github.io/gamblingManifesto-Proj01/" },
+  { image: SEO, 
+    name: "Horiseon", 
+    description: "This project is a visually stunning representation of modern web design principles, showcasing the perfect blend of aesthetics and functionality. Explore the beautifully crafted user interface, seamless navigation, and eye-catching visual elements that make a true visual delight. Immerse yourself in the world of elegant design and get inspired by the possibilities of web development.", 
+    technologies: [<FaHtml5 />, <FaCss3 />] , 
+    category: "Front-end", 
+    link: "https://jdelvalle12.github.io/horiseon-webpage/" , 
+    tags: ["Development Type", "Front-End Development", "Industry", "Technology"]
+  },
+  { image: Journeez, 
+    name: "JourneEZ", 
+    description: "Many people travel to many parts of the world everyday, and some of them are first time solo travelers, but they get overwhelmed with all the information that is out there, about where to go, where to stay, where to eat, what to do, etc. This app aims to ease those nerves for first time travelers in the most simplistic way by providing information and tips as well as share their experience with other solo travelers and a way to document their experiences.", 
+    technologies: [<FaReact />, <FaNodeJs />, <FaHtml5 />, <FaCss3 />, <FaJs />, <DiBootstrap />, "GraphQL"] , 
+    category: "Full Stack", 
+    link: "https://www.journeeztrip.com/" 
+  },
+  { image: Weather, 
+    name: "Weather Forecast", 
+    description: "Stay prepared for any weather condition with this intuitive app. Get real-time weather updates and accurate forecasts for your location and other areas of interest. Plan your activities, trips, and outdoor adventures with confidence, knowing you have reliable weather information at your fingertips. Stay informed and make the most of your day with the Weather Forecast app", 
+    technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />] , 
+    category: "Front-end", 
+    link: "https://jdelvalle12.github.io/5-day-national-weather-forecast/" 
+  },
+  { image: Planner, 
+    name: "Day Planner", 
+    description: "A user-friendly app that helps you organize your daily schedule. Input appointments, meetings, and important events, and save them in a day planner. Stay organized and never miss a task with this intuitive and convenient tool.", 
+    technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />, <FaNodeJs />] , 
+    category: "Front-end", 
+    link: "https://jdelvalle12.github.io/day-planner/" 
+  },
+  { image: Notepad, 
+    name: "Notepad", 
+    description: "Capture and organize your thoughts with ease using this versatile note-taking app. Jot down important information, ideas, and reminders, and conveniently access them whenever you need. Stay productive and never forget a thing with this handy digital notebook.", 
+    technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />, <FaNodeJs />, "Express"] , 
+    category: "Back-end", 
+    link: "https://notetaken.herokuapp.com/" 
+  },
+  { image: Winery, 
+    name: "The Valley Winery", 
+    description: "This project is a visually stunning representation of modern web design principles, showcasing the perfect blend of aesthetics and functionality. Explore the beautifully crafted user interface, seamless navigation, and eye-catching visual elements that make a true visual delight. Immerse yourself in the world of elegant design and get inspired by the possibilities of web development.", 
+    technologies: [<FaHtml5 />, <FaCss3 />] , 
+    category: "Front-end", 
+    link: "https://jdelvalle12.github.io/thevalleywinery/" 
+  }
 ];
 
 const ProjectCard = ({project, onClick}) => (
@@ -95,7 +131,7 @@ const SubNavbar = () => {
   return (
     <nav className={`sub-navbar ${isDevelopmentDropdownOpen || isIndustryDropdownOpen ? 'active' : ''}`}>
       <ul>
-        <li><Link to='/portfolio#all' style={{ textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} className="hover-effect">All</Link></li>
+        <li><Link to='#all' style={{ textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} className="hover-effect">All</Link></li>
         <li>
           <span onClick={toggleDevelopmentDropdown} 
                 style={{cursor: 'pointer', textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} 
@@ -105,10 +141,10 @@ const SubNavbar = () => {
           {/*Nested unordered list for the dropdown */}
           {isDevelopmentDropdownOpen && (
             <ul className='development-dropdown'>
-              <li><Link to='/portfolio#front-end-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Front-End Development</Link></li>
-              <li><Link to='/portfolio#web-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Full Stack Development</Link></li>
-              <li><Link to='/portfolio#software-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Software Development</Link></li>
-              <li><Link to='/portfolio#mobile-app-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Mobile App Development</Link></li>
+              <li><a href='#front-end-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Front-End Development</a></li>
+              <li><Link to='#web-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Full Stack Development</Link></li>
+              <li><Link to='#software-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Software Development</Link></li>
+              <li><Link to='#mobile-app-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Mobile App Development</Link></li>
             </ul>
           )}
         <li>
@@ -121,18 +157,19 @@ const SubNavbar = () => {
           {/*Nested unordered list for the dropdown */}
           {isIndustryDropdownOpen && (
             <ul className='industry-dropdown'>
-              <li><Link to='/portfolio#entertainment' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Entertainment</Link></li>
-              <li><Link to='/portfolio#sports' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Sports</Link></li>
-              <li><Link to='/portfolio#travel' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Travel</Link></li>
-              <li><Link to='/portfolio#technology' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Technology</Link></li>
-              <li><Link to='/portfolio#food-beverage' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Food & Beverage</Link></li>
-              <li><Link to='/portfolio#real-estate' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Real-Estate</Link></li>
-              <li><Link to='/portfolio#logistics' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Logistics</Link></li>
-              <li><Link to='/portfolio#ecommerce' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">E-commerce</Link></li>
-              <li><Link to='/portfolio#finance' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Finance</Link></li>
+              <li><Link to='#entertainment' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Entertainment</Link></li>
+              <li><Link to='#sports' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Sports</Link></li>
+              <li><Link to='#travel' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Travel</Link></li>
+              <li><Link to='#technology' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Technology</Link></li>
+              <li><Link to='#food-beverage' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Food & Beverage</Link></li>
+              <li><Link to='#real-estate' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Real-Estate</Link></li>
+              <li><Link to='#logistics' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Logistics</Link></li>
+              <li><Link to='#ecommerce' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">E-commerce</Link></li>
+              <li><Link to='#finance' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Finance</Link></li>
+              <li><Link to='#health' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Health</Link></li>
             </ul>
           )}
-          <li><Link to='/portfolio#our-products' style={{ textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Our Products</Link></li>
+          <li><Link to='#our-products' style={{ textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Our Products</Link></li>
       </ul>
     </nav>
   );
@@ -165,11 +202,16 @@ const Projects = () => {
 
     // Filter projects based on the selctced category
     const filteredProjects = projects.filter(project => {
+      console.log('Selected Category:', selectedCategory);
+      console.log('Project Category:', project.category);
+    
       if (selectedCategory === 'All') {
         return true; // Show all projects
       }
-      return project.category === selectedCategory; //Show projects of the selected category
+      return project.category === selectedCategory;
     });
+
+    console.log('Filtered Projects:', filteredProjects);
 
 return (
   <div className='portfolio-container'>
