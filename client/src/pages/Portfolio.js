@@ -43,35 +43,40 @@ const projects = [
     description: "Many people travel to many parts of the world everyday, and some of them are first time solo travelers, but they get overwhelmed with all the information that is out there, about where to go, where to stay, where to eat, what to do, etc. This app aims to ease those nerves for first time travelers in the most simplistic way by providing information and tips as well as share their experience with other solo travelers and a way to document their experiences.", 
     technologies: [<FaReact />, <FaNodeJs />, <FaHtml5 />, <FaCss3 />, <FaJs />, <DiBootstrap />, "GraphQL"] , 
     category: "Full Stack", 
-    link: "https://www.journeeztrip.com/" 
+    link: "https://www.journeeztrip.com/",
+    tags: ["Development Type", "Full Stack Development", "Industry", "Travel"] 
   },
   { image: Weather, 
     name: "Weather Forecast", 
     description: "Stay prepared for any weather condition with this intuitive app. Get real-time weather updates and accurate forecasts for your location and other areas of interest. Plan your activities, trips, and outdoor adventures with confidence, knowing you have reliable weather information at your fingertips. Stay informed and make the most of your day with the Weather Forecast app", 
     technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />] , 
     category: "Front-end", 
-    link: "https://jdelvalle12.github.io/5-day-national-weather-forecast/" 
+    link: "https://jdelvalle12.github.io/5-day-national-weather-forecast/",
+    tags: ["Development Type", "Software Development", "Industry", "Technology"] 
   },
   { image: Planner, 
     name: "Day Planner", 
     description: "A user-friendly app that helps you organize your daily schedule. Input appointments, meetings, and important events, and save them in a day planner. Stay organized and never miss a task with this intuitive and convenient tool.", 
     technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />, <FaNodeJs />] , 
     category: "Front-end", 
-    link: "https://jdelvalle12.github.io/day-planner/" 
+    link: "https://jdelvalle12.github.io/day-planner/",
+    tags: ["Development Type", "Software Development", "Industry", "Technology"] 
   },
   { image: Notepad, 
     name: "Notepad", 
     description: "Capture and organize your thoughts with ease using this versatile note-taking app. Jot down important information, ideas, and reminders, and conveniently access them whenever you need. Stay productive and never forget a thing with this handy digital notebook.", 
     technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />, <FaNodeJs />, "Express"] , 
     category: "Back-end", 
-    link: "https://notetaken.herokuapp.com/" 
+    link: "https://notetaken.herokuapp.com/",
+    tags: ["Development Type", "Software Development", "Industry", "Technology"] 
   },
   { image: Winery, 
     name: "The Valley Winery", 
     description: "This project is a visually stunning representation of modern web design principles, showcasing the perfect blend of aesthetics and functionality. Explore the beautifully crafted user interface, seamless navigation, and eye-catching visual elements that make a true visual delight. Immerse yourself in the world of elegant design and get inspired by the possibilities of web development.", 
     technologies: [<FaHtml5 />, <FaCss3 />] , 
     category: "Front-end", 
-    link: "https://jdelvalle12.github.io/thevalleywinery/" 
+    link: "https://jdelvalle12.github.io/thevalleywinery/",
+    tags: ["Development Type", "Front-End Development", "Industry", "Food & Beverage"] 
   }
 ];
 
@@ -108,7 +113,7 @@ const ProjectsGrid = ({ projects, onButtonClick }) => (
   </div>
 );
 
-const SubNavbar = () => {
+const SubNavbar = ({onSelectedCategory, setSelectedCategory}) => {
   const [isDevelopmentDropdownOpen, setIsDevelopmentDropdownOpen] = useState(false);
   const [isIndustryDropdownOpen, setIsIndustryDropdownOpen] = useState(false);
 
@@ -131,7 +136,21 @@ const SubNavbar = () => {
   return (
     <nav className={`sub-navbar ${isDevelopmentDropdownOpen || isIndustryDropdownOpen ? 'active' : ''}`}>
       <ul>
-        <li><Link to='#all' style={{ textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} className="hover-effect">All</Link></li>
+        <li>
+          <button 
+            onClick={() => setSelectedCategory('All')} 
+            style={{ 
+            textDecoration: 'none', 
+            transition: 'color 0.3s, background 0.3s', 
+            border: 'none',  // Remove default button styling
+             // Remove default button styling
+            cursor: 'pointer'  // Show pointer cursor on hover
+          }} 
+          className="hover-effect"
+          >
+            All
+          </button>
+        </li>
         <li>
           <span onClick={toggleDevelopmentDropdown} 
                 style={{cursor: 'pointer', textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} 
@@ -141,10 +160,42 @@ const SubNavbar = () => {
           {/*Nested unordered list for the dropdown */}
           {isDevelopmentDropdownOpen && (
             <ul className='development-dropdown'>
-              <li><a href='#front-end-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Front-End Development</a></li>
-              <li><Link to='#web-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Full Stack Development</Link></li>
-              <li><Link to='#software-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Software Development</Link></li>
-              <li><Link to='#mobile-app-development' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Mobile App Development</Link></li>
+              <li>
+                <button 
+                  onClick={() => onSelectedCategory('Front-End Development')} 
+                  style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+                  className="hover-effect"
+                >
+                  Front-End Development
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => onSelectedCategory('Full Stack Development')} 
+                  style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+                  className="hover-effect"
+                >
+                  Full Stack Development
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => onSelectedCategory('Software Development')} 
+                  style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+                  className="hover-effect"
+                >
+                  Software Development
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => onSelectedCategory('Mobile App Development')} 
+                  style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+                  className="hover-effect"
+                >
+                  Mobile App Development
+                </button>
+              </li>
             </ul>
           )}
         <li>
@@ -157,19 +208,122 @@ const SubNavbar = () => {
           {/*Nested unordered list for the dropdown */}
           {isIndustryDropdownOpen && (
             <ul className='industry-dropdown'>
-              <li><Link to='#entertainment' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Entertainment</Link></li>
-              <li><Link to='#sports' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Sports</Link></li>
-              <li><Link to='#travel' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Travel</Link></li>
-              <li><Link to='#technology' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Technology</Link></li>
-              <li><Link to='#food-beverage' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Food & Beverage</Link></li>
-              <li><Link to='#real-estate' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Real-Estate</Link></li>
-              <li><Link to='#logistics' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Logistics</Link></li>
-              <li><Link to='#ecommerce' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">E-commerce</Link></li>
-              <li><Link to='#finance' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Finance</Link></li>
-              <li><Link to='#health' style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Health</Link></li>
+               <li>
+          <button 
+            onClick={() => onSelectedCategory('Entertainment')} 
+            style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+            className="hover-effect"
+          >
+            Entertainment
+          </button>
+        </li>
+        <li>
+        <button 
+          onClick={() => onSelectedCategory('Sports')} 
+          style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+          className="hover-effect"
+        >
+          Sports
+        </button>
+      </li>
+      <li>
+        <button 
+          onClick={() => onSelectedCategory('Travel')} 
+          style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+          className="hover-effect"
+        >
+          Travel
+        </button>
+      </li>
+      <li>
+        <button 
+          onClick={() => onSelectedCategory('Technology')} 
+          style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+          className="hover-effect"
+        >
+          Technology
+        </button>
+      </li>
+      <li>
+        <button 
+          onClick={() => onSelectedCategory('Food & Beverage')} 
+          style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+          className="hover-effect"
+        >
+          Food & Beverage
+        </button>
+      </li>
+      <li>
+        <button 
+          onClick={() => onSelectedCategory('Real-Estate')} 
+          style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+          className="hover-effect"
+        >
+          Real-Estate
+        </button>
+      </li>
+      <li>
+        <button 
+          onClick={() => onSelectedCategory('Logistics')} 
+          style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+          className="hover-effect"
+        >
+          Logistics
+        </button>
+      </li>
+      <li>
+        <button 
+          onClick={() => onSelectedCategory('E-Commerce')} 
+          style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+          className="hover-effect"
+        >
+          E-Commerce
+        </button>
+      </li>
+      <li>
+        <button 
+          onClick={() => onSelectedCategory('Finance')} 
+          style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+          className="hover-effect"
+        >
+          Finance
+        </button>
+      </li>
+      <li>
+        <button 
+          onClick={() => onSelectedCategory('Health')} 
+          style={{ textDecoration: 'none',  transition: 'color 0.3s, background 0.3s' }} 
+          className="hover-effect"
+        >
+          Health
+        </button>
+      </li>
             </ul>
           )}
-          <li><Link to='#our-products' style={{ textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} className="hover-effect">Our Products</Link></li>
+          <li>
+  <button 
+    onClick={() => setSelectedCategory('Our Products')} 
+    style={{ 
+      textDecoration: 'none', 
+      transition: 'color 0.3s, background 0.3s', 
+      border: 'none',  // Remove default button styling
+      
+      cursor: 'pointer'  // Show pointer cursor on hover
+    }} 
+    className="hover-effect"
+  >
+    Our Products
+  </button>
+</li>
+          <li>
+            <button 
+              onClick={() => setSelectedCategory('Our Partners')} 
+              style={{ textDecoration: 'none', transition: 'color 0.3s, background 0.3s' }} 
+              className="hover-effect"
+            >
+              Our Partners
+            </button>
+          </li>
       </ul>
     </nav>
   );
@@ -225,13 +379,14 @@ return (
         </div>
       <div className='sub-navbar'>
        <SubNavbar
-        selectedCategory={selectedCategory} 
-        onSelectedCategory={(category) => setSelectedCategory(category)} // Set the selected category
+        selectedCategory={selectedCategory}
+        onSelectedCategory={(category) => setSelectedCategory(category)}
+        setSelectedCategory={setSelectedCategory} // Pass setSelectedCategory as a prop
         />
       </div>
         {/*Display the filtered projects */}
         <div>
-          <ProjectsGrid projects={filteredProjects} onButtonClick />
+        <ProjectsGrid projects={filteredProjects} onButtonClick={(category) => setSelectedCategory(category)} />
         </div>
         <div className='post-text'>
           <p>If you like the designs you see from our work or our software products, go to our marketplace for more.</p> 

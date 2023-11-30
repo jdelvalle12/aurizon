@@ -2404,7 +2404,7 @@ body {
   position: relative;
 }
 
-.sub-navbar ul li a.hover-effect:hover {
+.sub-navbar ul li button.hover-effect:hover {
   color: aqua ;
   background:black ;
   padding: 0.7rem;
