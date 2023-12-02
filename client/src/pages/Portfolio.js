@@ -44,7 +44,7 @@ const projects = [
     technologies: [<FaReact />, <FaNodeJs />, <FaHtml5 />, <FaCss3 />, <FaJs />, <DiBootstrap />, "GraphQL"] , 
     category: "Full Stack", 
     link: "https://www.journeeztrip.com/",
-    tags: ["Development Type", "Full Stack Development", "Industry", "Travel"] 
+    tags: ["Development Type", "Full Stack Development", "Industry", "Travel", "Our Products"] 
   },
   { image: Weather, 
     name: "Weather Forecast", 
@@ -80,8 +80,13 @@ const projects = [
   }
 ];
 
-const ProjectCard = ({project, onClick}) => (
-  <div className='project-card'>
+const ProjectCard = ({project, onClick}) => {
+  const handleCardClick = () => {
+    onclick(project.tags); // Pass the tags to the parent component
+  };
+
+  return (
+  <div className='project-card' onclick={handleCardClick}>
     <Image src={project.image} alt={project.name} width={600} height={400} />
     <div className='project-card-overlay'>
       <Link to={project.link} className='project-card-image-link'>
@@ -102,8 +107,9 @@ const ProjectCard = ({project, onClick}) => (
         <span className='additional-text'></span>
       </div>
     </div>
-  </div>  
-);
+  </div> 
+  ); 
+};
 
 const ProjectsGrid = ({ projects, onButtonClick }) => (
   <div className='projects-grid'>
@@ -307,7 +313,6 @@ const SubNavbar = ({onSelectedCategory, setSelectedCategory}) => {
       textDecoration: 'none', 
       transition: 'color 0.3s, background 0.3s', 
       border: 'none',  // Remove default button styling
-      
       cursor: 'pointer'  // Show pointer cursor on hover
     }} 
     className="hover-effect"
@@ -357,12 +362,12 @@ const Projects = () => {
     // Filter projects based on the selctced category
     const filteredProjects = projects.filter(project => {
       console.log('Selected Category:', selectedCategory);
-      console.log('Project Category:', project.category);
+      console.log('Project Tags:', project.tags);
     
       if (selectedCategory === 'All') {
         return true; // Show all projects
       }
-      return project.category === selectedCategory;
+      return project.tags.includes(selectedCategory);
     });
 
     console.log('Filtered Projects:', filteredProjects);
