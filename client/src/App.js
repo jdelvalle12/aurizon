@@ -14,6 +14,7 @@ import Portfolio from './pages/Portfolio';
 import Careers from './pages/Careers';
 import Insider from './pages/Insider';
 import Contact from './pages/Contact';
+import SignIn from './pages/Sign-In';
 import './index.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -44,6 +45,7 @@ return (
           <Route path="/careers" element={<Careers />} />
           <Route path="/insider" element={<Insider />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/signin" element={<SignIn />} />
         </Routes>
         <Footer />
       </div>
