@@ -398,7 +398,7 @@ return (
         <div>
         <ProjectsGrid projects={filteredProjects} onButtonClick={(category) => setSelectedCategory(category)} />
         </div>
-        <div className={`post-text ${showTitle ? 'fade-in' : ''}`}>
+        <div className='post-text'>
           <p>If you like the designs you see from our work or our software products, go to our marketplace for more.</p> 
             <Link to='/marketplace' className='marketplace-link'>Marketplace<span className='arrow'>&rarr;</span></Link>
         </div>
