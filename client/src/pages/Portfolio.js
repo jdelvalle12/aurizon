@@ -345,7 +345,7 @@ const Projects = () => {
       setShowTitle(true); //When the component mounts, set showTitle to true.
       setShowText(true);
 
-      const typingText = 'Take a look at our work that we have done so far, and we have more to come. We are always developing new projects and updating previous projects with new technologies.';
+      const typingText = 'Take a look at our work that we have done so far, and we have more to come. We are always developing new projects and updating previous projects with new technologies. Not only do we display our work or products, but we also display and advertise your website in "Our Partners" tab for customers to view. Take a look, you may find what you are looking for.';
       const typingSpeed = 30; // Speed in milliseconds between each character
 
       const typingContainer = document.getElementById('typing-text');
@@ -391,9 +391,9 @@ return (
         setSelectedCategory={setSelectedCategory} // Pass setSelectedCategory as a prop
         />
       </div>
-      <div className={`mid-text ${showText ? 'slide-in' : ''}`}>
+      {/* <div className={`mid-text ${showText ? 'slide-in' : ''}`}>
         <p>Not only do we display our work or products, but we also display and advertise your website in "Our Partners" tab for customers to view. Take a look, you may find what you are looking for.</p>
-      </div>
+      </div> */}
         {/*Display the filtered projects */}
         <div>
         <ProjectsGrid projects={filteredProjects} onButtonClick={(category) => setSelectedCategory(category)} />
