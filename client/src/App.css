@@ -2439,6 +2439,16 @@ body {
   z-index: 1; /* Ensure the dropdown is above other elements */
 }
 
+.mid-text {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-left: 13rem;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
