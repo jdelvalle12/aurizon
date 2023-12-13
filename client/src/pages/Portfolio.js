@@ -338,12 +338,12 @@ const SubNavbar = ({onSelectedCategory, setSelectedCategory}) => {
 
 const Projects = () => {
   const [showTitle, setShowTitle] = useState(false);
-  // const [showText, setShowText] = useState(false);
+  const [showText, setShowText] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('All'); // Track the selected category
 
     useEffect(() => {
       setShowTitle(true); //When the component mounts, set showTitle to true.
-      // setShowText(true);
+      setShowText(true);
 
       const typingText = 'Take a look at our work that we have done so far, and we have more to come. We are always developing new projects and updating previous projects with new technologies.';
       const typingSpeed = 30; // Speed in milliseconds between each character
@@ -378,7 +378,7 @@ return (
   <div className='portfolio-container'>
       <img src={Background} alt='portfolio-background' className='portfolio-background'></img>
       {/* // <video src={Codes} autoPlay loop muted className="projects-background-video"></video>       */}
-        <div className={`title ${showTitle ? 'fade-in' : ''}`}>
+        <div className={`title ${showTitle ? 'fade-in' : ''}`} style={{ transition: 'opacity 1s ease-in-out' }}>
           <h2>Our Portfolio</h2>
         </div>
         <div className='sub-text'>
@@ -391,14 +391,14 @@ return (
         setSelectedCategory={setSelectedCategory} // Pass setSelectedCategory as a prop
         />
       </div>
-      <div className={`mid-text ${showTitle ? 'slide-in' : ''}`}>
+      <div className={`mid-text ${showText ? 'slide-in' : ''}`}>
         <p>Not only do we display our work or products, but we also display and advertise your website in "Our Partners" tab for customers to view. Take a look, you may find what you are looking for.</p>
       </div>
         {/*Display the filtered projects */}
         <div>
         <ProjectsGrid projects={filteredProjects} onButtonClick={(category) => setSelectedCategory(category)} />
         </div>
-        <div className='post-text'>
+        <div className={`post-text ${showTitle ? 'fade-in' : ''}`}>
           <p>If you like the designs you see from our work or our software products, go to our marketplace for more.</p> 
             <Link to='/marketplace' className='marketplace-link'>Marketplace<span className='arrow'>&rarr;</span></Link>
         </div>

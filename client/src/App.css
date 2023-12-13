@@ -2636,6 +2636,96 @@ body {
   color: aqua;
 }
 
+@media (max-width: 767px) {
+  .portfolio-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .portfolio-background {
+    margin-top: -2rem;
+    width: 100%;
+    height: 5%;
+  }
+
+  .title h2 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 75%;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    width: 75%;
+  }
+
+  .sub-navbar {
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+    width: 75%;
+  }
+  
+  .sub-navbar ul {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .sub-navbar ul li {
+    padding: 1rem;
+  }
+
+  .development-dropdown {
+    width: 100%; /* Full width for smaller screens */
+    right: auto;
+  }
+
+  .industry-dropdown {
+    width: 100%; /* Full width for smaller screens */
+    right: auto;
+    margin-top: 1rem;
+  }
+
+  .mid-text {
+    font-size: 1.2rem;
+    margin-top: 32rem;
+    margin-left: 2rem;
+    width: 75%;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-card {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .project-card img {
+    width: 100%;
+  }
+
+  .project-card-details {
+    margin-bottom: 1rem;
+  }
+
+  .project-card-details h4 {
+    margin-left: 0;
+  }
+
+  .marketplace-link {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
 /* .project-card-button button {
   margin-top: -18rem;
   margin-bottom: 1rem;
@@ -2649,6 +2739,7 @@ body {
   font-weight: bold;
   cursor: pointer;
 } */
+
 
 
 /* Technologies */
