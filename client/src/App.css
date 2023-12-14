@@ -2340,7 +2340,7 @@ body {
 
 .title h2 {
   font-size: 2.5rem;
-  /* position: relative; */
+  position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -2646,7 +2646,7 @@ body {
   .portfolio-background {
     margin-top: -2rem;
     width: 100%;
-    height: 5%;
+    height: 4.5%;
   }
 
   .title h2 {
@@ -2705,23 +2705,34 @@ body {
 
   .project-card {
     margin-top: 1rem;
-    margin-left: 0;
+    margin-left: 0.8rem;
+    /* margin-bottom: 12rem; */
+    padding-bottom: 5rem;
+    width: 100%;
+    height: 40%;
   }
 
   .project-card img {
-    width: 100%;
+    width: 90%;
   }
 
   .project-card-details {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 
   .project-card-details h4 {
-    margin-left: 0;
+    margin-left: 1rem;
+  }
+
+  .post-text {
+    width: 85%;
+    margin-left: 1rem;
+    text-align: center;
   }
 
   .marketplace-link {
     margin-top: 1rem;
+    margin-left: 1rem;
     margin-bottom: 3rem;
   }
 }

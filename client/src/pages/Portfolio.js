@@ -50,7 +50,7 @@ const projects = [
     name: "Weather Forecast", 
     description: "Stay prepared for any weather condition with this intuitive app. Get real-time weather updates and accurate forecasts for your location and other areas of interest. Plan your activities, trips, and outdoor adventures with confidence, knowing you have reliable weather information at your fingertips. Stay informed and make the most of your day with the Weather Forecast app", 
     technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />] , 
-    category: "Front-end", 
+    category: "Software", 
     link: "https://jdelvalle12.github.io/5-day-national-weather-forecast/",
     tags: ["Development Type", "Software Development", "Industry", "Technology"] 
   },
@@ -58,7 +58,7 @@ const projects = [
     name: "Day Planner", 
     description: "A user-friendly app that helps you organize your daily schedule. Input appointments, meetings, and important events, and save them in a day planner. Stay organized and never miss a task with this intuitive and convenient tool.", 
     technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />, <FaNodeJs />] , 
-    category: "Front-end", 
+    category: "Software", 
     link: "https://jdelvalle12.github.io/day-planner/",
     tags: ["Development Type", "Software Development", "Industry", "Technology"] 
   },
@@ -66,7 +66,7 @@ const projects = [
     name: "Notepad", 
     description: "Capture and organize your thoughts with ease using this versatile note-taking app. Jot down important information, ideas, and reminders, and conveniently access them whenever you need. Stay productive and never forget a thing with this handy digital notebook.", 
     technologies: [<FaHtml5 />, <FaCss3 />, <FaJs />, <FaNodeJs />, "Express"] , 
-    category: "Back-end", 
+    category: "Software", 
     link: "https://notetaken.herokuapp.com/",
     tags: ["Development Type", "Software Development", "Industry", "Technology"] 
   },
@@ -378,7 +378,7 @@ return (
   <div className='portfolio-container'>
       <img src={Background} alt='portfolio-background' className='portfolio-background'></img>
       {/* // <video src={Codes} autoPlay loop muted className="projects-background-video"></video>       */}
-        <div className={`title ${showTitle ? 'fade-in' : ''}`} style={{ transition: 'opacity 1s ease-in-out' }}>
+        <div className={`title ${showTitle ? 'fade-in' : ''}`} >
           <h2>Our Portfolio</h2>
         </div>
         <div className='sub-text'>
@@ -398,7 +398,7 @@ return (
         <div>
         <ProjectsGrid projects={filteredProjects} onButtonClick={(category) => setSelectedCategory(category)} />
         </div>
-        <div className={`post-text ${showTitle ? 'fade-in' : ''}`}>
+        <div className='post-text'>
           <p>If you like the designs you see from our work or our software products, go to our marketplace for more.</p> 
             <Link to='/marketplace' className='marketplace-link'>Marketplace<span className='arrow'>&rarr;</span></Link>
         </div>
