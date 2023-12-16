@@ -8,7 +8,7 @@ const Careers = () => {
 
     
 return (
-        <div className=''>
+        <div className='careers-container'>
            <p>At Aurizon, we're fueled by ambitious goals and innovative ideas,
            and we recognize that achieving them requires a dedicated and talented
            team. We invite individuals from diverse backgrounds, whether you're a
