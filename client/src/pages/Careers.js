@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 // import emailjs from 'emailjs-com'; // Import email.js library
 import CareersBackground from '../images/careers-background.jpg';
 import LearningToo from '../images/learning-2.jpg';
@@ -41,6 +42,9 @@ return (
         </div>
         <div className='head-text'>
             <p id='typing-text'></p>
+        </div>
+        <div className={`button-container ${showCareerTitle ? 'slide-in' : ''}`}>
+            <Link to='/careers-page' className={`careers-button ${showCareerTitle ? 'slide-in' : ''}`}>Explore Job Opportunities<span className='arrow'>&rarr;</span></Link>
         </div>
         <div className='career-description'>
            <p>

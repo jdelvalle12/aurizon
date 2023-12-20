@@ -8,8 +8,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Technologies from './pages/Technologies';
 import ApiDevelopment from './pages/Api-Development';
-import MobileDevelopment from './pages/Mobile-Development';
-import WebDevelopment from './pages/Web-Development';
+import Marketplace from './pages/Marketplace';
+import JobOpportunities from './pages/Job-Opportunities';
 import Portfolio from './pages/Portfolio';
 import Careers from './pages/Careers';
 import Insider from './pages/Insider';
@@ -38,10 +38,9 @@ return (
           <Route path="/about" element={<About />} />
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/technologies/api-development" element={<ApiDevelopment />} />
-          <Route path="/technologies/mobile-development" element={<MobileDevelopment />} />
-          <Route path="/technologies/web-development" element={<WebDevelopment />} />
+          <Route path="/marketplace" element={<Marketplace />} />
+          <Route path="/job-opportunities" element={<JobOpportunities />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          {/* <Route path="/portfolio/:category?" component={Projects} /> */}
           <Route path="/careers" element={<Careers />} />
           <Route path="/insider" element={<Insider />} />
           <Route path="/contact" element={<Contact />} />
