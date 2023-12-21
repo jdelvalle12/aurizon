@@ -56,6 +56,7 @@ return (
            </p>
         </div>
            <img src={LearningToo} alt='learning-too' className='learning-too'></img>
+           <span className='random-design'></span>
         <div className='career-description-two'>
            <p>
            By becoming a part of the Aurizon team, you'll have the opportunity to
@@ -64,17 +65,25 @@ return (
            ongoing learning and development opportunities, and a chance to work on 
            exciting projects that make a real impact.
            </p>
-        </div>   
+        <span className='random-design'></span>
+        <span className='random-design'></span>  
+        </div> 
             <img src={Learning} alt='learning' className='learning'></img>
+           <span className='random-design'></span> {/* Second circle */}
         <div className='having-fun-description'>
             <p>
              More importantly, at Aurizon, we believe in fostering an environment 
              where you can have fun and be yourself. We value authenticity and 
              encourage you to bring your unique personality to the workplace.   
             </p>
-
+        <span className='random-design'></span>
+        <span className='random-design'></span>
         </div>
             <img src={HavingFun} alt='having-fun' className='having-fun'></img>
+            <span className='random-design'></span>
+        <div>
+            
+        </div>
         <div className='career-description-three'>
            <p> 
            Join us in our journey to redefine possibilities and create meaningful
@@ -82,6 +91,8 @@ return (
            your career in the process. Explore our current job openings and take 
            the first step toward a rewarding future with Aurizon.
            </p>
+           <span className='random-design'></span>
+           <span className='random-design'></span>
         </div>
             <img src={Working} alt='working' className='working'></img>
         </div>
