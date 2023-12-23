@@ -8,9 +8,11 @@ import Working from '../images/working.jpg';
 import HavingFun from '../images/having-fun.jpg'
 
 import BalanceIcon from '../images/work-life-balance.png';
-import GrowthIcon from '../images/personal-growth.png';
-import DiversityIcon from '../images/diversity.png';
+import PersonalGrowthIcon from '../images/personal-growth.png';
+import AnywhereIcon from '../images/diversity.png';
 import EquityIcon from '../images/equity.png';
+import ProfessionalIcon from '../images/education.png';
+import HealthIcon from '../images/health.png';
 
 import '../index.css';
 import '../App.css';
@@ -103,30 +105,42 @@ return (
               <li><img className='offer-icon' src={BalanceIcon} alt='Icon Description' />
               <strong>Work-Life Balance</strong> We believe in promoting harmony between professional 
                   and personal life for a fulfilling journey, having flexible time off for the days that
-                  are important to you.
+                  are important to you. In addition, spending time with family is important so we also offer 
+                  long Thanksgiving weekend and one week off between Christmas & New Years.
               </li>              
               <li><img className='offer-icon' src={EquityIcon} alt='Icon Description' />
-              <strong>Equity</strong> We offer equity to all employees so they have a stake in
-                    the company's success.</li>              
-              <li><img className='offer-icon' src={DiversityIcon} alt='Icon Description' />
-              <strong>Diversity</strong> We embrace diverse backgrounds and perspectives.</li>              
-              {/* <li><img className='offer-icon' src={PositivityIcon} alt='Icon Description' />
-              <strong>Positivity</strong> We approach challenges with optimism and creativity.</li>              
-              <li><img className='offer-icon' src={TeamworkIcon} alt='Icon Description' />
+              <strong>Equity</strong> As part of our ongoing efforts to recognize and reward your dedication, 
+              we're actively exploring the introduction of equity opportunities for our team. This initiative 
+              is designed to align everyone with the long-term success and prosperity of Aurizon. While 
+              the details are still in progress, we're committed to ensuring that every team member has the 
+              chance to share in the success they contribute to.</li>              
+              <li><img className='offer-icon' src={AnywhereIcon} alt='Icon Description' />
+              <strong>Work Anywhere</strong> As a startup, we work anywhere and everywhere, in other words remotely,
+                    but in the spirit of transparency, eventually we will have the option to have a hybrid option
+                    especially for those who don't fully like to work remotely and have the balance of working from
+                    home, but also see your fellow coworkers.</li>              
+              <li><img className='offer-icon' src={HealthIcon} alt='Icon Description' />
+              <strong>Health</strong> We are diligently working towards the implementation of comprehensive health 
+              insurance coverage for all team members. Our goal is to provide you with the security and support 
+              needed to thrive both inside and outside the workplace. We understand the importance of health, 
+              and we're excited about the positive impact this will have on our team. .</li>              
+              {/* <li><img className='offer-icon' src={TeamworkIcon} alt='Icon Description' />
               <strong>Teamwork</strong> Collaboration drives our success. We foster an environment 
                     where every team member's voice is heard, ideas are valued, and 
                     innovation flourishes.
               </li> */}
-              <li><img className='offer-icon' src={GrowthIcon} alt='Icon Description' />
-              <strong>Personal & Professional Growth</strong> We believe in fostering an environment where each 
+              <li><img className='offer-icon' src={PersonalGrowthIcon} alt='Icon Description' />
+              <strong>Personal Growth</strong> We believe in fostering an environment where each 
                   team member has the opportunity to learn, grow, and reach their 
-                  full potential, personally & professionally.
+                  full potential.
               </li>              
-              {/* <li><img className='offer-icon' src={InnovationIcon} alt='Icon Description' />
-              <strong>Innovation</strong> Cultivating creative brilliance to pioneer innovative 
-                  solutions and drive industry progress
+              <li><img className='offer-icon' src={ProfessionalIcon} alt='Icon Description' />
+              <strong>Professional</strong> We believe it is important to continue your education, especially in the 
+                    tech industry, new technologies are constantly emerging. Thats why we offer our own inhouse university 
+                    to learn new technologies and as well as refresher courses to go back to what you know already know but
+                    may not have worked with in awhile.
               </li>              
-              <li><img className='offer-icon' src={AutonomyIcon} alt='Icon Description' />
+              {/* <li><img className='offer-icon' src={AutonomyIcon} alt='Icon Description' />
               <strong>Autonomy</strong> We empower our team to innovate and take ownership.</li> */}
             </ul>
         </div>
