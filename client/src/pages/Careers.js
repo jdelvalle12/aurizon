@@ -144,6 +144,14 @@ return (
               <strong>Autonomy</strong> We empower our team to innovate and take ownership.</li> */}
             </ul>
         </div>
+        <div className='hiring-process'>
+            <h2>Hiring Process</h2>
+              <p>
+                We understand how tough it can be to enter the tech industry and we
+                want to give you the chance to showcase your work and test your knowledge.
+                Here is our hiring process...
+              </p>
+        </div>
         <div className='career-description-three'>
            <p> 
            Join us in our journey to redefine possibilities and create meaningful
