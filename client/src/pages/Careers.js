@@ -144,6 +144,7 @@ return (
               <strong>Autonomy</strong> We empower our team to innovate and take ownership.</li> */}
             </ul>
         </div>
+        <span className='random-design'></span>
         <div className='hiring-process'>
             <h2>Hiring Process</h2>
               <p>
@@ -151,6 +152,56 @@ return (
                 want to give you the chance to showcase your work and test your knowledge.
                 Here is our hiring process...
               </p>
+              <ul>              
+                <li>
+                    <h3>1</h3>
+                    <strong>Online Application</strong> We believe in promoting harmony between professional 
+                    and personal life for a fulfilling journey, having flexible time off for the days that
+                    are important to you. In addition, spending time with family is important so we also offer 
+                    long Thanksgiving weekend and one week off between Christmas & New Years.
+                <span className='hiring-arrow'>&rarr;</span>            
+                </li>  
+                <li>
+                    <h3>2</h3>
+                    <strong>Phone Interview</strong> As part of our ongoing efforts to recognize and reward your dedication, 
+                    we're actively exploring the introduction of equity opportunities for our team. This initiative 
+                    is designed to align everyone with the long-term success and prosperity of Aurizon. While 
+                    the details are still in progress, we're committed to ensuring that every team member has the 
+                    chance to share in the success they contribute to.
+                    <span className='hiring-arrow'>&rarr;</span>              
+                </li> 
+                <li>
+                    <h3>3</h3>
+                    <strong>Online Testing</strong> As a startup, we work anywhere and everywhere, in other words remotely,
+                    but in the spirit of transparency, eventually we will have the option to have a hybrid option
+                    especially for those who don't fully like to work remotely and have the balance of working from
+                    home, but also see your fellow coworkers.
+                    <span className='hiring-arrow'>&rarr;</span> 
+                </li>              
+                <li>
+                    <h3>4</h3>
+                    <strong>Interviews</strong> We are diligently working towards the implementation of comprehensive health 
+                    insurance coverage for all team members. Our goal is to provide you with the security and support 
+                    needed to thrive both inside and outside the workplace. We understand the importance of health, 
+                    and we're excited about the positive impact this will have on our team. 
+                    <span className='hiring-arrow'>&rarr;</span> 
+                </li>              
+                <li>
+                    <h3>5</h3>
+                    <strong>Offer</strong> We believe in fostering an environment where each 
+                    team member has the opportunity to learn, grow, and reach their 
+                    full potential.
+                    <span className='hiring-arrow'>&rarr;</span> 
+                </li>              
+                <li>
+                    <h3>6</h3>
+                    <strong>Joining The Team</strong> We believe it is important to continue your education, especially in the 
+                    tech industry, new technologies are constantly emerging. Thats why we offer our own inhouse university 
+                    to learn new technologies and as well as refresher courses to go back to what you know already know but
+                    may not have worked with in awhile.
+                    <span className='hiring-arrow'>&rarr;</span> 
+                </li>
+            </ul>
         </div>
         <div className='career-description-three'>
            <p> 
