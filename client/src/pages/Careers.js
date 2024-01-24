@@ -155,51 +155,63 @@ return (
               <ul>              
                 <li>
                     <h3>1</h3>
-                    <strong>Online Application</strong> We believe in promoting harmony between professional 
-                    and personal life for a fulfilling journey, having flexible time off for the days that
-                    are important to you. In addition, spending time with family is important so we also offer 
-                    long Thanksgiving weekend and one week off between Christmas & New Years.
+                    <strong>Online Application</strong>The online application is your first 
+                    step towards joining our dynamic team at Aurizon. We've designed this 
+                    process to be straightforward, giving you the opportunity to showcase 
+                    your skills and experiences. Your application allows us to understand 
+                    more about you, your professional journey, and what excites you about 
+                    joining Aurizon. We value authenticity, so be yourself and tell us your 
+                    story. 
                 <span className='hiring-arrow'>&rarr;</span>            
                 </li>  
                 <li>
                     <h3>2</h3>
-                    <strong>Phone Interview</strong> As part of our ongoing efforts to recognize and reward your dedication, 
-                    we're actively exploring the introduction of equity opportunities for our team. This initiative 
-                    is designed to align everyone with the long-term success and prosperity of Aurizon. While 
-                    the details are still in progress, we're committed to ensuring that every team member has the 
-                    chance to share in the success they contribute to.
+                    <strong>Phone Interview</strong>Congratulations on making it to the phone 
+                    interview stage! This is an exciting opportunity for us to learn more about 
+                    you beyond your resume. During the phone interview, we'll delve into your 
+                    experiences, skills, and what motivates you. It's also a chance for you to 
+                    gain insights into our company culture, values, and the exciting projects 
+                    we're working on. Prepare to discuss your journey and how it aligns with our 
+                    vision at Aurizon. 
                     <span className='hiring-arrow'>&rarr;</span>              
                 </li> 
                 <li>
                     <h3>3</h3>
-                    <strong>Online Testing</strong> As a startup, we work anywhere and everywhere, in other words remotely,
-                    but in the spirit of transparency, eventually we will have the option to have a hybrid option
-                    especially for those who don't fully like to work remotely and have the balance of working from
-                    home, but also see your fellow coworkers.
+                    <strong>Online Testing</strong>As part of our commitment to thorough 
+                    assessments, the online testing phase allows us to gauge your technical 
+                    and problem-solving skills. This step is crucial, especially in the tech 
+                    industry where innovation and problem-solving are key. We're interested 
+                    in understanding how you approach challenges and find solutions. Don't worry; 
+                    we design our tests to be fair and reflective of real-world scenarios. 
                     <span className='hiring-arrow'>&rarr;</span> 
                 </li>              
                 <li>
                     <h3>4</h3>
-                    <strong>Interviews</strong> We are diligently working towards the implementation of comprehensive health 
-                    insurance coverage for all team members. Our goal is to provide you with the security and support 
-                    needed to thrive both inside and outside the workplace. We understand the importance of health, 
-                    and we're excited about the positive impact this will have on our team. 
+                    <strong>Interviews</strong>Congratulations! You've reached the interview 
+                    stage. This is an opportunity for you to meet our team and showcase your 
+                    expertise. Expect a mix of technical and behavioral questions to understand 
+                    your skills, experience, and how you'd fit into our collaborative environment. We're interested in your thought process and how you approach problem-solving. This is a two-way conversation, so feel free to ask us questions too. 
                     <span className='hiring-arrow'>&rarr;</span> 
                 </li>              
                 <li>
                     <h3>5</h3>
-                    <strong>Offer</strong> We believe in fostering an environment where each 
-                    team member has the opportunity to learn, grow, and reach their 
-                    full potential.
+                    <strong>Offer</strong>If you receive an offer from Aurizon, congratulations! 
+                    This means we see great potential in you and believe you'll be a valuable 
+                    addition to our team. The offer includes details about your role, responsibilities, 
+                    benefits, and other important information. Take your time to review and feel 
+                    free to ask any questions you may have. We're excited about the prospect of 
+                    having you on board. 
                     <span className='hiring-arrow'>&rarr;</span> 
                 </li>              
                 <li>
                     <h3>6</h3>
-                    <strong>Joining The Team</strong> We believe it is important to continue your education, especially in the 
-                    tech industry, new technologies are constantly emerging. Thats why we offer our own inhouse university 
-                    to learn new technologies and as well as refresher courses to go back to what you know already know but
-                    may not have worked with in awhile.
-                    <span className='hiring-arrow'>&rarr;</span> 
+                    <strong>Joining The Team</strong>Welcome to Aurizon! The "Joining The Team" 
+                    phase marks the beginning of an exciting journey. As you integrate into our 
+                    work culture, you'll have access to onboarding resources, mentorship, and our 
+                    in-house university for continuous learning. This is a time for you to familiarize 
+                    yourself with our projects, colleagues, and the collaborative spirit that defines 
+                    Aurizon. We encourage you to bring your unique perspectives, ideas, and enthusiasm 
+                    to make a meaningful impact. 
                 </li>
             </ul>
         </div>
