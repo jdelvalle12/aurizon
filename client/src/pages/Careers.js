@@ -50,9 +50,9 @@ return (
         <div className='head-text'>
             <p id='typing-text'></p>
         </div>
-        <div className={`button-container ${showCareerTitle ? 'slide-in' : ''}`}>
-            <Link to='/careers-page' className={`careers-button ${showCareerTitle ? 'slide-in' : ''}`}>Explore Job Opportunities<span className='arrow'>&rarr;</span></Link>
-        </div>
+        {/* <div className={`button-container ${showCareerTitle ? 'slide-in' : ''}`}>
+            <Link to='/job-list' className={`careers-button ${showCareerTitle ? 'slide-in' : ''}`}>Explore Job Opportunities<span className='arrow'>&rarr;</span></Link>
+        </div> */}
         <div className='why-work'>
             <h1>Why Work at Aurizon?</h1>
         </div>
@@ -215,18 +215,37 @@ return (
                 </li>
             </ul>
         </div>
+        <span className='random-design'></span>
+        <div className='hiring-process'>
+           <h2>Remember...</h2>   
+           <ul>
+            <li>
+              <strong>Be prepared</strong>Do your research and be ready by interview day to confident   
+            </li>
+            <li>
+                <strong>Be yourself</strong>Be unique and just be you, we want to see who you really are.
+            </li>
+            <li>
+                <strong>Just ask away!</strong>Ask us questions about your role, the company, etc. 
+            </li>
+           </ul>
+        </div>
         <div className='career-description-three'>
-           <p> 
-           Join us in our journey to redefine possibilities and create meaningful
-           solutions. Together, we can achieve remarkable milestones and advance 
-           your career in the process. Explore our current job openings and take 
-           the first step toward a rewarding future with Aurizon.
-           </p>
+            <p> 
+            Join us in our journey to redefine possibilities and create meaningful
+            solutions. Together, we can achieve remarkable milestones and advance 
+            your career in the process. Explore our current job openings and take 
+            the first step toward a rewarding future with Aurizon.
+            </p>
            <span className='random-design'></span>
            <span className='random-design'></span>
         </div>
-            <img src={Working} alt='working' className='working'></img>
-        </div>
+            <img src={Working} alt='working' className='working'></img>        
+            {/* <div className={`button-container ${showCareerTitle ? 'slide-in' : ''}`}>
+                <Link to='/job-list' className={`careers-button ${showCareerTitle ? 'slide-in' : ''}`}>Explore Job Opportunities<span className='arrow'>&rarr;</span></Link>
+            </div> */}
+            
+    </div>        
     );
 };
 

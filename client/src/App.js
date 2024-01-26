@@ -9,7 +9,6 @@ import About from './pages/About';
 import Technologies from './pages/Technologies';
 import AurizonUniversity from './pages/Aurizon-University';
 import Marketplace from './pages/Marketplace';
-import JobOpportunities from './pages/Job-Opportunities';
 import Portfolio from './pages/Portfolio';
 import Careers from './pages/Careers';
 import Insider from './pages/Insider';
@@ -39,7 +38,6 @@ return (
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/aurizon-university" element={<AurizonUniversity />} />
           <Route path="/marketplace" element={<Marketplace />} />
-          <Route path="/job-opportunities" element={<JobOpportunities />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/insider" element={<Insider />} />
