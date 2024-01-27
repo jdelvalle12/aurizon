@@ -3170,7 +3170,23 @@ body {
   font-size: 5.5rem;
 }
 
+.opportunity h2 {
+  text-decoration: underline;
+  margin-top: 7rem;
+  font-size: 2.5rem;
+}
 
+.opportunity p {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.opportunity hr {
+  margin-top: 3rem;
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+  width: 80%;
+}
 
 /* Insider */
 

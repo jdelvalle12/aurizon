@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import emailjs from 'emailjs-com'; // Import email.js library
 import CareersBackground from '../images/careers-background.jpg';
 import LearningToo from '../images/learning-2.jpg';
@@ -244,7 +244,16 @@ return (
             {/* <div className={`button-container ${showCareerTitle ? 'slide-in' : ''}`}>
                 <Link to='/job-list' className={`careers-button ${showCareerTitle ? 'slide-in' : ''}`}>Explore Job Opportunities<span className='arrow'>&rarr;</span></Link>
             </div> */}
-            
+        <div className='opportunity'>
+            <h2>Job Opportunities</h2>    
+                <p>
+                  See any roles that best fit you? Go ahead and apply.  
+                </p>
+                    <hr />
+                <p>At this time, there are no open positions. Please continue to check 
+                back as we are a new growing startup company.
+                </p>
+        </div>    
     </div>        
     );
 };
