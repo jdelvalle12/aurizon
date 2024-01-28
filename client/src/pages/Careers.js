@@ -244,6 +244,7 @@ return (
             {/* <div className={`button-container ${showCareerTitle ? 'slide-in' : ''}`}>
                 <Link to='/job-list' className={`careers-button ${showCareerTitle ? 'slide-in' : ''}`}>Explore Job Opportunities<span className='arrow'>&rarr;</span></Link>
             </div> */}
+            <span className='random-design'></span>
         <div className='opportunity'>
             <h2>Job Opportunities</h2>    
                 <p>
@@ -253,7 +254,18 @@ return (
                 <p>At this time, there are no open positions. Please continue to check 
                 back as we are a new growing startup company.
                 </p>
-        </div>    
+        </div>  
+        <div className='dont-see'>
+            <h2>Don't see the job for you?</h2>
+                <p>
+                    Send your resume anyway and we will keep you in mind for future openings.
+                </p>
+        </div>  
+                {/* <div className={`button-container ${showCareerTitle ? 'slide-in' : ''}`}>
+                    <a href="mailto:jdelvalle88@live.com" className={`careers-button ${showCareerTitle ? 'slide-in' : ''}`}>
+                    Send Your Resume<span className='arrow'>&rarr;</span>
+                    </a>
+                </div> */}
     </div>        
     );
 };
