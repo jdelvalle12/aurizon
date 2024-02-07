@@ -3208,6 +3208,144 @@ body {
   font-size: 1.3rem;
 }
 
+@media (max-width: 767px) {
+  .careers-container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .careers-background {
+    margin-top: -2.3rem;
+    margin-left: 4rem;
+    width: 100%;
+    height: 4.5%;
+  }
+
+  .career-title h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  .career-title p {
+    font-size: 1.2rem;
+    /* margin-left: 1rem; */
+    margin-bottom: 1rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  .head-text {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-left: 9rem;
+    margin-bottom: 2rem;
+    width: 40%;
+    text-align: center;
+  }
+
+  .why-work {
+    width: 50%;
+    margin-left: 7.5rem;
+    margin-right: 2rem;
+  }
+
+  .career-description,
+  .career-description-two,
+  .career-description-three,
+  .having-fun-description {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  .career-description p,
+  .career-description-two p,
+  .career-description-three p,
+  .having-fun-description p {
+    font-size: 1rem;
+    margin-left: 0; /* Adjust as needed */
+    text-align: left;
+  }
+
+  .we-offer p {
+    font-size: 1rem;
+    margin-left: 0; /* Adjust as needed */
+    text-align: left;
+  }
+
+  .we-offer ul {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .we-offer ul li {
+    width: 90%;
+    margin: 1rem auto;
+    flex-direction: column;
+  }
+
+  .hiring-process h3 {
+    font-size: 2rem;
+    margin-left: 0; /* Adjust as needed */
+    width: 90%;
+    text-align: center;
+  }
+
+  .hiring-process p {
+    font-size: 1rem;
+    margin-left: 0; /* Adjust as needed */
+    width: 90%;
+    text-align: left;
+  }
+
+  .hiring-process ul {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .hiring-process ul li {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .opportunity h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .opportunity p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .dont-see {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 0; /* Adjust as needed */
+    width: 90%;
+    text-align: left;
+  }
+
+  .dont-see p {
+    font-size: 1rem;
+  }
+}
+
+
 /* Insider */
 
 /* Resume */
