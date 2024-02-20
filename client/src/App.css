@@ -3210,32 +3210,34 @@ body {
 
 @media (max-width: 767px) {
   .careers-container {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     justify-content: center;
     align-items: center;
+    text-align: center;
     /* display: flex;
     flex-direction: column; */
   }
 
   .careers-background {
+    position: relative;
     margin-top: -2.3rem;
-    margin-left: 18rem;
-    width: 100%;
+    margin-left: 13rem;
+    width: 73%;
     height: 4.5%;
   }
 
   .career-title h2 {
     font-size: 2rem;
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-top: -21rem;
+    margin-left: 1rem;
     width: 90%;
     text-align: center;
   }
 
   .career-title p {
     font-size: 1.2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-bottom: 1rem;
     width: 90%;
     text-align: center;
@@ -3244,68 +3246,35 @@ body {
   .head-text {
     font-size: 1.2rem;
     margin-top: 2rem;
-    margin-left: 21rem;
+    margin-left: 14rem;
     margin-bottom: 2rem;
-    width: 30%;
+    width: 35%;
     text-align: center;
   }
 
   .why-work {
-    width: 28%;
-    margin-top: 24rem;
-    margin-left: 21.8rem;
+    width: 30%;
+    margin-top: 10rem;
+    margin-left: 15.8rem;
     margin-right: 2rem;
   }
 
   .career-description {
-    width: 90%;
-    margin-top: 2rem;
-    margin-left: 9rem;
-    margin-right: 25rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-  }
-  .career-description-two,
-  .career-description-three,
-  .having-fun-description {
-    width: 90%;
+    font-size: 1.1rem;
+    width: 30%;
     margin-top: 2rem;
     margin-left: 12rem;
-    margin-right: 25rem;
-    margin-bottom: 1rem;
+    margin-right: 18.5rem;
+    margin-bottom: 2rem;
     /* padding: 1rem; */
   }
 
   .learning-too {
-    width: 30%;
-    margin-top: 4rem;
-    margin-left: 18rem;
+    width: 35%;
+    margin-top: 9rem;
+    margin-left: 14.7rem;
   }
-
-  .career-description p,
-  .career-description-two p,
-  .having-fun-description p {
-    font-size: 1rem;
-    width: 25%;
-    /* height: auto; */
-    margin-left: 20rem; /* Adjust as needed */
-    /* margin-right: 2rem; */
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .career-description-three p {
-    font-size: 1rem;
-    width: 50%;
-    /* height: 58%; */
-    margin-left: 1rem; /* Adjust as needed */
-    margin-right: 2rem;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-  }
-
+  
   .random-design::before,
   .random-design::after {
     width: 7%;
@@ -3315,6 +3284,64 @@ body {
     flex-direction: column;
   }
 
+  .career-description-two {
+    font-size: 1.1rem;
+    width: 30%;
+    margin-top: 2rem;
+    margin-left: 16rem;
+    margin-right: 18rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+  }
+
+  .learning {
+    width: 45%;
+    margin-top: 7rem;
+    margin-left: 12rem;
+  }
+
+  .having-fun-description {
+    font-size: 1.1rem;
+    width: 30%;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 19rem;
+    margin-bottom: 2rem;
+    /* padding: 1rem; */
+  }
+
+  .having-fun {
+    width: 38%;
+    margin-top: 7rem;
+    margin-left: 13.5rem;
+  }
+  
+  
+  /* .career-description p,
+  .career-description-two p,
+  .having-fun-description p {
+    font-size: 1rem;
+    width: 25%;
+    height: auto;
+    margin-left: 20rem; 
+    margin-right: 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  } */
+
+  /* .career-description-three p {
+    font-size: 1rem;
+    width: 50%;
+    height: 58%;
+    margin-left: 1rem; 
+    margin-right: 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  
   /* .random-design:nth-child(2)::before,
   .random-design:nth-child(3)::before,
   .random-design:nth-child(2)::after,
@@ -3328,113 +3355,131 @@ body {
     align-items: center;
     justify-content: center;
   } */
-
+  
   .we-offer h2 {
     margin-left: 1rem;
     margin-right: 4rem;
   }
-
+  
   .we-offer p {
     font-size: 1rem;
-    width: 40%;
-    margin-left: 9rem; /* Adjust as needed */
+    width: 30%;
+    margin-left: 15rem; /* Adjust as needed */
     text-align: left;
   }
-
+  
   .we-offer ul {
-    width: 50%;
-    margin-left: 7rem;
+    width: 40%;
+    margin-left: 13rem;
     display: flex;
     flex-direction: column;
   }
-
+  
   .offer-icon {
     width: 30%;
     margin-left: 5rem;
   }
-
+  
   .we-offer ul li {
     width: 90%;
     margin: 1rem auto;
     flex-direction: column;
   }
-
+  
   .hiring-process h2 {
     margin-left: 1rem;
     margin-right: 4rem;
   }
-
+  
   .hiring-process h3 {
     font-size: 2rem;
     margin-left: 5rem; /* Adjust as needed */
     width: 25%;
     text-align: center;
   }
-
+  
   .hiring-process p {
     font-size: 1rem;
-    margin-left: 7.3rem; /* Adjust as needed */
-    width: 50%;
+    margin-left: 15.3rem; /* Adjust as needed */
+    width: 30%;
     text-align: left;
   }
-
+  
   .hiring-process ul {
     width: 50%;
-    margin-left: 7rem;
+    margin-left: 10.5rem;
     display: flex;
     flex-direction: column;
   }
-
+  
   .hiring-process ul li {
-    width: 90%;
-    margin: 1rem auto;
+    width: 70%;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
   }
-
+  
   .hiring-arrow {
     transform: rotate(90deg); /* Rotate the arrow 90 degrees clockwise */
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
-
+  
   .opportunity h2 {
     font-size: 1.5rem;
+    width: 50%;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    margin-left: 1rem;
+    margin-left: 10rem;
     margin-right: 3rem;
     text-align: center;
   }
-
+  
   .opportunity p {
     font-size: 1rem;
-    width: 50%;
+    width: 30%;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 7.3rem;
-    text-align: left;
+    margin-left: 15rem;
+    text-align: center;
   }
-
+  
   .opportunity hr {
-    width: 50%;
-    margin-left: 7.3rem;
+    width: 40%;
+    margin-left: 13.3rem;
+  }
+  
+  .career-description-three {
+    font-size: 1.1rem;
+    width: 35%;
+    margin-top: 2rem;
+    margin-left: 14.2rem;
+    margin-right: 17rem;
+    margin-bottom: 2rem;
   }
 
   .working {
     width: 40%;
     margin-left: 13rem;
   }
-
+  
   .dont-see {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 7.3rem; /* Adjust as needed */
-    width: 50%;
-    text-align: left;
+    margin-left: 14.3rem; /* Adjust as needed */
+    width: 35%;
+    text-align: center;
   }
-
+  
   .dont-see p {
     font-size: 1rem;
+  }
+
+  .careers-button {
+    width: 100%;
+  }
+
+  .footer {
+
   }
 }
 
@@ -3685,7 +3730,7 @@ body {
         align-items: center;
         flex-direction: column;
         width: 70%;
-        margin-left: 3.5rem;
+        margin-left: 1.5rem;
       }
 
       .social-icons {
