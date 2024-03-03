@@ -2848,7 +2848,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 38rem;
+  margin-top: 42rem;
   margin-left: 35rem;
   padding: 1rem;
   width: 35%;
@@ -3476,10 +3476,6 @@ body {
 
   .careers-button {
     width: 100%;
-  }
-
-  .footer {
-
   }
 }
 
