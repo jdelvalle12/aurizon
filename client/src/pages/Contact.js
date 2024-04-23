@@ -4,7 +4,7 @@ import React from 'react';
 import '../styles/Contact.css';
 import '../App.css';
 
-export default function Contact() {
+const Contact = () => {
   // const sendEmail = (e) => {
   //   e.preventDefault();
   //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
@@ -50,3 +50,5 @@ export default function Contact() {
     </section>
   );
 }
+
+export default Contact;
