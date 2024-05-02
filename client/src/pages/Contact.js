@@ -1,6 +1,6 @@
 import React from 'react';
 // import emailjs from 'emailjs-com'; // Import email.js library
-import ContactUs from '../images/contact-us.jpg';
+import ContactUs from '../images/contact-us-two.jpg';
 import '../styles/Contact.css';
 import '../App.css';
 
@@ -19,7 +19,7 @@ const Contact = () => {
 
   return (
     <section>
-      <img src={ContactUs} alt='ContactUs' className="contact-us"></img>
+      <img src={ContactUs} alt='ContactUs' className="contact-us-two"></img>
       <div className='contact-container'>
         <h1 className='contact-title'>Contact</h1>
         <div className="design-inquiries">
