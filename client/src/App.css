@@ -407,11 +407,13 @@ body {
 .home-container .background-video {
   position: absolute;
   width: 100%;
-  height: 13%;
+  margin-top: -7.3rem;
+  /* height: 13%; */
 }
 
 /* Apply the animation to the slogan */
 .home-container h1 {
+  position: relative;
   font-size: 2.5rem;
   font-family: 'Source Code Pro', 'Space Grotesk', sans-serif; /* Change the font family to your preferred italic font */
   font-style: italic; /* Apply italic to the font */
@@ -621,6 +623,7 @@ body {
   max-width: 90%;
   margin-right: 3rem;
   margin-left: 3rem;
+  margin-top: 12rem;
   text-align: left;
   justify-content: center;
   align-items: center;
@@ -629,6 +632,7 @@ body {
 
 .motion-video {
   padding: 2rem;
+  margin-top: 12rem;
 }
 
 .who-we-are {
