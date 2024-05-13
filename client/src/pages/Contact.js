@@ -57,7 +57,7 @@ const Contact = () => {
             <label htmlFor='companyName'>Company Name:</label>
             <input type='text' name='companyName' id='companyName' ref={register} />
 
-            <lable htmlFor='industry'>Industry:</lable>
+            <label htmlFor='industry'>Industry:</label>
             <input type='text' name='industry' id='industry' ref={register} />
 
             <label htmlFor='state'>State:</label>
