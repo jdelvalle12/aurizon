@@ -35,7 +35,7 @@ const Contact = () => {
   return (
       <div className='contact-container'>
         <img src={ContactUs} alt='ContactUs' className="contact-us-background" />
-        <h1 className='contact-title'>Contact Us</h1>
+        <h1 className='contact-title'>Hey Let's Talk About It!</h1>
         <div className="design-inquiries">
           {/* <h3 className='contact-header'>Design Inquiries:</h3> */}
           <p>Questions, feedback, need further assistance, we are here to help. Fill out the form below of your inquiry.</p>
@@ -47,35 +47,35 @@ const Contact = () => {
           </ul> */}
           <form onSubmit={handleSubmit}>
             <label htmlFor='firstName'>First Name:</label>
-            <input type='text' name='firstName' id='firstName' value={formData.firstName} onChange={handleChange} required />
-            <span>This field is required</span>
+            <input type='text' name='firstName' id='firstName' value={formData.firstName} onChange={handleChange} placeholder='This field is required' required />
+            {/* <span>This field is required</span> */}
             <br />
             <label htmlFor='lastName'>Last Name:</label>
-            <input type='text' name='lastName' id='lastName' value={formData.lastName} onChange={handleChange} required />
-            <span>This field is required</span>
+            <input type='text' name='lastName' id='lastName' value={formData.lastName} onChange={handleChange} placeholder='This field is required' required />
+            {/* <span>This field is required</span> */}
             <br />
             <label htmlFor='companyEmail'>Company Email:</label>
-            <input type='email' name='companyEmail' id='companyEmail' value={formData.companyEmail} onChange={handleChange} required />
-            <span>This field is required</span>
+            <input type='email' name='companyEmail' id='companyEmail' value={formData.companyEmail} onChange={handleChange} placeholder='This field is required' required />
+            {/* <span>This field is required</span> */}
             <br />
             <label htmlFor='phone'>Phone:</label>
-            <input type='text' name='phone' id='phone' value={formData.phone} onChange={handleChange} required />
-            <span>This field is required</span>
+            <input type='text' name='phone' id='phone' value={formData.phone} onChange={handleChange} placeholder='This field is required' required />
+            {/* <span>This field is required</span> */}
             <br />
             <label htmlFor='companyName'>Company Name:</label>
-            <input type='text' name='companyName' id='companyName' value={formData.companyName} onChange={handleChange} />
+            <input type='text' name='companyName' id='companyName' value={formData.companyName} onChange={handleChange} placeholder='Company Name (optional)' />
             <br />
             <label htmlFor='industry'>Industry:</label>
-            <input type='text' name='industry' id='industry' value={formData.industry} onChange={handleChange} />
+            <input type='text' name='industry' id='industry' value={formData.industry} onChange={handleChange} placeholder='Industry (optional)' />
             <br />
             <label htmlFor='state'>State:</label>
-            <input type='text' name='state' id='state' value={formData.state} onChange={handleChange} />
+            <input type='text' name='state' id='state' value={formData.state} onChange={handleChange} placeholder='State (optional)' />
             <br />
             <label htmlFor='intent'>Intent of Message:</label>
-            <input type='text' name='intent' id='intent' value={formData.intent} onChange={handleChange} />
+            <input type='text' name='intent' id='intent' value={formData.intent} onChange={handleChange} placeholder='This field is required' required />
             <br />
             <label htmlFor='message'>Message:</label>
-            <textarea name='message' id='message' value={formData.message} onChange={handleChange} />
+            <textarea name='message' id='message' value={formData.message} onChange={handleChange} placeholder='This field is required' required />
             <br />
             <input type='submit' value='Submit' />
           </form>
