@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import { useForm } from 'react-hook-form';
 // import emailjs from 'emailjs-com'; // Import email.js library
 import ContactUs from '../images/contact-us-two.jpg';
+import Reality from '../images/into-reality.jpg';
 import '../styles/Contact.css';
 import '../App.css';
 
@@ -36,9 +37,9 @@ const Contact = () => {
       <div className='contact-container'>
         <img src={ContactUs} alt='ContactUs' className="contact-us-background" />
         <h1 className='contact-title'>Hey Let's Talk About It!</h1>
+          <p>Questions? Want to leave feedback? Need further assistance? We are here to help. Fill out the form below of your inquiry.</p>
         <div className="design-inquiries">
           {/* <h3 className='contact-header'>Design Inquiries:</h3> */}
-          <p>Questions, feedback, need further assistance, we are here to help. Fill out the form below of your inquiry.</p>
           {/* <ul>
             <li>Name</li>
             <li>Email</li>
@@ -80,6 +81,8 @@ const Contact = () => {
             <input type='submit' value='Submit' />
           </form>
         </div>
+        <h2 className='contact-end-message'>Let's make it work! Let's make the dream become a reality.</h2>
+        <img src={Reality} alt='Reality' className="into-reality" />
       </div>
   );
 }
