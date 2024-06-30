@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // import { useForm } from 'react-hook-form';
 // import emailjs from 'emailjs-com'; // Import email.js library
 import ContactUs from '../images/contact-us-two.jpg';
@@ -19,6 +19,12 @@ const Contact = () => {
     message: '',
   });
 
+  const [showSlogan, setShowSlogan] = useState(false);
+
+  useEffect (() => {
+    setShowSlogan(true);
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -36,8 +42,8 @@ const Contact = () => {
   return (
       <div className='contact-container'>
         <img src={ContactUs} alt='ContactUs' className="contact-us-background" />
-        <h1 className='contact-title'>Hey Let's Talk About It!</h1>
-          <p>Questions? Want to leave feedback? Need further assistance? We are here to help. Fill out the form below of your inquiry.</p>
+        <h1 className={`contact-title ${showSlogan ? 'fade-in' : ''}`}>Hey Let's Talk About It!</h1>
+      <p className={showSlogan ? 'slide-in' : ''}>Questions? Want to leave feedback? Need further assistance? We are here to help. Fill out the form below with your inquiry.</p>
         <div className="design-inquiries">
           {/* <h3 className='contact-header'>Design Inquiries:</h3> */}
           {/* <ul>
@@ -81,7 +87,7 @@ const Contact = () => {
             <input type='submit' value='Submit' />
           </form>
         </div>
-        <h2 className='contact-end-message'>Let's make it work! Let's make the dream become a reality.</h2>
+        <h2 className='contact-end-message'>Let's connect, work together, and make the dream become a reality.</h2>
         <img src={Reality} alt='Reality' className="into-reality" />
       </div>
   );
