@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
       <div className="footer-legal">
   <div className="footer-legal-content">
-    <div className="copyright">© 2023 Aurizon Technologies, LLC</div>
+    <div className="copyright">© 2023-2024 Aurizon Technologies, LLC</div>
   <p>Privacy Policy</p>
   <p>Terms of Service</p>
     <div className="social-icons">
