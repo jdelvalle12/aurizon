@@ -1,0 +1,63 @@
+.insights-section {
+  padding: 6rem 2rem;
+  background: #050816;
+  text-align: center;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+.insight-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: 0.3s ease;
+  color: #cbd5e1;
+}
+
+.insight-card:hover {
+  transform: translateY(-6px);
+  border-color: aqua;
+  background: rgba(0, 255, 255, 0.08);
+}
+
+@media screen and (max-width: 768px) {
+
+  .insights-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .insights-grid {
+    grid-template-columns: 1fr; /* stack cards */
+    gap: 1.5rem;
+  }
+
+  .insight-card {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .insight-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .insight-card p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .insights-section .section-title {
+    font-size: 2.2rem;
+  }
+
+  .insights-section .section-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}

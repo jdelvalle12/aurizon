@@ -1,0 +1,76 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  background: linear-gradient(to bottom, #050816, #0b1120);
+  padding: 6rem 2rem;
+  color: white;
+}
+
+/* layout container */
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 3rem;
+}
+
+/* text side */
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  color: #cbd5e1;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* media side */
+.about-media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-video {
+  width: 100%;
+  max-width: 500px;
+
+  border-radius: 16px;
+
+  opacity: 0.9;
+
+  object-fit: cover;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-video {
+    max-width: 100%;
+  }
+}

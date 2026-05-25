@@ -1,0 +1,86 @@
+/* =========================
+   CAREERS SECTION
+========================= */
+
+.careers-section {
+  padding: 6rem 2rem;
+
+  background: #081120;
+
+  text-align: center;
+}
+
+.careers-container {
+  max-width: 800px;
+ background: linear-gradient(to bottom, #050816, #0b1120);
+  margin: 0 auto;
+}
+
+.careers-section h2 {
+  font-size: 2.8rem;
+
+  color: white;
+
+  margin-bottom: 1.5rem;
+}
+
+.careers-section p {
+  color: #cbd5e1;
+
+  line-height: 1.9rem;
+
+  font-size: 1.1rem;
+
+  margin-bottom: 2.5rem;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.careers-btn {
+  display: inline-block;
+
+  background: transparent;
+
+  border: 1px solid aqua;
+
+  color: aqua;
+
+  padding: 1rem 2rem;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.careers-btn:hover {
+  background: aqua;
+
+  color: black;
+
+  transform: translateY(-3px);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  .careers-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .careers-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .careers-section p {
+    font-size: 1rem;
+  }
+}

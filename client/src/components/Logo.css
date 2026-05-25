@@ -1,0 +1,49 @@
+/* =========================
+   LOGO
+========================= */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Main logo text */
+.logo-link {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  color: white;
+  letter-spacing: 1px;
+
+  transition: 0.3s ease;
+}
+
+.logo-link:hover {
+  color: aqua;
+}
+
+/* Highlighted A */
+.logo-mark {
+  background-color: aqua;
+  color: black;
+
+  font-weight: 800;
+
+  padding: 0.1rem 0.35rem;
+  margin-right: 0.2rem;
+
+  border-radius: 4px;
+
+  line-height: 1;
+}
+
+/* Optional SVG (future use only) */
+.arc {
+  width: 40px;
+  height: 30px;
+}

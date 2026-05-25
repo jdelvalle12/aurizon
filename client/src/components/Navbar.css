@@ -1,87 +1,122 @@
-/* Navbar */
+/* =========================
+   NAVBAR BASE
+========================= */
 
-/* .navbar {
+.navbar {
+  width: 100%;
+  height: 90px;
+  background-color: #0b0f19;
+
   display: flex;
+  justify-content: space-between;
   align-items: center;
+
+  padding: 0 4rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.toggle-button {
+/* =========================
+   DESKTOP NAV MENU (DEFAULT)
+========================= */
+
+.nav-menu {
   display: flex;
+}
+
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  list-style: none;
+  margin: 0.5rem 0 0 9rem;
+  padding: 0;
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: aqua;
+}
+
+/* =========================
+   HAMBURGER (HIDDEN ON DESKTOP)
+========================= */
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
 }
 
 .line {
-  width: 25px;
+  width: 28px;
   height: 3px;
-  background-color: #333;
-  margin: 3px;
+  background-color: white;
+  margin: 4px 0;
 }
 
-.nav-tabs {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+/* =========================
+   MOBILE STYLES
+========================= */
 
-.projects {
-  color: whitesmoke;
-  padding-right: 0;
-  margin: 0 0.8rem;
-  font-family: "Orbitron","Quantico", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.9;
-  list-style-type: none;
-}
+@media screen and (max-width: 768px) {
 
-.projects:hover {
-  color: rgb(245, 71, 40);
-}
+  .navbar {
+    padding: 0 1.5rem;
+  }
 
-.contact {
-  color: whitesmoke;
-  padding-right: 0;
-  margin: 0 0.8rem;
-  font-family: "Orbitron","Quantico", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.9;
-  list-style-type: none;
-}
+  .hamburger {
+    display: flex;
+  }
 
-.contact:hover {
-  color: magenta;
-}
+  /* hidden by default */
+  .nav-menu {
+    position: absolute;
+    top: 90px;
+    left: -100%;
 
-.about-me {
-  color: whitesmoke;
-  padding-right: 0;
-  margin: 0 0.9rem;
-  font-family: "Orbitron","Quantico", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.9;
-  list-style-type: none;
-}
+    width: 100%;
+    background-color: #0b0f19;
 
-.about-me:hover {
-  color: cyan;
-}
+    flex-direction: column;
 
-.resume {
-  color: whitesmoke;
-  padding-right: 0;
-  margin: 0 0.9rem;
-  font-family: "Orbitron","Quantico", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.9;
-  list-style-type: none;
-}
+    padding: 2rem 0;
 
-.resume:hover {
-  color: rgb(231, 235, 12)
-} */
+    transition: 0.4s ease;
+  }
+
+  /* when menu is open */
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+}

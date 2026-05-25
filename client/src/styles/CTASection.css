@@ -1,0 +1,81 @@
+/* =========================
+   CTA SECTION
+========================= */
+
+.cta-section {
+  padding: 6rem 2rem;
+
+  background: linear-gradient(
+    to right,
+    #061120,
+    #0b1f35
+  );
+
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 3rem;
+
+  color: white;
+
+  margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+  max-width: 700px;
+
+  margin: 0 auto 2.5rem auto;
+
+  color: #cbd5e1;
+
+  line-height: 1.8rem;
+
+  font-size: 1.1rem;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.primary-btn {
+  display: inline-block;
+
+  background: aqua;
+  color: black;
+
+  padding: 1rem 2rem;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+
+  background: white;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  .cta-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .cta-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .cta-section p {
+    font-size: 1rem;
+  }
+}
