@@ -3,26 +3,42 @@ import { Link } from 'react-router-dom';
 
 import '../styles/CTASection.css';
 
+import ctaImage from '../images/digital-network.jpg'; // abstract tech / network / futuristic image
+
 const CTASection = () => {
 
   return (
 
     <section className="cta-section">
 
-  <h2>
-    Technology Built for the Future
-  </h2>
+      {/* BACKGROUND IMAGE */}
+      <div className="cta-image-wrapper">
+        <img
+          src={ctaImage}
+          alt="Technology background"
+          className="cta-image"
+        />
+      </div>
 
-  <p>
-    Helping organizations build, scale,
-    and innovate through modern technology solutions.
-  </p>
+      {/* CONTENT */}
+      <div className="cta-container">
 
-  <Link to="/contact" className="primary-btn">
-    Contact Us
-  </Link>
+        <h2>
+          Technology Built for the Future
+        </h2>
 
-</section>
+        <p>
+          Helping organizations build, scale,
+          and innovate through modern technology solutions.
+        </p>
+
+        <Link to="/contact" className="primary-btn">
+          Contact Us
+        </Link>
+
+      </div>
+
+    </section>
 
   );
 };

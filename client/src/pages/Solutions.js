@@ -1,18 +1,44 @@
 import React from 'react';
+import '../styles/Solutions.css';
 
-import Background from '../images/abstract-image.jpg';
+const Solutions = () => {
+  return (
+    <div className="solutions-page">
 
-import '../index.css';
-import '../App.css';
+      <header className="solutions-hero">
+        <h1>Technology Solutions</h1>
+        <p>
+          We design and develop scalable digital solutions
+          that help businesses operate, grow, and adapt.
+        </p>
+      </header>
 
-const technologies = () => {
+      <section className="solutions-grid">
 
-    return (
-       <div className='technologies-container'>
+        <div className="solution-card">
+          <h3>Software Development</h3>
+          <p>Placeholder for detailed breakdown of software solutions.</p>
+        </div>
 
-           <img src={Background} alt="background" className="background-design" />
-       </div> 
-    )
-}
+        <div className="solution-card">
+          <h3>IT Support</h3>
+          <p>Placeholder for support services and technical assistance.</p>
+        </div>
 
-export default technologies;
+        <div className="solution-card">
+          <h3>Technology Consulting</h3>
+          <p>Placeholder for consulting methodologies and strategy services.</p>
+        </div>
+
+        <div className="solution-card">
+          <h3>Research & Development</h3>
+          <p>Placeholder for innovation and future technology exploration.</p>
+        </div>
+
+      </section>
+
+    </div>
+  );
+};
+
+export default Solutions;

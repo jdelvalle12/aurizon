@@ -1,0 +1,68 @@
+.solutions-page {
+  padding: 5rem 2rem;
+  background: #0b1120;
+  color: white;
+}
+
+/* Hero */
+.solutions-hero {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+}
+
+.solutions-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.solutions-hero p {
+  color: #94a3b8;
+  line-height: 1.7rem;
+}
+
+/* Grid */
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.solution-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 2rem;
+  transition: 0.3s ease;
+}
+
+.solution-card h3 {
+  margin-bottom: 0.8rem;
+  color: white;
+}
+
+.solution-card p {
+  color: #cbd5f5;
+  line-height: 1.6rem;
+}
+
+.solution-card:hover {
+  transform: translateY(-6px);
+  border-color: aqua;
+  background: rgba(0, 255, 255, 0.06);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .solutions-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+}

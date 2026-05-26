@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Home from './pages/Home';
 import About from './pages/About';
 import Solutions from './pages/Solutions';
+import Industries from './pages/Industries';
 import AurizonUniversity from './pages/Aurizon-University';
 import Marketplace from './pages/Marketplace';
 import CaseStudies from './pages/CaseStudies';
@@ -36,6 +37,7 @@ return (
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/solutions" element={<Solutions />} />
+          <Route path="/industries" element={<Industries />} />
           <Route path="/aurizon-university" element={<AurizonUniversity />} />
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/casestudies" element={<CaseStudies />} />

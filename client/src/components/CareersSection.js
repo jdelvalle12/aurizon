@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../styles/CareersSection.css';
+import careersImage from '../images/careers-background.jpg'; // your image
 
 const Careers = () => {
 
@@ -9,11 +10,19 @@ const Careers = () => {
 
     <section className="careers-section">
 
+      {/* IMAGE LAYER */}
+      <div className="careers-image-wrapper">
+        <img
+          src={careersImage}
+          alt="Careers at Aurizon Technologies"
+          className="careers-image"
+        />
+      </div>
+
+      {/* CONTENT LAYER */}
       <div className="careers-container">
 
-        <h2>
-          Future Opportunities
-        </h2>
+        <h2>Future Opportunities</h2>
 
         <p>
           Aurizon Technologies is building toward future
@@ -29,7 +38,6 @@ const Careers = () => {
       </div>
 
     </section>
-
   );
 };
 

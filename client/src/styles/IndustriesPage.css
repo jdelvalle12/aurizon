@@ -1,0 +1,74 @@
+.industries-page {
+  padding: 5rem 2rem;
+  background: #0b1120;
+  color: white;
+}
+
+/* Hero section */
+.industries-hero {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+}
+
+.industries-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.industries-hero p {
+  color: #94a3b8;
+  line-height: 1.7rem;
+}
+
+/* Placeholder section */
+.industries-placeholder {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.placeholder-text {
+  color: #cbd5f5;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Grid */
+.placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Cards */
+.placeholder-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 2rem;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.placeholder-card:hover {
+  transform: translateY(-6px);
+  border-color: aqua;
+  background: rgba(0, 255, 255, 0.06);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .industries-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .industries-hero p {
+    font-size: 1rem;
+  }
+
+  .placeholder-grid {
+    grid-template-columns: 1fr;
+  }
+}

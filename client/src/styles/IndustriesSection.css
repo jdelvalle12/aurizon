@@ -22,12 +22,14 @@
   color: #94a3b8;
 
   line-height: 1.8rem;
+
+  font-size: 1.05rem;
 }
 
 .industries-grid {
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 
   gap: 2rem;
 
@@ -37,27 +39,103 @@
 }
 
 .industry-card {
-  background: rgba(255, 255, 255, 0.04);
+  position: relative;
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  height: 220px;
 
-  border-radius: 16px;
+  border-radius: 18px;
 
-  padding: 2rem;
+  overflow: hidden;
 
-  transition: 0.3s ease;
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: transform 0.35s ease,
+              border-color 0.35s ease;
+
+  border: 0px solid rgba(255, 255, 255, 0.08);
 }
 
 .industry-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px) scale(1.02);
 
   border-color: aqua;
+}
 
-  background: rgba(0, 255, 255, 0.08);
+.industry-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  transition: background 0.3s ease;
+}
+
+.industry-card:hover .industry-overlay {
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .industry-card h3 {
+  position: relative;
+
+  z-index: 2;
+
   color: white;
 
-  font-size: 1.2rem;
+  font-size: 1.35rem;
+
+  font-weight: 600;
+
+  padding: 0 1rem;
+
+  text-align: center;
+
+  letter-spacing: 0.5px;
+}
+
+/* ========================= */
+/* Mobile Responsive Styles */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .industries-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+
+    line-height: 1.7rem;
+
+    margin-bottom: 3rem;
+  }
+
+  .industries-grid {
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+  }
+
+  .industry-card {
+    height: 180px;
+  }
+
+  .industry-card h3 {
+    font-size: 1.2rem;
+  }
 }

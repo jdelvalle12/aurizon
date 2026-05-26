@@ -1,58 +1,86 @@
-/* =========================
-   CAREERS SECTION
-========================= */
-
 .careers-section {
+  position: relative;
+
   padding: 6rem 2rem;
 
-  background: #081120;
-
   text-align: center;
+
+  overflow: hidden;
+
+  background: #081120;
 }
+
+/* =========================
+   IMAGE LAYER
+========================= */
+
+.careers-image-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.careers-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DARK OVERLAY */
+.careers-image-wrapper::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* =========================
+   CONTENT CONTAINER
+========================= */
 
 .careers-container {
+  position: relative;
+  z-index: 2;
+
   max-width: 800px;
- background: linear-gradient(to bottom, #050816, #0b1120);
   margin: 0 auto;
+
+  padding: 2rem;
+  background: none;
 }
 
+/* TITLE */
 .careers-section h2 {
   font-size: 2.8rem;
-
   color: white;
-
   margin-bottom: 1.5rem;
 }
 
+/* TEXT */
 .careers-section p {
   color: #cbd5e1;
-
   line-height: 1.9rem;
-
   font-size: 1.1rem;
-
   margin-bottom: 2.5rem;
 }
 
 /* =========================
-   BUTTON
+   BUTTON (UNCHANGED STYLE)
 ========================= */
 
 .careers-btn {
   display: inline-block;
 
   background: transparent;
-
   border: 1px solid aqua;
-
   color: aqua;
 
   padding: 1rem 2rem;
-
   border-radius: 8px;
 
   text-decoration: none;
-
   font-weight: 600;
 
   transition: 0.3s ease;
@@ -60,9 +88,7 @@
 
 .careers-btn:hover {
   background: aqua;
-
   color: black;
-
   transform: translateY(-3px);
 }
 
