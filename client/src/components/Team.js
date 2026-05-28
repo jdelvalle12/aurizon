@@ -1,100 +1,159 @@
 import React, { useState } from 'react';
 import Me from '../images/Me.jpg';
-import {Modal} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaLinkedin, FaFacebook, FaEnvelope } from 'react-icons/fa';
 
-import '../index.css';
+import {
+  FaLinkedin,
+  FaFacebook,
+  FaEnvelope
+} from 'react-icons/fa';
+
 import '../App.css';
+import '../styles/About.css';
 
-function AboutTheTeam() {
-  const [modalVisible, setModalVisible] = useState(false);
-  const [selectedTeamMember, setSelectedTeamMember] = useState(null);
+const Team = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedMember, setSelectedMember] = useState(null);
 
   const teamMembers = [
     {
-      name: 'Jose Del Valle Founder and CEO',
-      photoSrc: Me,
-      description: (
-        <p style={{ whiteSpace: 'pre-line' }}>
-          Jose Del Valle is the passionate Founder and CEO of Aurizon, 
-          a software development company that helps businesses (large or small) 
-          to be successful and empower individuals. With a couple of years of 
-          experience in the industry, Jose has been the driving force behind our success. 
-          His visionary leadership and unwavering commitment to our mission have propelled 
-          us to new heights. His expertise in business strategy, technology, finance, marketing, 
-          just to name a few, has been instrumental in shaping the company's direction. 
-          He's a forward-thinker, a problem solver, a dedicated leader who inspires the team to 
-          excel and likes to develop partnerships to work with, in achieving success in the 
-          ever-evolving tech landscape. Outside the office, Jose enjoys time with friends, 
-          travel around the world, play videogames, constantly likes to learn new things 
-          regarding technology and non-tech, which reflect his diverse and creative mindset. 
-          He holds a Bachelor of Science in Criminal Justice and a certificate in Full Stack Web Development as of now.
-        </p>
-      )
-    }
-    // Add more team members here
+      name: 'Jose Del Valle - Founder & CEO',
+
+      photo: Me,
+
+      description: `
+Jose Del Valle is the Founder and CEO of Aurizon Technologies.
+
+He focuses on building scalable systems, digital ecosystems,
+and long-term technological innovation.
+
+His background spans software development, business strategy,
+marketing, leadership, and technology operations.
+
+Aurizon Technologies was created from a vision of building
+future-focused solutions that empower individuals,
+businesses, and innovation across industries.
+
+Outside of technology, he enjoys travel, gaming, spend time with
+his kids, continuously learning, and enjoy nature.
+      `,
+    },
   ];
 
+  const openModal = (member) => {
+    setSelectedMember(member);
+    setIsModalOpen(true);
 
-  const openModal = (teamMember) => {
-    setSelectedTeamMember(teamMember);
-    setModalVisible(true);
+    // Prevent background scrolling
+    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
-    setSelectedTeamMember(null);
-    setModalVisible(false);
+    setSelectedMember(null);
+    setIsModalOpen(false);
+
+    // Restore scrolling
+    document.body.style.overflow = 'auto';
   };
 
   return (
-    <div className="about-the-team">
-      <h2>The Team</h2>
-      <p>Meet the team that makes it all happen...</p>
 
-      {/* Render team members */}
-      {teamMembers.map((member, index) => (
-        <div key={index} className="team-member">
-          <button
-            className='team-member-button' 
+    <section className="about-the-team">
+
+      <h2>The Team</h2>
+
+      <p>
+        Meet the people building Aurizon Technologies.
+      </p>
+
+      <div className="team-grid">
+
+        {teamMembers.map((member, index) => (
+
+          <div
+            key={index}
+            className="team-member"
             onClick={() => openModal(member)}
           >
+
             <img
-              src={member.photoSrc}
+              src={member.photo}
               alt={member.name}
             />
-          </button>
-          <p>{member.name}</p>
+
+            <p>{member.name}</p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+      {/* CUSTOM MODAL */}
+
+      {isModalOpen && selectedMember && (
+
+        <div
+          className="modal-overlay"
+          onClick={closeModal}
+        >
+
+          <div
+            className="modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+
+            <button
+              className="close-btn"
+              onClick={closeModal}
+            >
+              ✕
+            </button>
+
+            <img
+              src={selectedMember.photo}
+              alt={selectedMember.name}
+              className="modal-image"
+            />
+
+            <h2>{selectedMember.name}</h2>
+
+            <div className="social-icons-team-member">
+
+              <a
+                href="https://linkedin.com/in/jose-del-valle-94993a124/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+
+              <a
+                href="https://facebook.com/jose.j.delvalle.58"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaFacebook />
+              </a>
+
+              <a href="mailto:josejr.delvalle@aetherosglobal.com">
+                <FaEnvelope />
+              </a>
+
+            </div>
+
+            <p className="modal-description">
+              {selectedMember.description}
+            </p>
+
+          </div>
+
         </div>
-      ))}
 
-      {/* Modal */}
-      <Modal show={modalVisible} onHide={closeModal}>
-        {selectedTeamMember && ( // Check if selectedTeamMember is not null
-      <>
-      <Modal.Header closeButton>
-      </Modal.Header>
-      <Modal.Body>
-        <img src={selectedTeamMember.photoSrc} alt={selectedTeamMember.name} />
-        <Modal.Title><h2>{selectedTeamMember.name}</h2></Modal.Title>
-        <div className="social-icons-team-member">
-      <a href="https://linkedin.com/in/jose-del-valle-94993a124/" target="_blank" rel="noopener noreferrer">
-        <FaLinkedin className="icon" />
-      </a>
-      <a href="https://www.facebook.com/jose.j.delvalle.58" target="_blank" rel="noopener noreferrer">
-        <FaFacebook className="icon" />
-      </a>
-      <a href="mailto:jdelvalle88@live.com" target="_blank" rel="noopener noreferrer">
-        <FaEnvelope className="icon" />
-      </a>
-    </div>
-        <p>{selectedTeamMember.description}</p>
-      </Modal.Body>
-    </>
-  )}
-</Modal>
-    </div>
+      )}
+
+    </section>
   );
-}
+};
 
-export default AboutTheTeam;
+export default Team;

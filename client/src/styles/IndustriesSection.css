@@ -63,6 +63,7 @@
               border-color 0.35s ease;
 
   border: 0px solid rgba(255, 255, 255, 0.08);
+  margin-top: 2rem;
 }
 
 .industry-card:hover {

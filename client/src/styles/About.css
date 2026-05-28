@@ -1,65 +1,521 @@
-/* About me
+/* =========================
+   ABOUT PAGE BASE
+========================= */
 
-.aboutme-container  {
-  background-image: url('../images/Background.jpg');
-  width: 100%;
-  height: 100%;
-  display: block;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  padding-bottom: 10rem; 
-  /* margin: 2rem; */
-/* }
-
-.aboutme-container .description {
+.about-container {
   position: relative;
-  font-size: 1rem;
-  color: black;
-  max-width: 55%;
-  margin-left: 1rem;
+  width: 100%;
+  min-height: 100vh;
+  background: aliceblue;
+  overflow-x: hidden;
+}
+
+/* =========================
+   HERO / VIDEO SECTION
+========================= */
+
+.about-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.about-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.content-container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 120px 20px 60px;
+  text-align: center;
+}
+
+.content-container h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.content-container h2 {
+  font-size: 1.8rem;
+  color: aqua;
+  margin-top: 1rem;
+}
+
+.content-container p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-top: 1rem;
+}
+
+/* =========================
+   SECTION LAYOUT BASE
+========================= */
+
+section,
+.about-our-story,
+.about-our-mission,
+.about-our-history,
+.about-ecosystem,
+.about-goals-vision,
+.about-facts-figures,
+.about-partners,
+.about-timeline {
+  width: 100%;
+  padding: 5rem 2rem;
+}
+
+/* =========================
+   STORY / MISSION / HISTORY
+========================= */
+
+.about-our-story,
+.about-our-mission,
+.about-our-history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.story-description,
+.mission-description,
+.history-description {
+  flex: 1;
+  max-width: 600px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.innovation,
+.passion,
+.history-pic {
+  width: 40%;
+  max-width: 420px;
+  height: auto;
+}
+
+/* =========================
+   VALUE SECTION (GRID FIXED)
+========================= */
+
+.about-our-value {
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, aliceblue, #d7f3ff);
+  text-align: center;
+}
+
+.about-our-value ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.about-our-value ul li {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.about-our-value ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 255, 255, 0.25);
+}
+
+.value-icon {
+  width: 60px;
   margin-bottom: 1rem;
 }
 
-.aboutme-container .aboutme {
-  position: relative;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
+/* =========================
+   ECOSYSTEM
+========================= */
+
+.about-ecosystem {
+  text-align: center;
+  background: #061a33;
+  color: white;
+}
+
+/* =========================
+   GOALS & VISION
+========================= */
+
+.about-goals-vision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background: linear-gradient(to bottom, aliceblue, #cfefff);
+}
+
+.vision {
+  flex: 1;
+  max-width: 650px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+.horizon-vision {
+  width: 35%;
+  max-width: 350px;
+}
+
+/* =========================
+   Team
+========================= */
+
+.about-the-team {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.about-the-team h2 {
+  font-size: 2.2rem;
   color: black;
-  margin-left: 3rem;
-  width: 15rem;
+  margin-bottom: 0.5rem;
 }
 
-.profile-picture {
-  position: relative;
-  max-width: 28%;
-  height: auto;
-  border-radius: 5%;
-  margin-left: 5rem;
-  margin-top: 3rem; */ 
-  /* Add any other styling for the profile picture here */
-/* } */
-
-/* .aboutme-container h2 {
-  position: relative;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-right: 20rem;
-    color: black;
-    
-} */
-
-/* .abouttitle {
-  font-size: 2.5rem;
-  margin-left: 5rem;
-  color:black;
+.about-the-team p {
+  font-size: 1.1rem;
+  color: #8ab2e2;
+  max-width: 600px;
+  margin: 0 auto 3rem auto; /* centers the text block */
 }
 
-.abouttitle:hover {
-  color: cyan;
-} */
+.team-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.team-member img {
+  width: 180px;
+  border-radius: 12px;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   MODAL OVERLAY
+========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.85);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+
+  z-index: 9999;
+
+  overflow-y: auto; /* KEY FIX */
+}
+
+/* =========================
+   MODAL CONTENT
+========================= */
+
+.modal-content {
+  background: linear-gradient(to bottom, #061a33, #000000);
+
+  width: 100%;
+  max-width: 700px;
+
+  border-radius: 20px;
+
+  padding: 2.5rem;
+
+  position: relative;
+
+  color: white;
+
+  /* KEY FIXES */
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.modal-image {
+  width: 180px;
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 16px;
+
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  border: none;
+  background: transparent;
+
+  font-size: 1.6rem;
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.close-btn:hover {
+  color: aqua;
+  transform: rotate(90deg);
+}
+
+/* =========================
+   TIMELINE SECTION
+========================= */
+
+.about-timeline {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, aliceblue, #d7f3ff);
+  text-align: center;
+}
+
+.about-timeline h2 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   TIMELINE CONTAINER
+========================= */
+
+.timeline {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap; /* IMPORTANT: prevents overflow issues */
+}
+
+/* =========================
+   TIMELINE CARD
+========================= */
+
+.timeline-item {
+  position: relative;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   YEAR
+========================= */
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.timeline-content p {
+  font-size: 1rem;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-item {
+    width: 90%;
+  }
+}
+
+/* =========================
+   FAQ SECTION (MAIN WRAPPER)
+========================= */
+
+.faq-section {
+  background: linear-gradient(to bottom, aliceblue, #d7f3ff);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* TITLE */
+.faq-section h3 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #0f172a;
+}
+
+/* =========================
+   FAQ ITEM CARD
+========================= */
+
+.question {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.question:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   QUESTION HEADER
+========================= */
+
+.question h4 {
+  font-size: 1.1rem;
+  padding: 1.5rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0f172a;
+}
+
+/* +/- ICON */
+.toggle-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* =========================
+   ANSWER SECTION
+========================= */
+
+.answer {
+  padding: 0 1.5rem 1.5rem;
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 3rem 1rem;
+  }
+
+  .question {
+    width: 95%;
+  }
+
+  .faq-section h3 {
+    font-size: 1.6rem;
+  }
+
+  .question h4 {
+    font-size: 1rem;
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .about-our-story,
+  .about-our-mission,
+  .about-our-history,
+  .about-goals-vision {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .innovation,
+  .passion,
+  .history-pic,
+  .horizon-vision {
+    width: 80%;
+  }
+
+  .content-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .content-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .content-container p {
+    font-size: 1rem;
+  }
+}
