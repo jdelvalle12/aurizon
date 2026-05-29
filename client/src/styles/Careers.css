@@ -1,0 +1,363 @@
+/* =========================
+   GLOBAL RESET FIX (IMPORTANT)
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.careers-container {
+  width: 100%;
+  min-height: 100vh;
+  background: aliceblue;
+}
+
+/* prevents accidental centering from parent layouts */
+.careers-container,
+.careers-container * {
+  max-width: none;
+}
+
+/* =========================
+   HERO (FULL WIDTH FIX)
+========================= */
+
+.careers-hero {
+  position: relative;
+  width: 100vw;
+  height: 420px;
+  overflow: hidden;
+  margin-top: -2rem;
+  margin-left: -2rem;
+}
+
+/* FULL BLEED IMAGE (this is the key fix) */
+.careers-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* dark overlay so text is readable */
+.careers-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.career-title {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  width: 100%;
+}
+
+.career-title h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+.career-title h2 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.head-text {
+  max-width: 800px;
+  margin: 1rem auto 0;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+/* =========================
+   SECTION WRAPPER (FULL WIDTH FLOW)
+========================= */
+
+.career-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 4rem 6vw;
+}
+
+.career-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.career-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.career-image {
+  flex: 1;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* =========================
+   WE OFFER (FULL WIDTH GRID)
+========================= */
+
+.we-offer {
+  width: 100%;
+  padding: 5rem 6vw;
+  background: linear-gradient(to bottom, aliceblue, #d7f3ff);
+  text-align: center;
+}
+
+.offer-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.offer-card {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers everything horizontally */
+  justify-content: flex-start;
+}
+
+.offer-icon {
+  width: 70px;
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* =========================
+   HIRING PROCESS
+========================= */
+.hiring-process {
+  width: 100%;
+  padding: 5rem 6vw;
+  text-align: center;
+}
+
+.hiring-process h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hiring-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* GRID */
+.hiring-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* CARD */
+.hiring-card {
+  position: relative;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+
+  padding: 2rem;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  min-height: 320px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.hiring-card:hover {
+  transform: translateY(-5px);
+}
+
+/* STEP NUMBER */
+.hiring-card h3 {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  background: #003468;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.8rem;
+
+  margin-bottom: 1.5rem;
+}
+
+/* TITLE */
+.hiring-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+/* TEXT */
+.hiring-card p {
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ARROWS */
+.hiring-card::after {
+  content: "➜";
+
+  position: absolute;
+
+  right: -1.4rem;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: 2rem;
+  color: #007bff;
+}
+
+/* REMOVE LAST COLUMN ARROWS */
+.hiring-card:nth-child(3)::after,
+.hiring-card:nth-child(6)::after {
+  display: none;
+}
+
+/* =========================
+   FINAL SECTIONS
+========================= */
+
+.opportunity,
+.dont-see {
+  width: 100%;
+  padding: 4rem 6vw;
+  text-align: center;
+}
+
+.opportunity hr {
+  width: 60%;
+  margin-top: -2rem;
+  margin-left: -2rem;
+  margin: 2rem auto;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.careers-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: aqua;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* =========================
+   MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  .career-section,
+  .career-section.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .career-text {
+    text-align: center;
+  }
+
+  .career-image {
+    max-width: 100%;
+  }
+
+  .career-title h1 {
+    font-size: 2.2rem;
+  }
+
+  .career-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .head-text {
+    font-size: 1rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hiring-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hiring-card {
+    min-height: auto;
+  }
+
+  .hiring-card::after {
+    content: "⬇";
+
+    right: 50%;
+    top: auto;
+    bottom: -1.8rem;
+
+    transform: translateX(50%);
+  }
+
+  .hiring-card:last-child::after {
+    display: none;
+  }
+}
