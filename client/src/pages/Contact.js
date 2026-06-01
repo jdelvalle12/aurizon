@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-// import { useForm } from 'react-hook-form';
-// import emailjs from 'emailjs-com'; // Import email.js library
-import ContactUs from '../images/contact-us-two.jpg';
-import Reality from '../images/into-reality.jpg';
+import React, { useState } from 'react';
+
+import ContactUs from '../images/digital-network.jpg';
+import WhyContact from '../images/why-contact.jpg';
+
 import '../styles/Contact.css';
 import '../App.css';
 
@@ -10,87 +10,205 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
-    companyEmail: '',
+    email: '',
     phone: '',
-    companyName: '',
-    industry: '', 
-    state: '',
-    intent: '',
+    inquiryType: '',
     message: '',
   });
 
-  const [showSlogan, setShowSlogan] = useState(false);
-
-  useEffect (() => {
-    setShowSlogan(true);
-  }, []);
-
   const handleChange = (e) => {
-    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value,
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    // Handle form submission, e.g., send data to an API or email service
   };
 
   return (
-      <div className='contact-container'>
-        <img src={ContactUs} alt='ContactUs' className="contact-us-background" />
-        <h1 className={`contact-title ${showSlogan ? 'fade-in' : ''}`}>Hey Let's Talk About It!</h1>
-      <p className={showSlogan ? 'slide-in' : ''}>Questions? Want to leave feedback? Need further assistance? We are here to help. Fill out the form below with your inquiry.</p>
-        <div className="design-inquiries">
-          {/* <h3 className='contact-header'>Design Inquiries:</h3> */}
-          {/* <ul>
-            <li>Name</li>
-            <li>Email</li>
-            <li>Nature of your inquiry</li>
-            <li>Email to: <button onClick={() => window.location.href = 'mailto:jdelvalle88@live.com'}>jdelvalle88@live.com</button></li>
-          </ul> */}
-          <form onSubmit={handleSubmit}>
-            <label htmlFor='firstName'>First Name:</label>
-            <input type='text' name='firstName' id='firstName' value={formData.firstName} onChange={handleChange} placeholder='This field is required' required />
-            {/* <span>This field is required</span> */}
-            <br />
-            <label htmlFor='lastName'>Last Name:</label>
-            <input type='text' name='lastName' id='lastName' value={formData.lastName} onChange={handleChange} placeholder='This field is required' required />
-            {/* <span>This field is required</span> */}
-            <br />
-            <label htmlFor='companyEmail'>Company Email:</label>
-            <input type='email' name='companyEmail' id='companyEmail' value={formData.companyEmail} onChange={handleChange} placeholder='This field is required' required />
-            {/* <span>This field is required</span> */}
-            <br />
-            <label htmlFor='phone'>Phone:</label>
-            <input type='text' name='phone' id='phone' value={formData.phone} onChange={handleChange} placeholder='This field is required' required />
-            {/* <span>This field is required</span> */}
-            <br />
-            <label htmlFor='companyName'>Company Name:</label>
-            <input type='text' name='companyName' id='companyName' value={formData.companyName} onChange={handleChange} placeholder='Company Name (optional)' />
-            <br />
-            <label htmlFor='industry'>Industry:</label>
-            <input type='text' name='industry' id='industry' value={formData.industry} onChange={handleChange} placeholder='Industry (optional)' />
-            <br />
-            <label htmlFor='state'>State:</label>
-            <input type='text' name='state' id='state' value={formData.state} onChange={handleChange} placeholder='State (optional)' />
-            <br />
-            <label htmlFor='intent'>Intent of Message:</label>
-            <input type='text' name='intent' id='intent' value={formData.intent} onChange={handleChange} placeholder='This field is required' required />
-            <br />
-            <label htmlFor='message'>Message:</label>
-            <textarea name='message' id='message' value={formData.message} onChange={handleChange} placeholder='This field is required' required />
-            <br />
-            <input type='submit' value='Submit' />
-          </form>
+    <div className="contact-container">
+
+      {/* HERO */}
+      <section className="contact-hero">
+
+        <img
+          src={ContactUs}
+          alt="Contact Aurizon"
+          className="contact-background"
+        />
+
+        <div className="contact-overlay"></div>
+
+        <div className="contact-title">
+          <h1>Contact Aurizon</h1>
+
+          <p>
+            Let's start the conversation.
+            Whether you have questions about technology solutions,
+            consulting, partnerships, or future opportunities,
+            we'd love to hear from you.
+          </p>
         </div>
-        <h2 className='contact-end-message'>Let's connect, work together, and make the dream become a reality.</h2>
-        <img src={Reality} alt='Reality' className="into-reality" />
-      </div>
+
+      </section>
+
+      {/* CONTACT OPTIONS */}
+
+      <section className="contact-options">
+
+        <div className="contact-card">
+          <h3>General Inquiries</h3>
+          <p>
+            Questions about Aurizon Technologies and our services.
+          </p>
+        </div>
+
+        <div className="contact-card">
+          <h3>Technology Consulting</h3>
+          <p>
+            Discuss technology challenges, planning, and future projects.
+          </p>
+        </div>
+
+        <div className="contact-card">
+          <h3>Partnership Opportunities</h3>
+          <p>
+            Explore collaboration and strategic partnerships.
+          </p>
+        </div>
+
+      </section>
+
+      {/* FORM */}
+
+      <section className="contact-form-section">
+
+        <div className="contact-form-card">
+
+          <h2>Send Us a Message</h2>
+
+          <form onSubmit={handleSubmit}>
+
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+            />
+
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+
+            <input
+              type="text"
+              name="phone"
+              placeholder="Phone (Optional)"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+
+            <select
+              name="inquiryType"
+              value={formData.inquiryType}
+              onChange={handleChange}
+              required
+            >
+              <option value="">Select Inquiry Type</option>
+              <option>General Question</option>
+              <option>Technology Consulting</option>
+              <option>IT Support</option>
+              <option>Partnership</option>
+              <option>Career Inquiry</option>
+            </select>
+
+            <textarea
+              name="message"
+              placeholder="How can we help?"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+
+            <button type="submit">
+              Submit Inquiry
+            </button>
+
+          </form>
+
+        </div>
+
+      </section>
+
+      {/* WHY CONTACT */}
+
+      <section className="contact-section">
+
+        <img
+          src={WhyContact}
+          alt="Technology Solutions"
+          className="contact-image"
+        />
+
+        <div className="contact-text">
+
+          <h2>Why Contact Aurizon?</h2>
+
+          <p>
+            Technology should help organizations move forward with confidence.
+          </p>
+
+          <p>
+            Whether you're looking for guidance, consulting,
+            technical support, or future collaboration,
+            we're here to help.
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* CTA */}
+
+      <section className="contact-cta">
+
+        <h2>Let's Build Something Together</h2>
+
+        <p>
+          We're always open to conversations about technology,
+          innovation, and future opportunities.
+        </p>
+
+        <a
+          href="mailto:info@aurizontech.com"
+          className="contact-button"
+        >
+          Email Us
+        </a>
+
+      </section>
+
+    </div>
   );
-}
+};
 
 export default Contact;

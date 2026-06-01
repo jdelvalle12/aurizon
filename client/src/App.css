@@ -455,27 +455,4 @@ body {
   }
 }
 
-/* Technologies */
 
-.technologies-container {
-  display: block;
-  /* position: relative; */
-  /* margin-top: -5.3rem; */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  background-color: aliceblue;
-  /* background-size: cover;  */
-}
-
-.background-design {
-  position: absolute;
-  margin-top: -1.8rem;
-  margin-bottom: 12rem;
-  width: 100%; 
-  height: 24%; 
-  object-fit: cover;
-  /* background-size: contain; */
-}
