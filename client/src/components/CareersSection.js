@@ -20,7 +20,7 @@ const Careers = () => {
       </div>
 
       {/* CONTENT LAYER */}
-      <div className="careers-container">
+      <div className="careers-section-container">
 
         <h2>Future Opportunities</h2>
 

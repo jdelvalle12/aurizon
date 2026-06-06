@@ -25,7 +25,15 @@ const Footer = () => {
       <div className="footer-column">
         <h4>Ecosystem</h4>
         <ul>
-          <li>Mosaic Digital Creations</li>
+          <li>
+            <a
+              href="https://www.mosaicdigitalcreations.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mosaic Digital Creations
+            </a>
+          </li>
           <li>Marketplace (Coming Soon)</li>
           <li>Aurizon University (Coming Soon)</li>
           <li>Developer Resources (Coming Soon)</li>
@@ -37,10 +45,12 @@ const Footer = () => {
       <div className="footer-column">
         <h4>Solutions</h4>
         <ul>
-          <li><Link to="/solutions/api-development">API Development</Link></li>
-          <li><Link to="/solutions/business-solutions">Business Solutions</Link></li>
+          <li><Link to="/solutions/software-development">Software Development</Link></li>
+          <li><Link to="/solutions/research-development">Research & Development</Link></li>
           <li><Link to="/solutions/it-support">IT Support</Link></li>
-          <li><Link to="/solutions/security-solutions">Security Solutions</Link></li>
+          <li><Link to="/solutions/cybersecurity">Cybersecurity</Link></li>
+          <li><Link to="/solutions/cloud-infrastructure">Cloud & Infrastructure</Link></li>
+          <li><Link to="/solutions/technology-consulting">Technology Consulting</Link></li>
         </ul>
       </div>
 

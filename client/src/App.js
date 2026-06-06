@@ -8,6 +8,12 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Solutions from './pages/Solutions';
+import SoftwareDevelopment from './pages/SoftwareDevelopment';
+import ItSupport from './pages/ItSupport';
+import Cybersecurity from './pages/Cybersecurity';
+import CloudInfrastructure from './pages/CloudInfrastructure';
+import TechnologyConsulting from './pages/TechnologyConsulting';
+import ResearchDevelopment from './pages/ResearchDevelopment';
 import Industries from './pages/Industries';
 import AurizonUniversity from './pages/Aurizon-University';
 import Marketplace from './pages/Marketplace';
@@ -41,6 +47,12 @@ return (
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/solutions" element={<Solutions />} />
+          <Route path="/solutions/software-development" element={<SoftwareDevelopment />} />
+          <Route path="/solutions/it-support" element={<ItSupport />} />
+          <Route path="/solutions/cybersecurity" element={<Cybersecurity />} />
+          <Route path="/solutions/cloud-infrastructure" element={<CloudInfrastructure />} />
+          <Route path="/solutions/technology-consulting" element={<TechnologyConsulting />} />
+          <Route path="/solutions/research-development" element={<ResearchDevelopment />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/aurizon-university" element={<AurizonUniversity />} />
           <Route path="/marketplace" element={<Marketplace />} />

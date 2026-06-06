@@ -37,8 +37,8 @@ body {
   width: 100vw;
   height: 420px;
   overflow: hidden;
-  margin-top: -2rem;
-  margin-left: -2rem;
+  margin-top: 0rem;
+  margin-left: 0rem;
 }
 
 /* FULL BLEED IMAGE (this is the key fix) */
