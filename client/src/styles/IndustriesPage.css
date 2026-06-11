@@ -1,74 +1,266 @@
+/* ==========================
+   INDUSTRIES PAGE
+========================== */
+
 .industries-page {
-  padding: 5rem 2rem;
-  background: #0b1120;
-  color: white;
+  width: 100%;
+  background: aliceblue;
+  overflow-x: hidden;
 }
 
-/* Hero section */
+/* HERO */
+
 .industries-hero {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 4rem auto;
+  position: relative;
+  height: 700px;
+  /* overflow: hidden; */
 }
 
-.industries-hero h1 {
+.hero-image-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  width: 100%;
+  height: 100%;
+  gap: 0;
+}
+
+.hero-image-grid > * {
+  overflow: hidden;
+}
+
+.hero-image-grid img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+}
+
+.industry-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0,0,0,.45);
+}
+
+.industry-hero-content {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+}
+
+/* INTRO */
+
+.industries-intro {
+  padding: 5rem 6vw;
+  text-align: center;
+}
+
+.industries-intro h2 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
+  color: #003468;
 }
 
-.industries-hero p {
-  color: #94a3b8;
-  line-height: 1.7rem;
+.industries-intro > p {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  font-size: 1.15rem;
+  line-height: 1.8;
 }
 
-/* Placeholder section */
-.industries-placeholder {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+/* INDUSTRY GRID */
 
-.placeholder-text {
-  color: #cbd5f5;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-/* Grid */
-.placeholder-grid {
+.industries-page-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+
   gap: 2rem;
+
   margin-top: 3rem;
 }
 
-/* Cards */
-.placeholder-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
+.industries-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,.95),
+    rgba(232,245,255,.95)
+  );
+
   padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+  text-align: center; /* important */
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers contents */
+
+  transition: all .3s ease;
+  min-height: 350px;
+}
+
+.industries-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+
+  border: 1px solid rgba(0,52,104,.15);
+}
+
+.industries-card h3 {
+  color: #003468;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
   text-align: center;
-  transition: 0.3s ease;
+  width: 100%;
 }
 
-.placeholder-card:hover {
-  transform: translateY(-6px);
-  border-color: aqua;
-  background: rgba(0, 255, 255, 0.06);
+.industries-card p {
+  line-height: 1.7;
+  text-align: center;
+  width: 100%;
 }
 
-/* Mobile */
+.industry-icon {
+  font-size: 3rem;
+  color: #003468;
+
+  margin-bottom: 1.5rem;
+
+  transition: transform .3s ease;
+}
+
+.industry-card:hover .industry-icon {
+  transform: scale(1.1);
+}
+
+.industry-learn-more {
+  margin-top: auto;
+
+  color: #003468;
+
+  font-weight: 600;
+}
+
+/* .industry-icon {
+  display: block;
+  margin: 0 auto 1rem;
+  font-size: 3rem;
+  color: #003468;
+  
+} */
+
+/* HOW WE ADAPT */
+
+.industries-adapt {
+  padding: 5rem 6vw;
+
+  background: linear-gradient(
+    to bottom,
+    aliceblue,
+    rgba(148,208,228,.35)
+  );
+}
+
+.industries-adapt h2 {
+  text-align: center;
+
+  font-size: 2.8rem;
+
+  margin-bottom: 3rem;
+
+  color: #003468;
+}
+
+.industries-steps {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 2rem;
+}
+
+.industries-steps div {
+  background: white;
+
+  padding: 2rem;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.industries-steps h3 {
+  color: #003468;
+
+  margin-bottom: 1rem;
+}
+
+.industries-steps p {
+  line-height: 1.7;
+}
+
+/* CASE STUDIES */
+
+.industries-coming {
+  text-align: center;
+
+  padding: 5rem 6vw;
+}
+
+.industries-coming h2 {
+  font-size: 2.5rem;
+
+  margin-bottom: 1rem;
+
+  color: #003468;
+}
+
+.industries-coming p {
+  max-width: 700px;
+
+  margin: auto;
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+}
+
+/* MOBILE */
+
 @media (max-width: 768px) {
 
   .industries-hero h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
-  .industries-hero p {
-    font-size: 1rem;
-  }
-
-  .placeholder-grid {
+  .industries-grid {
     grid-template-columns: 1fr;
+  }
+
+  .industries-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-intro h2,
+  .industries-adapt h2,
+  .industries-coming h2 {
+    font-size: 2rem;
   }
 }

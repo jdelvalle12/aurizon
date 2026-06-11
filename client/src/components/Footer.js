@@ -54,6 +54,21 @@ const Footer = () => {
         </ul>
       </div>
 
+{/* INDUSTRIES */}
+      <div className="footer-column">
+        <h4>Industries</h4>
+        <ul>
+          <li><Link to="/industries/technology">Technology</Link></li>
+          <li><Link to="/industries/financial-services">Financial Services</Link></li>
+          <li><Link to="/industries/logistics-transportation">Logistics & Transportation</Link></li>
+          <li><Link to="/industries/real-estate">Real Estate</Link></li>
+          <li><Link to="/industries/travel-hospitality">Travel & Hospitality</Link></li>
+          <li><Link to="/industries/media-entertainment">Media & Entertainment</Link></li>
+          <li><Link to="/industries/sports-recreation">Sports & Recreation</Link></li>
+          <li><Link to="/industries/food-beverage">Food & Beverage</Link></li>
+        </ul>
+      </div>
+
       {/* COMPANY */}
       <div className="footer-column">
         <h4>Company</h4>

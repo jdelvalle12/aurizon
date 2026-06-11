@@ -15,6 +15,14 @@ import CloudInfrastructure from './pages/CloudInfrastructure';
 import TechnologyConsulting from './pages/TechnologyConsulting';
 import ResearchDevelopment from './pages/ResearchDevelopment';
 import Industries from './pages/Industries';
+import Technology from './pages/Technology';
+import LogisticsTransportation from './pages/Logistics-Transportation';
+import FinancialServices from './pages/Financial-Services';
+import RealEstate from './pages/Real-Estate';
+import TravelHospitality from './pages/Travel-Hospitality';
+import MediaEntertainment from'./pages/Media-Entertainment';
+import SportsRecreation from './pages/Sports-Recreation';
+import FoodBeverage from './pages/Food-Beverage';
 import AurizonUniversity from './pages/Aurizon-University';
 import Marketplace from './pages/Marketplace';
 import CaseStudies from './pages/CaseStudies';
@@ -54,6 +62,14 @@ return (
           <Route path="/solutions/technology-consulting" element={<TechnologyConsulting />} />
           <Route path="/solutions/research-development" element={<ResearchDevelopment />} />
           <Route path="/industries" element={<Industries />} />
+          <Route path="/industries/technology" element={<Technology />} />
+          <Route path="/industries/logistics-transportation" element={<LogisticsTransportation />} />
+          <Route path="/industries/financial-services" element={<FinancialServices />} />
+          <Route path="/industries/real-estate" element={<RealEstate />} />
+          <Route path="/industries/travel-hospitality" element={<TravelHospitality />} />
+          <Route path="/industries/media-entertainment" element={<MediaEntertainment />} />
+          <Route path="/industries/sports-recreation" element={<SportsRecreation />} />
+          <Route path="/industries/food-beverage" element={<FoodBeverage />} />
           <Route path="/aurizon-university" element={<AurizonUniversity />} />
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/casestudies" element={<CaseStudies />} />
