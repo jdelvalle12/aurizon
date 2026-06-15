@@ -52,11 +52,11 @@ const Navbar = () => {
 
           <li>
             <Link 
-              to="/innovation" 
+              to="/innovations" 
               className="nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
-              Innovation
+              Innovations
             </Link>
           </li>
 

@@ -23,6 +23,7 @@ import TravelHospitality from './pages/Travel-Hospitality';
 import MediaEntertainment from'./pages/Media-Entertainment';
 import SportsRecreation from './pages/Sports-Recreation';
 import FoodBeverage from './pages/Food-Beverage';
+import Innovations from './pages/Innovations';
 import AurizonUniversity from './pages/Aurizon-University';
 import Marketplace from './pages/Marketplace';
 import CaseStudies from './pages/CaseStudies';
@@ -70,6 +71,7 @@ return (
           <Route path="/industries/media-entertainment" element={<MediaEntertainment />} />
           <Route path="/industries/sports-recreation" element={<SportsRecreation />} />
           <Route path="/industries/food-beverage" element={<FoodBeverage />} />
+          <Route path="/innovations" element={<Innovations />} />
           <Route path="/aurizon-university" element={<AurizonUniversity />} />
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/casestudies" element={<CaseStudies />} />
