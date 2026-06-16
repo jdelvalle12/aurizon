@@ -47,10 +47,10 @@ const Solutions = () => {
         <h2>Technology Built Around Your Goals</h2>
 
         <p>
-          Every organization faces unique challenges. Aurizon works
-          alongside businesses and organizations to identify
-          opportunities, solve problems, and implement technology
-          solutions that create meaningful results.
+          Technology is constantly evolving. Aurizon Technologies
+          researches, develops, and supports solutions designed
+          to address real-world challenges while preparing for
+          future opportunities.
         </p>
 
       </section>
@@ -115,6 +115,32 @@ const Solutions = () => {
 
 </section>
 
+{/* SOLUTIONS PHILOSOPHY */}
+
+<section className="solutions-philosophy">
+
+  <h2>More Than Services</h2>
+
+  <div className="philosophy-content">
+
+    <p>
+      Aurizon solutions combine research, development,
+      technical expertise, and real-world application
+      to address challenges across industries and
+      emerging technologies.
+    </p>
+
+    <p>
+      From software platforms and cybersecurity initiatives
+      to infrastructure, education, and future-focused
+      innovations, every solution is designed with
+      long-term impact in mind.
+    </p>
+
+  </div>
+
+</section>
+
         <section className="solutions-overview">
 
           <h2>Built for Today. Designed for Tomorrow.</h2>
@@ -141,16 +167,16 @@ const Solutions = () => {
           <h2>Why Choose Aurizon?</h2>
 
           <p>
-            We focus on understanding your goals first and
-            technology second. Every recommendation is designed
-            around helping your organization operate more
-            effectively and prepare for future growth.
+            Aurizon Technologies combines research,
+            development, innovation, and technical expertise
+            to create practical solutions for today's challenges
+            and tomorrow's opportunities.
           </p>
 
           <p>
-            Our mission is to combine innovation, practicality,
-            and long-term thinking to create solutions that
-            deliver real value.
+            Our focus is on building technologies,
+            supporting users, and exploring new ideas that
+            drive meaningful progress.
           </p>
 
         </div>
@@ -162,49 +188,53 @@ const Solutions = () => {
 
         <h2>Our Process</h2>
           <p className="process-intro">
-            Every solution begins with understanding your goals.
-            Our process is designed to identify challenges,
-            develop practical strategies, and provide long-term
-            support for continued success.
+            Every solution begins with identifying a challenge.
+            Through research, development, testing, and support,
+            Aurizon transforms ideas into practical technologies
+            designed to create long-term value.
           </p>
         <div className="process-grid">
                     
           <div className="process-card">
             <h3>1</h3>
-            <h4>Discovery</h4>
-            <p>Understand your goals and challenges.</p>
+            <h4>Identify Problem</h4>
+            <p>Recognize challenges and opportunities.</p>
             <span className="process-arrow">→</span>
           </div>
+
           <div className="process-card">
             <h3>2</h3>
-            <h4>Assessment</h4>
-            <p>Evaluate opportunities and requirements.</p>
-          <span className="process-arrow">→</span>
+            <h4>Research</h4>
+            <p>Explore technologies, systems, and approaches.</p>
+            <span className="process-arrow">→</span>
           </div>
+
           <div className="process-card">
             <h3>3</h3>
-            <h4>Strategy</h4>
-            <p>Create a technology roadmap.</p>
-          <span className="process-arrow">→</span>
+            <h4>Prototype</h4>
+            <p>Develop concepts and early solutions.</p>
+            <span className="process-arrow">→</span>
           </div>
+
           <div className="process-card">
             <h3>4</h3>
-            <h4>Implementation</h4>
-            <p>Deploy and execute solutions.</p>
-          <span className="process-arrow">→</span>
+            <h4>Develop</h4>
+            <p>Transform ideas into functional technologies.</p>
+            <span className="process-arrow">→</span>
           </div>
+
           <div className="process-card">
             <h3>5</h3>
-            <h4>Optimization</h4>
-            <p>Improve performance and efficiency.</p>
-          <span className="process-arrow">→</span>
+            <h4>Deploy</h4>
+            <p>Launch, implement, and refine solutions.</p>
+            <span className="process-arrow">→</span>
           </div>
+
           <div className="process-card">
             <h3>6</h3>
             <h4>Support</h4>
-            <p>Provide ongoing assistance and guidance.</p>
+            <p>Provide ongoing assistance and improvements.</p>
           </div>
-
         </div>
 
       </section>
@@ -215,11 +245,13 @@ const Solutions = () => {
         <h2>Ready to Explore New Possibilities?</h2>
 
         <p>
-          Let's discuss how technology can help support your goals.
+          Explore the technologies, research initiatives,
+          and future-focused solutions shaping the next generation
+          of innovation.
         </p>
 
-        <a href="/contact" className="solutions-button">
-          Contact Us
+        <a href="/innovation" className="solutions-button">
+          Explore Innovations
         </a>
 
       </section>

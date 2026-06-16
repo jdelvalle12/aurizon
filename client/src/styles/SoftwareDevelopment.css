@@ -1,0 +1,247 @@
+.software-container {
+  background: #f5f7fb;
+  min-height: 100vh;
+  color: #0a1f33;
+}
+
+.software-hero {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.software-hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.software-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 2;
+}
+
+.software-hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 850px;
+  padding: 2rem;
+}
+
+.software-hero-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.software-hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.software-overview {
+  padding: 5rem 6vw;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.software-overview h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  color: #003468;
+}
+
+.software-overview p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.software-mid-image {
+  display: flex;
+  padding: 4rem 6vw;
+  text-align: center;
+  justify-content: center;
+}
+
+.software-mid-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.software-grid {
+  padding: 5rem 6vw;
+  text-align: center;
+}
+
+.software-grid h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+  color: #003468;
+}
+
+.software-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.software-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.software-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.software-card h3 {
+  color: #003468;
+  margin-bottom: 0.8rem;
+}
+
+.software-card p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.software-process {
+  padding: 5rem 6vw;
+  text-align: center;
+}
+
+.software-process h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #003468;
+}
+
+.process-software-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.process-software-card {
+  background: white;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.process-software-card:hover {
+  transform: translateY(-5px);
+}
+
+.process-software-card h3 {
+  font-size: 2rem;
+  color: #003468;
+  margin-bottom: 0.5rem;
+}
+
+.process-software-card h4 {
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.process-software-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.software-why {
+  padding: 5rem 6vw;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.software-why h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  color: #003468;
+}
+
+.software-why p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.software-cta {
+  padding: 5rem 6vw;
+  text-align: center;
+  background: linear-gradient(135deg, #003468, #0057a3);
+  color: white;
+}
+
+.software-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.software-cta p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.software-button {
+  background: white;
+  color: #003468;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.software-button:hover {
+  background: #e6f0ff;
+}
+
+@media (max-width: 1024px) {
+  .software-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-software-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .software-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .process-software-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .software-hero-content h1 {
+    font-size: 2.2rem;
+  }
+}
