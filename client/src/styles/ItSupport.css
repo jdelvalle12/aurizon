@@ -1,0 +1,284 @@
+/* =========================
+   PAGE
+========================= */
+
+.it-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.it-hero {
+  position: relative;
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+.it-hero-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.it-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 20, 40, 0.65);
+}
+
+.it-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 900px;
+  padding: 0 2rem;
+}
+
+.it-hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.it-hero-content p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.it-overview,
+.it-services,
+.it-process,
+.it-why,
+.it-cta {
+  padding: 5rem 6vw;
+  text-align: center;
+}
+
+.it-overview h2,
+.it-services h2,
+.it-process h2,
+.it-why h2,
+.it-cta h2 {
+  font-size: 2.5rem;
+  color: #003468;
+  margin-bottom: 2rem;
+}
+
+.it-overview p,
+.it-why p {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+/* =========================
+   IMAGE SECTION
+========================= */
+
+.it-image-section {
+  display: flex;
+  padding: 2rem 6vw 5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.it-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   SUPPORT AREAS
+========================= */
+
+.it-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.it-icon {
+  font-size: 2rem;
+  color: #0078ff;
+  margin-bottom: 1rem;
+}
+
+.it-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;  
+  background: white;
+
+  padding: 2rem;
+
+  border-radius: 16px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+
+  border-top: 4px solid #0078ff;
+}
+
+.it-card:hover {
+  transform: translateY(-6px);
+}
+
+.it-card h3 {
+  color: #003468;
+  margin-bottom: 1rem;
+}
+
+.it-card p {
+  line-height: 1.7;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.it-process {
+  background: #f7f9fc;
+}
+
+.it-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.it-process-card {
+  position: relative;
+
+  background: white;
+
+  padding: 2rem;
+
+  border-radius: 16px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+}
+
+.it-process-card:hover {
+  transform: translateY(-5px);
+}
+
+.it-process-card h3 {
+  font-size: 2rem;
+  color: #0078ff;
+  margin-bottom: 0.5rem;
+}
+
+.it-process-card h4 {
+  margin-bottom: 1rem;
+  color: #003468;
+}
+
+.it-process-card p {
+  line-height: 1.7;
+}
+
+/* =========================
+   WHY SECTION
+========================= */
+
+.it-why {
+  background: white;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.it-cta {
+  background: #003468;
+  color: white;
+}
+
+.it-cta h2 {
+  color: white;
+}
+
+.it-cta p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.it-button {
+  display: inline-block;
+
+  margin-top: 2rem;
+
+  padding: 1rem 2rem;
+
+  background: white;
+  color: #003468;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.it-button:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .it-grid,
+  .it-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .it-hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .it-grid,
+  .it-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .it-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .it-hero-content p {
+    font-size: 1.1rem;
+  }
+}
