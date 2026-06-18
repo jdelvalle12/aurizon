@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Cybersec from '../images/cybersecurity-3.mp4';
+import NetworkSecurity from '../images/network-security-2.jpg';
+import NetSec from '../images/network-security.jpg';
+
 import '../styles/Cybersecurity.css';
 import '../App.css';
 
@@ -19,6 +23,16 @@ const Cybersecurity = () => {
 
       {/* HERO */}
       <section className="cyber-hero">
+
+        <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="cyber-video"
+          >
+            <source src={Cybersec} type="video/mp4" />
+          </video>
 
         <div className="cyber-overlay"></div>
 
@@ -44,6 +58,12 @@ const Cybersecurity = () => {
         </p>
 
       </section>
+
+        <img
+          src={NetSec}
+          alt="Network Security two"
+          className="cyber-image"
+        />
 
       {/* FOCUS AREAS */}
       <section className="cyber-grid-section">
@@ -93,6 +113,11 @@ const Cybersecurity = () => {
       </section>
 
       {/* PROCESS */}
+        <img
+          src={NetworkSecurity}
+          alt="Network Security"
+          className="cyber-image"
+        />
       <section className="cyber-process">
 
         <h2>Security Response Process</h2>
