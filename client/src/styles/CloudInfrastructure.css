@@ -1,0 +1,352 @@
+/* ==========================================
+   CLOUD & INFRASTRUCTURE PAGE
+========================================== */
+
+.cloud-container {
+  width: 100%;
+  overflow-x: hidden;
+  background: #f8fbff;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.cloud-hero {
+  position: relative;
+  height: 85vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  overflow: hidden;
+}
+
+.cloud-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 1;
+}
+
+.cloud-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 20, 50, 0.55);
+
+  z-index: 2;
+}
+
+.cloud-hero-content {
+  position: relative;
+  z-index: 3;
+
+  max-width: 900px;
+  padding: 0 2rem;
+}
+
+.cloud-hero-content h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cloud-hero-content p {
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.8;
+}
+
+/* ==========================================
+   OVERVIEW
+========================================== */
+
+.cloud-overview {
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 2rem;
+
+  text-align: center;
+}
+
+.cloud-overview h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cloud-overview p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.cloud-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3rem 2rem;
+}
+
+.cloud-image {
+  width: 100%;
+  max-width: 1000px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* ==========================================
+   AREAS
+========================================== */
+
+.cloud-areas {
+  padding: 5rem 2rem;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+.cloud-areas h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.cloud-areas-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 2rem;
+
+  max-width: 1300px;
+  margin: auto;
+}
+
+.cloud-area-card {
+  background: white;
+  position: relative;
+  padding: 2rem;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 5px 20px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+}
+
+.cloud-area-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #003468,
+    #4aa3ff
+  );
+}
+
+.cloud-area-card:hover {
+  transform: translateY(-8px);
+}
+
+.cloud-area-card h3 {
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.cloud-area-card p {
+  line-height: 1.8;
+}
+
+/* ==========================================
+   PROCESS
+========================================== */
+
+.cloud-process {
+  padding: 5rem 2rem;
+  background: white;
+  text-align: center;
+}
+
+.cloud-process h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.cloud-process-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 2rem;
+
+  max-width: 1300px;
+  margin: auto;
+}
+
+.cloud-process-card {
+  background: white;
+  position: relative;
+  padding: 2rem;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 5px 20px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+}
+
+.cloud-process-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #003468,
+    #4aa3ff
+  );
+}
+
+.cloud-process-card:hover {
+  transform: translateY(-8px);
+}
+
+.cloud-process-card h3 {
+  font-size: 2rem;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.cloud-process-card h4 {
+  margin-bottom: 1rem;
+}
+
+.cloud-process-card p {
+  line-height: 1.7;
+}
+
+/* ==========================================
+   WHY SECTION
+========================================== */
+
+.cloud-why {
+  max-width: 1100px;
+  margin: auto;
+
+  padding: 5rem 2rem;
+
+  text-align: center;
+}
+
+.cloud-why h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cloud-why p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+/* ==========================================
+   CTA
+========================================== */
+
+.cloud-cta {
+  background: #071a35;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 5rem 2rem;
+}
+
+.cloud-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cloud-cta p {
+  max-width: 800px;
+  margin: auto auto 2rem;
+
+  line-height: 1.8;
+}
+
+.cloud-button {
+  display: inline-block;
+
+  background: #0d6efd;
+  color: white;
+
+  text-decoration: none;
+
+  padding: 1rem 2rem;
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.cloud-button:hover {
+  background: #0b5ed7;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+
+  .cloud-hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .cloud-hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .cloud-overview,
+  .cloud-areas,
+  .cloud-process,
+  .cloud-why,
+  .cloud-cta {
+    padding: 4rem 1.5rem;
+  }
+
+  .cloud-process-grid,
+  .cloud-areas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cloud-image {
+    max-width: 100%;
+  }
+
+}
