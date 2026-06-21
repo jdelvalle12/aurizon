@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Cybersec from '../images/cybersecurity-3.mp4';
+import Cybersec from '../images/cybersecurity-2.mp4';
 import NetworkSecurity from '../images/network-security-2.jpg';
 import NetSec from '../images/network-security.jpg';
 
