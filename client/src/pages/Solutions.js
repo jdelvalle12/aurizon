@@ -193,44 +193,44 @@ const Solutions = () => {
             Aurizon transforms ideas into practical technologies
             designed to create long-term value.
           </p>
-        <div className="process-grid">
+        <div className="solutions-process-grid">
                     
-          <div className="process-card">
+          <div className="solutions-process-card">
             <h3>1</h3>
             <h4>Identify Problem</h4>
             <p>Recognize challenges and opportunities.</p>
-            <span className="process-arrow">→</span>
+            <span className="solutions-process-arrow">→</span>
           </div>
 
-          <div className="process-card">
+          <div className="solutions-process-card">
             <h3>2</h3>
             <h4>Research</h4>
             <p>Explore technologies, systems, and approaches.</p>
-            <span className="process-arrow">→</span>
+            <span className="solutions-process-arrow">→</span>
           </div>
 
-          <div className="process-card">
+          <div className="solutions-process-card">
             <h3>3</h3>
             <h4>Prototype</h4>
             <p>Develop concepts and early solutions.</p>
-            <span className="process-arrow">→</span>
+            <span className="solutions-process-arrow">→</span>
           </div>
 
-          <div className="process-card">
+          <div className="solutions-process-card">
             <h3>4</h3>
             <h4>Develop</h4>
             <p>Transform ideas into functional technologies.</p>
-            <span className="process-arrow">→</span>
+            <span className="solutions-process-arrow">→</span>
           </div>
 
-          <div className="process-card">
+          <div className="solutions-process-card">
             <h3>5</h3>
             <h4>Deploy</h4>
             <p>Launch, implement, and refine solutions.</p>
-            <span className="process-arrow">→</span>
+            <span className="solutions-process-arrow">→</span>
           </div>
 
-          <div className="process-card">
+          <div className="solutions-process-card">
             <h3>6</h3>
             <h4>Support</h4>
             <p>Provide ongoing assistance and improvements.</p>

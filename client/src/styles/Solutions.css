@@ -171,7 +171,7 @@
   padding: 5rem 6vw;
   text-align: center;
   background: linear-gradient(
-    to bottom,
+    to top,
     aliceblue,
     rgba(148, 208, 228, 0.2)
   );
@@ -252,14 +252,14 @@
   box-shadow: 0 10px 25px rgba(0,0,0,.08);
 }
 
-.process-grid {
+.solutions-process-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 3rem;
 }
 
-.process-card {
+.solutions-process-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -287,7 +287,7 @@
 }
 
 
-.process-card h3 {
+.solutions-process-card h3 {
   width: 60px;
   height: 60px;
   margin: 0 auto 1rem;
@@ -301,7 +301,7 @@
   justify-content: center;
 }
 
-.process-arrow {
+.solutions-process-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
