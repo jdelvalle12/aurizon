@@ -199,10 +199,10 @@ const CloudInfrastructure = () => {
         </p>
 
         <Link
-          to="/innovation"
+          to="/innovations"
           className="cloud-button"
           >
-          View Innovation
+          View Innovations
         </Link>
 
       </section>
