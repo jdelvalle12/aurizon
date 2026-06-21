@@ -336,9 +336,20 @@
 @media (max-width: 768px) {
 
   .solutions-grid,
-  .process-grid {
-    grid-template-columns: 1fr;
-  }
+  .solutions-process-grid {
+  grid-template-columns: 1fr;
+}
+
+.solutions-hero {
+  height: 60vh;
+  min-height: 450px;
+}
+
+.solutions-philosophy h2,
+.solutions-overview h2,
+.solutions-process h2 {
+  font-size: 2rem;
+}
 
   .solutions-section {
     flex-direction: column;
@@ -348,5 +359,35 @@
   .solutions-title h1 {
     font-size: 2.5rem;
   }
+
+  .solutions-title p {
+  font-size: 1rem;
+}
+
+.solutions-intro,
+.solutions-philosophy,
+.solutions-overview,
+.solutions-section,
+.solutions-process,
+.solutions-cta {
+  padding: 4rem 1.5rem;
+}
+
+.solutions-image {
+  width: 100%;
+  max-width: 400px;
+}
+
+.philosophy-content,
+.solutions-overview p,
+.process-intro {
+  padding: 1.5rem;
+}
+
+.solutions-button {
+  display: block;
+  width: fit-content;
+  margin: 1.5rem auto 0;
+}
 
 }

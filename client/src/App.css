@@ -13,6 +13,14 @@ body {
   color: aliceblue;
 }
 
+/* Global Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 768px) {
   body {

@@ -249,12 +249,46 @@
 }
 
 @media (max-width: 768px) {
+  .cyber-hero {
+    height: 65vh;
+    min-height: 500px;
+  }
+  
   .cyber-grid,
   .cyber-process-grid {
     grid-template-columns: 1fr;
   }
 
+  .cyber-overview,
+  .cyber-grid-section,
+  .cyber-process,
+  .cyber-cta {
+    padding: 4rem 1.5rem;
+  }
+
   .cyber-hero-content h1 {
     font-size: 2.5rem;
+  }
+
+  .cyber-hero-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .cyber-overview h2,
+  .cyber-grid-section h2,
+  .cyber-process h2,
+  .cyber-cta h2 {
+    font-size: 2rem;
+  }
+
+  .cyber-image-section {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+   .cyber-button {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto 0;
   }
 }

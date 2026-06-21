@@ -233,6 +233,7 @@
 }
 
 @media (max-width: 768px) {
+
   .software-cards {
     grid-template-columns: 1fr;
   }
@@ -241,7 +242,51 @@
     grid-template-columns: 1fr;
   }
 
+  .software-hero {
+    height: 65vh;
+    min-height: 500px;
+  }
+
+  .software-hero-content {
+    padding: 1.5rem;
+  }
+
   .software-hero-content h1 {
     font-size: 2.2rem;
+  }
+
+  .software-hero-content p {
+    font-size: 1rem;
+  }
+
+  .software-overview,
+  .software-grid,
+  .software-process,
+  .software-why,
+  .software-cta {
+    padding: 4rem 1.5rem;
+  }
+
+  .software-mid-image {
+    padding: 2rem 1.5rem;
+  }
+
+  .software-overview h2,
+  .software-grid h2,
+  .software-process h2,
+  .software-why h2,
+  .software-cta h2 {
+    font-size: 2rem;
+  }
+
+  .software-overview p,
+  .software-why p {
+    font-size: 1rem;
+  }
+
+  .software-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
   }
 }
