@@ -1,15 +1,285 @@
-.technology-page {
-  padding: 4rem 6vw;
+.technology-hero {
+  position: relative;
+
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
 }
 
-.technology-hero {
+.technology-video {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.technology-overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.technology-hero-content {
+  position: relative;
+
+  z-index: 2;
+
   text-align: center;
+
+  color: white;
+
+  max-width: 800px;
+
+  padding: 0 20px;
+}
+
+.technology-hero-content h1 {
+  font-size: 4rem;
+
+  margin-bottom: 1rem;
+
+  font-weight: 700;
+}
+
+.technology-hero-content p {
+  font-size: 1.3rem;
+
+  line-height: 1.7;
+}
+
+.technology-overview {
+  padding: 6rem 2rem;
+
+  text-align: center;
+
+  max-width: 1100px;
+
+  margin: auto;
+}
+
+.technology-overview h2 {
+  color: #003468;
+
+  margin-bottom: 1.5rem;
+
+  font-size: 2.5rem;
+}
+
+.technology-overview p {
+  line-height: 1.8;
+
+  margin-bottom: 1.5rem;
+
+  font-size: 1.1rem;
+}
+
+.technology-areas {
+  padding: 6rem 2rem;
+
+  background: #f8f9fb;
+}
+
+.technology-areas h2 {
+  text-align: center;
+
+  color: #003468;
+
   margin-bottom: 3rem;
 }
 
-.technology-placeholder {
-  margin: 2rem 0;
+.technology-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 2rem;
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.technology-card {
+  position: relative;
+
+  background: white;
+
   padding: 2rem;
-  background: rgba(255,255,255,0.6);
-  border-radius: 12px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 5px 20px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+
+  overflow: hidden;
+}
+
+.technology-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #003468,
+      #4aa3ff
+    );
+}
+
+.technology-card:hover {
+  transform: translateY(-8px);
+}
+
+.technology-challenges {
+  padding: 6rem 2rem;
+}
+
+.technology-challenges h2 {
+  text-align: center;
+
+  color: #003468;
+
+  margin-bottom: 3rem;
+}
+
+.technology-why-content {
+  display: flex;
+
+  align-items: center;
+
+  gap: 3rem;
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.technology-why-text {
+  flex: 1;
+}
+
+.technology-why-image {
+  flex: 1;
+}
+
+.technology-why-image img {
+  width: 100%;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.12);
+}
+
+.technology-cta {
+  padding: 6rem 2rem;
+
+  text-align: center;
+}
+
+.technology-button {
+  display: inline-block;
+
+  margin-top: 2rem;
+
+  padding: 1rem 2rem;
+
+  background: #003468;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.technology-button:hover {
+  background: #0055aa;
+}
+
+.technology-image-section {
+  display: flex;
+
+  justify-content: center;
+
+  padding: 4rem 2rem;
+}
+
+.technology-image {
+  width: 100%;
+
+  max-width: 800px;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.12);
+}
+
+
+
+@media (max-width: 768px) {
+
+  .technology-hero {
+    height: 60vh;
+  }
+
+  .technology-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .technology-hero-content p {
+    font-size: 1rem;
+  }
+
+  .technology-overview,
+  .technology-areas,
+  .technology-challenges,
+  .technology-why,
+  .technology-cta {
+    padding: 4rem 1.5rem;
+  }
+
+  .technology-grid {
+    grid-template-columns: 1fr;
+  }
+
+   .technology-image-section {
+    padding: 3rem 1rem;
+  }
+
+  .technology-image {
+    width: 100%;
+  }
+
+  .technology-why-content {
+    flex-direction: column;
+  }
 }
