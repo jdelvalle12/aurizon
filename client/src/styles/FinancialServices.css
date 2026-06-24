@@ -1,15 +1,220 @@
 .financial-page {
-  padding: 4rem 6vw;
+  width: 100%;
+  overflow-x: hidden;
+  background: #f8fbff;
 }
 
-.financial-hero {
+.financial-overview,
+.financial-grid-section,
+.financial-why,
+.financial-cta {
+  padding: 5rem 6vw;
   text-align: center;
+}
+
+/* HERO */
+
+.financial-hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.financial-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.financial-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 15, 30, 0.65);
+}
+
+.financial-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 2rem;
+  color: white;
+}
+
+.financial-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.financial-hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.financial-overview h2 {
+  color: #003468;
+
+  margin-bottom: 1.5rem;
+
+  font-size: 2.5rem;
+}
+
+.financial-overview p {
+  line-height: 1.8;
+
+  margin-bottom: 1.5rem;
+
+  font-size: 1.1rem;
+}
+
+.financial-areas h2 {
+  text-align: center;
+
+  color: #003468;
+
   margin-bottom: 3rem;
 }
 
-.financial-placeholder {
-  margin: 2rem 0;
+/* GRID */
+.financial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  max-width: 1300px;
+  margin: 3rem auto 0;
+}
+
+.financial-icon {
+  font-size: 2.2rem;
+  color: #003468;
+  margin-bottom: 1rem;
+}
+
+.financial-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+
   padding: 2rem;
-  background: rgba(255,255,255,0.6);
-  border-radius: 12px;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+  border-top: 3px solid #003468;
+}
+
+.financial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+}
+
+/* IMAGE SECTION */
+.financial-image-section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 6vw;
+}
+
+.financial-image {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.financial-challenges {
+  padding: 6rem 2rem;
+}
+
+.financial-challenges h2 {
+  text-align: center;
+
+  color: #003468;
+
+  margin-bottom: 3rem;
+}
+
+/* WHY SPLIT */
+.financial-why {
+  padding: 6rem 2rem;
+
+  background: #f8f9fb;
+}
+
+.financial-why-content {
+  display: flex;
+
+  align-items: center;
+
+  gap: 3rem;
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.financial-why-text {
+  flex: 1;
+}
+
+.financial-why-image {
+  flex: 1;
+}
+
+.financial-why-image img {
+  width: 100%;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* CTA */
+.financial-cta {
+  background: linear-gradient(135deg, #003468, #0057a3);
+  color: white;
+}
+
+.financial-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+
+  background: white;
+  color: #003468;
+
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.financial-button:hover {
+  transform: translateY(-3px);
+  background: #e6f0ff;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+   .financial-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .financial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .financial-why {
+    flex-direction: column;
+    text-align: center;
+  }
 }
