@@ -201,7 +201,7 @@ const RealEstate = () => {
       </section>
 
       {/* CTA */}
-      <section className="financial-cta">
+      <section className="realestate-cta">
 
         <h2>Explore Real-Estate Solutions</h2>
 
