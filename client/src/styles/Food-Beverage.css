@@ -1,15 +1,255 @@
 .food-page {
-  padding: 4rem 6vw;
+  width: 100%;
+  overflow-x: hidden;
+  background: #f8fbff;
 }
 
-.food-hero {
+.food-overview,
+.food-grid-section,
+.food-why,
+.food-cta {
+  padding: 5rem 6vw;
   text-align: center;
+}
+
+/* HERO */
+
+.food-hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.food-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 15, 30, 0.65);
+}
+
+.food-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 2rem;
+  color: white;
+}
+
+.food-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.food-hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.food-areas {
+  padding: 6rem 2rem;
+  background: #f8f9fb;
+}
+
+.food-overview {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.food-overview h2 {
+  color: #003468;
+
+  margin-bottom: 1.5rem;
+
+  font-size: 2.5rem;
+}
+
+.food-overview p {
+  line-height: 1.8;
+
+  margin-bottom: 1.5rem;
+
+  font-size: 1.1rem;
+}
+
+.food-areas h2 {
+  text-align: center;
+
+  color: #003468;
+
   margin-bottom: 3rem;
 }
 
-.food-placeholder {
-  margin: 2rem 0;
+/* GRID */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  max-width: 1300px;
+  margin: 3rem auto 0;
+}
+
+.food-icon {
+  background: linear-gradient(135deg,
+    #003468,
+    #00a86b);
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.food-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+
   padding: 2rem;
-  background: rgba(255,255,255,0.6);
-  border-radius: 12px;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg,
+#003468,
+#00a86b,
+#66cdaa) 1;
+}
+
+.food-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+}
+
+/* IMAGE SECTION */
+.food-image-section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 6vw;
+}
+
+.food-image {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.food-challenges {
+  padding: 6rem 2rem;
+}
+
+.food-challenges h2 {
+  text-align: center;
+
+  color: #003468;
+
+  margin-bottom: 3rem;
+}
+
+/* WHY SPLIT */
+.food-why {
+  padding: 6rem 2rem;
+
+  background: #f8f9fb;
+}
+
+.food-why-content {
+  display: flex;
+
+  align-items: center;
+
+  gap: 3rem;
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.food-why-text {
+  flex: 1;
+  text-align: left;
+}
+
+.food-why-image {
+  flex: 1;
+}
+
+.food-why-image img {
+  width: 100%;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* CTA */
+.food-cta {
+  background: linear-gradient(
+135deg,
+#003468,
+#008060
+);
+  color: white;
+}
+
+.food-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+
+  background: white;
+  color: #003468;
+
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.food-button:hover {
+  transform: translateY(-3px);
+  background: #e6f0ff;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .food-hero {
+    height: 60vh;
+  } 
+  
+  .food-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .food-why {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .food-why-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .food-why-text {
+    text-align: center;
+  }
 }
