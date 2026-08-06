@@ -1,100 +1,213 @@
-/* .projects-container {
+.case-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: #f8fbff;
+}
+
+/* HERO */
+
+.case-hero {
   position: relative;
-  padding-bottom: 14rem;
-  z-index: 1;
+  height: 70vh;
   display: flex;
-  flex-direction: column; 
   justify-content: center;
-  align-items: center; 
-  font-size: 2rem;
-  color: whitesmoke;
-  height: auto;
-  width: auto;
-  text-decoration: none;
-  margin-bottom: 2rem;
+  align-items: center;
+  overflow: hidden;
 }
 
-.projects-background-video {
+.case-background {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100.4%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; 
-}
-
-.projects-section span {
-  font-size: 28px;
-  position: relative;
-}
-
-.title {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.title:hover {
-  color: rgb(245, 71, 40);
-}
-
-.project-card {
-  position: relative;
-}
-.project-card {
-  position: relative; 
-  width: 12rem; 
-  height: 9rem; 
-  margin: 0 45px; 
-  top: 4rem;
-}
-
-.project-card img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
-  transition: transform 0.3s ease-in-out;
-}
-
-.project-card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out; 
+  object-fit: cover;
 }
 
-.project-card:hover .project-card-overlay {
-  opacity: 1; 
+.case-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 15, 30, 0.65);
 }
 
-.project-card-overlay h3 {
-  color: #fff; 
-  font-size: 1rem; 
+.case-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.case-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.case-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* INTRO */
+
+.case-intro {
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 2rem;
   text-align: center;
 }
 
-.project-card-overlay a {
-  color: #fff; 
-  text-decoration: none; 
+.case-intro h2 {
+  color: #003468;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.project-card-overlay a:hover {
-  text-decoration: underline; 
+.case-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
-.EZ {
-  color:blue;
+/* GRID */
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  max-width: 1300px;
+  margin: auto;
+  padding: 2rem;
 }
 
-.carousel-container {
-  margin-top: 10rem;
-  margin: 0 auto;
-  align-items: center;
-} */
+.case-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+  transition: .3s ease;
+
+  border-top: 4px solid #003468;
+}
+
+.case-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,.15);
+}
+
+.case-card h3 {
+  color: #003468;
+  margin-bottom: .5rem;
+}
+
+.case-card span {
+  display: inline-block;
+  background: #eaf3ff;
+  color: #003468;
+
+  padding: .4rem .8rem;
+
+  border-radius: 25px;
+
+  margin-bottom: 1.5rem;
+
+  font-weight: 600;
+}
+
+.case-card h4 {
+  margin-top: 1.3rem;
+  color: #0057a3;
+}
+
+.case-card p {
+  line-height: 1.7;
+  color: #444;
+}
+
+/* TECHNOLOGY TAGS */
+
+.case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: 1rem;
+}
+
+.case-tags span {
+  background: #003468;
+  color: white;
+  padding: .45rem .8rem;
+  border-radius: 30px;
+  font-size: .85rem;
+}
+
+/* CTA */
+
+.case-cta {
+  margin-top: 5rem;
+  padding: 5rem 2rem;
+
+  text-align: center;
+
+  background: linear-gradient(
+      135deg,
+      #003468,
+      #0057a3
+  );
+
+  color: white;
+}
+
+.case-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.case-cta p {
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.case-button {
+  display: inline-block;
+
+  margin-top: 2rem;
+
+  padding: 1rem 2rem;
+
+  background: white;
+  color: #003468;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  border-radius: 8px;
+
+  transition: .3s ease;
+}
+
+.case-button:hover {
+  background: #eaf3ff;
+  transform: translateY(-3px);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .case-hero {
+    height: 55vh;
+  }
+
+  .case-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
