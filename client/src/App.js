@@ -31,6 +31,11 @@ import Careers from './pages/Careers';
 import Insights from './pages/Insights';
 import Contact from './pages/Contact';
 import SignIn from './pages/Sign-In';
+
+import PrivacyPolicy from './pages/Privacy-Policy';
+import TermsOfService from './pages/Terms-of-Service';
+import SiteMap from './pages/SiteMap';
+
 import './index.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -79,6 +84,9 @@ return (
           <Route path="/insights" element={<Insights />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/footer/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/footer/terms-of-service" element={<TermsOfService />} />
+          <Route path="/footer/sitemap" element={<SiteMap />} />
         </Routes>
         <Footer />
       </div>
